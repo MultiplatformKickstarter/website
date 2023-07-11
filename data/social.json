@@ -3,10 +3,5 @@
         "name": "Github",
         "link": "https://github.com/MultiplatformKickstarter",
         "image": "images/social/github.svg"
-    },
-    {
-        "name": "Twitter",
-        "link": "https://twitter.com/ponsaffair",
-        "image": "images/social/twitter.svg"
     }
 ]

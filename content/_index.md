@@ -10,3 +10,5 @@ intro_image_hide_on_mobile: true
 # Multiplatform Kickstarter
 
 Create multiplatform applications within minutes using Kotlin Multiplatform.
+
+We are working hard to be available soon.
