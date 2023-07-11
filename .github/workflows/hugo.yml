@@ -31,7 +31,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      HUGO_VERSION: 0.108.0
+      HUGO_VERSION: 0.115.2
     steps:
       - name: Install Hugo CLI
         run: |
@@ -48,6 +48,8 @@ jobs:
         uses: actions/configure-pages@v3
       - name: Install Node.js dependencies
         run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
+      - name: Install postcss
+        run: npm install -D autoprefixer postcss-cli postcss
       - name: Build with Hugo
         env:
           # For maximum backward compatibility with Hugo modules
