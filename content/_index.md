@@ -11,4 +11,4 @@ intro_image_hide_on_mobile: true
 
 Create multiplatform applications within minutes using Kotlin Multiplatform.
 
-We are working hard to be available soon.
+We are working hard to be available soon. Subscribe to our newsletter if you want to be the first to know when it's released.
