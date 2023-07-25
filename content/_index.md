@@ -9,6 +9,9 @@ intro_image_hide_on_mobile: true
 
 # Multiplatform Kickstarter
 
-Create multiplatform applications within minutes using Kotlin Multiplatform.
+Create multiplatform applications within minutes using *Kotlin Multiplatform*.
+The first **Open Source** template to kickstart your applications for **Android**, **iOS**, **Web** with **Ktor** as server.
 
-We are working hard to be available soon. Subscribe to our newsletter if you want to be the first to know when it's released.
+It will be available on *late 2023*.
+
+Subscribe to our newsletter if you want to be the first to know when it's released.

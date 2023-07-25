@@ -2,7 +2,7 @@ baseURL = "/"
 themesDir = "themes"
 theme = "hugo-serif-theme"
 languageCode = "en-us"
-title = "Multiplatform Kickstarter"
+title = "Multiplatform Kickstarter | The Open Source template to build multiplatform applications faster"
 
 [module]
   [module.hugoVersion]
@@ -51,7 +51,7 @@ title = "Multiplatform Kickstarter"
     summary_large_truncate = 120 # How many characters to include in the summary of the team bios (large layout) before truncating
 
   [params.footer]
-    copyright_text = 'Multiplatform Kickstarter @Copyright 2023'
+    copyright_text = 'Copyright © 2023 Multiplatform Kickstarter'
 
 [menu]
   # Main Menu
