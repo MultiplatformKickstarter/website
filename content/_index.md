@@ -10,7 +10,10 @@ intro_image_hide_on_mobile: true
 # Multiplatform Kickstarter
 
 Create multiplatform applications within minutes using *Kotlin Multiplatform*.
-The first **Open Source** template to kickstart your applications for **Android**, **iOS**, **Web** with **Ktor** as server.
+
+Developed by industry veterans, *Multiplatform Kickstarter* is going to be the first **Open Source** template that will help you to kickstart your business.
+
+With few simple steps you will have up and running applications for **Android**, **iOS** and **Web** using **Ktor** as the server.
 
 It will be available on *late 2023*.
 

@@ -56,13 +56,13 @@ title = "Multiplatform Kickstarter | The Open Source template to build multiplat
 [menu]
   # Main Menu
   #[[menu.main]]
-  #  name = "Services"
-  #  url = "/services/"
+  #  name = "Docs"
+  #  url = "https://docs.multiplatformkickstarter.com"
   #  weight = 1
 
   #[[menu.main]]
-  #  name = "Team"
-  #  url = "/team/"
+  #  name = "Blog"
+  #  url = "https://blog.multiplatformkickstarter.com"
   #  weight = 2
 
   #[[menu.main]]
