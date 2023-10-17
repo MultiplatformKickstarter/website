@@ -12905,6 +12905,15 @@ ol {
   .logo-mobile img {
     width: auto; }
 
+.logo-title {
+  color: #2f2f41;
+  font-size: 2.0rem;
+  font-family: Poppins, serif, -apple-system;
+  font-weight: bold;
+  margin-bottom: 10px; }
+  @media (min-width: 576px) {
+    .logo-title {
+      margin: 0; } }
 .main-menu {
   display: none; }
   @media (min-width: 768px) {
@@ -13193,7 +13202,7 @@ ol {
   overflow: hidden; }
   @media (min-width: 768px) {
     .intro {
-      padding-top: 140px;
+      padding-top: 80px;
       padding-bottom: 140px; } }
   .intro h1 {
     color: #2f2f41;
@@ -13237,7 +13246,7 @@ ol {
   margin-bottom: 30px; }
   @media (min-width: 768px) {
     .intro-image-absolute {
-      position: absolute;
+      position: relative;
       bottom: -50px;
       left: -50px;
       width: 700px; } }

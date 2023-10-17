@@ -1,2 +1,17 @@
 [
+  {
+    "title": "Download",
+    "description": "After purchasing you receive a github invite link. Download the full codebase.",
+    "image": "images/features/noun_branding_1885335.svg"
+  },
+  {
+    "title": "Setup",
+    "description": "Setup in minutes your environment following the instructions here.",
+    "image": "images/features/noun_The Process_1885341.svg"
+  },
+  {
+    "title": "Build",
+    "description": "Start building your own features easily and get a head start with the right tools today.",
+    "image": "images/features/noun_3d modeling_1885342.svg"
+  }
 ]

@@ -7,16 +7,17 @@ intro_image_absolute: true
 intro_image_hide_on_mobile: true
 ---
 
-# Multiplatform Kickstarter
+# Create multiplatform applications within minutes
 
-Create multiplatform applications within minutes using **Kotlin Multiplatform** with **Compose Multiplatform**.
-
-Developed by industry veterans, *Multiplatform Kickstarter* is going to be the first **Open Source** template that will help you to kickstart your business.
+Developed by industry veterans, *Multiplatform Kickstarter* is going to be the first **Open Source** *template* that will help you to kickstart your business.
 
 Most templates only solves the basic functionality, we are aiming to solve most of the common problems when creating applications from initial status to production.
 
-With few simple steps you will have up and running applications for **Android**, **iOS**, **Desktop** and **Web** using **Ktor** as the server.
+Based in **Kotlin Multiplatform (KMP)** and in conjunction with **Compose Multiplatform**, with few simple steps you will have up and running applications for **Android**, **iOS** and **Desktop** using **Ktor** as the server. (and in the near future also **Web**)
 
 It will be available on *late 2023*.
+
+**TRY IT NOW!**
+[**DOWNLOAD OUR PREVIEW VERSION!**](https://github.com/MultiplatformKickstarter/kmp-template)
 
 Subscribe to our [newsletter](https://multiplatformkickstarter.substack.com/) if you want to be the first to know when it's released.

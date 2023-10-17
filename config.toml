@@ -2,7 +2,7 @@ baseURL = "/"
 themesDir = "themes"
 theme = "hugo-serif-theme"
 languageCode = "en-us"
-title = "Multiplatform Kickstarter | The Open Source template to build multiplatform applications faster"
+title = "The Open Source template to build multiplatform applications faster"
 
 [module]
   [module.hugoVersion]
@@ -21,9 +21,9 @@ title = "Multiplatform Kickstarter | The Open Source template to build multiplat
 
   [params.logo]
     mobile = "images/logo/MKLogo.svg"
-    mobile_height = "36px"
+    mobile_height = "60px"
     desktop = "images/logo/MKLogo.svg"
-    desktop_height = "36px"
+    desktop_height = "60px"
     alt = "Multiplatform Kickstarter"
 
   [params.fonts]
@@ -55,25 +55,30 @@ title = "Multiplatform Kickstarter | The Open Source template to build multiplat
 
 [menu]
   # Main Menu
-  #[[menu.main]]
-  #  name = "Docs"
-  #  url = "https://docs.multiplatformkickstarter.com"
-  #  weight = 1
+  [[menu.main]]
+    name = "Docs"
+    url = "https://docs.multiplatformkickstarter.com"
+    weight = 1
 
-  #[[menu.main]]
-  #  name = "Blog"
-  #  url = "https://blog.multiplatformkickstarter.com"
-  #  weight = 2
+  [[menu.main]]
+    name = "Pricing"
+    url = "/pricing/"
+  weight = 3
 
   #[[menu.main]]
   #  name = "About"
   #  url = "/about/"
-  #  weight = 3
-
-  #[[menu.main]]
-  #  name = "Contact"
-  #  url = "/contact/"
   #  weight = 4
+
+  [[menu.main]]
+    name = "Blog"
+    url = "https://blog.multiplatformkickstarter.com"
+    weight = 2
+
+  [[menu.main]]
+    name = "Contact"
+    url = "/contact/"
+    weight = 4
 
   # Footer Menu
   #[[menu.footer]]
