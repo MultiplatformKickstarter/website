@@ -7,7 +7,7 @@
       <div class="col-12 col-md-7 col-lg-6 order-2 order-md-1">
         {{ .Content }}
         {{ if .Site.Params.homepage.show_contact_box }}
-        {{ partial "call.html" (dict "site" .Site "context" . "show_button" "true") }}
+        {{ partial "download.html" (dict "site" .Site "context" . "show_button" "true") }}
         {{ end }}
       </div>
       {{ if .Params.intro_image }}
@@ -20,6 +20,28 @@
     </div>
   </div>
 </div>
+
+{{ $pricing := where (where .Site.RegularPages "Type" "pricing") ".Params.featured" true }}
+{{if gt (len $pricing) 0}}
+<div class="strip">
+  <div class="container pt-6 pb-6 pb-md-10">
+    <div class="row justify-content-start">
+      {{ range first 6 (sort $pricing ".Params.weight") }}
+      <div class="col-12 col-md-4 mb-1">
+        {{ .Render "summary" }}
+      </div>
+      {{ end }}
+    </div>
+    {{ if .Site.Params.homepage.show_services_button }}
+    <div class="row justify-content-center">
+      <div class="col-auto">
+        <a class="button button-primary" href="{{ "pricing/" | relURL }}">Pricing</a>
+      </div>
+    </div>
+    {{ end }}
+  </div>
+</div>
+{{end}}
 
 {{ $services := where (where .Site.RegularPages "Type" "services") ".Params.featured" true }}
 {{if gt (len $services) 0}}
@@ -65,6 +87,14 @@
   </div>
 </div>
 {{end}}
+
+<div class="strip strip-grey">
+  <div class="container pt-6 pb-6 pt-md-10 pb-md-10">
+    <div class="row justify-content-center">
+      <iframe src="https://multiplatformkickstarter.substack.com/embed" width="480" height="320" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+    </div>
+  </div>
+</div>
 
 {{ end }}
 

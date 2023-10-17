@@ -47,6 +47,9 @@ title = "The Open Source template to build multiplatform applications faster"
   [params.services]
     summary_truncate = 120 # How many characters to include in the summary of the services before truncating
 
+  [params.pricing]
+    summary_truncate = 120
+
   [params.team]
     summary_large_truncate = 120 # How many characters to include in the summary of the team bios (large layout) before truncating
 
@@ -63,22 +66,22 @@ title = "The Open Source template to build multiplatform applications faster"
   [[menu.main]]
     name = "Pricing"
     url = "/pricing/"
-  weight = 3
+    weight = 2
 
-  #[[menu.main]]
-  #  name = "About"
-  #  url = "/about/"
-  #  weight = 4
+  [[menu.main]]
+    name = "FAQ"
+    url = "/faq/"
+    weight = 3
 
   [[menu.main]]
     name = "Blog"
     url = "https://blog.multiplatformkickstarter.com"
-    weight = 2
+    weight = 4
 
   [[menu.main]]
     name = "Contact"
     url = "/contact/"
-    weight = 4
+    weight = 5
 
   # Footer Menu
   #[[menu.footer]]
