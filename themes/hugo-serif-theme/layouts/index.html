@@ -84,17 +84,23 @@
         Get <b>lifetime access</b> to <b>our private Github</b> team and join <b>our Slack community</b> for support. Pay once and receive <b>unlimited updates</b> to <b>build as many apps as you want</b>.
       </p>
       {{ range first 3 (sort $pricing ".Params.weight") }}
+      {{ if eq (.Params.highlighted) true }}
+      <div class="col-14 col-md-3 mb-1 pricing-highlighted">
+      {{ else }}
       <div class="col-14 col-md-3 mb-1 pricing">
+      {{ end }}
         {{ .Render "price-summary" }}
-        <!-- <div class="row justify-content-center"> -->
         <div class="col-auto">
-          <a class="button button-primary" href="{{ .Params.shoppingurl | relURL }}">{{ .Params.leadtext }}</a>
+          {{ if eq (.Params.highlighted) true }}
+          <a class="button-expanded button-primary button-highlighted" href="{{ .Params.shoppingurl | relURL }}">{{ .Params.leadtext }}</a>
+          {{ else }}
+          <a class="button-expanded button-primary" href="{{ .Params.shoppingurl | relURL }}">{{ .Params.leadtext }}</a>
+          {{ end }}
         </div>
-        <!-- </div> -->
       </div>
       {{ end }}
       <div class="col-auto pricing-centered pricing-small">
-        * price may change in the future after the promotion ends.
+        * price and purchase options may change in the future after the promotion ends.
       </div>
     </div>
   </div>
