@@ -3,7 +3,7 @@ title: 'Homepage'
 meta_title: 'Multiplatform Kickstarter'
 description: "Create multiplatform applications within minutes"
 intro_image: "images/illustrations/app-development-amico.svg"
-intro_image_absolute: true
+intro_image_absolute: false
 intro_image_hide_on_mobile: true
 ---
 
@@ -11,9 +11,7 @@ intro_image_hide_on_mobile: true
 
 Developed by industry veterans, *Multiplatform Kickstarter* is the first **Open Source** *template* that will help you to kickstart your business in no time.
 
-While most templates only solves the basic functionality, we are aiming to solve most of the common problems when creating applications from initial status to production.
-
-Based in **Kotlin Multiplatform (KMP)** and in conjunction with **Compose Multiplatform**, with few simple steps you will have up and running applications for **Android**, **iOS** and **Desktop** using **Ktor** as the server. (and in the near future also **Web**)
+Based in **Kotlin Multiplatform (KMP)** and **Compose Multiplatform**, with few simple steps you will have up and running applications for **Android**, **iOS** and **Desktop** using **Ktor** as the server. (and in the near future also **Web**)
 
 It will be available on *late 2023*.
 

@@ -8,5 +8,5 @@ intro_image_hide_on_mobile: false
 
 # Pricing
 
-Get lifetime access to our private Github team and join our Slack community for support.
-Pay once and receive unlimited updates to build as many apps as you want.
+Get **lifetime access** to **our private Github** team and join **our Slack community** for support.
+Pay once and receive **unlimited updates** to **build as many apps as you want**.

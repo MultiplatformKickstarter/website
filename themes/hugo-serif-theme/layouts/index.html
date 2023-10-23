@@ -21,26 +21,6 @@
   </div>
 </div>
 
-{{ $pricing := where (where .Site.RegularPages "Type" "pricing") ".Params.featured" true }}
-{{if gt (len $pricing) 0}}
-<div class="strip">
-  <div class="container pt-3 pb-3 pb-md-10">
-    <div class="row justify-content-center">
-      {{ range first 3 (sort $pricing ".Params.weight") }}
-        <div class="col-14 col-md-3 mb-1 pricing">
-          {{ .Render "price-summary" }}
-          <!-- <div class="row justify-content-center"> -->
-            <div class="col-auto">
-              <a class="button button-primary" href="{{ .Params.shoppingurl | relURL }}">{{ .Params.leadtext }}</a>
-            </div>
-          <!-- </div> -->
-        </div>
-      {{ end }}
-    </div>
-  </div>
-</div>
-{{end}}
-
 {{ $services := where (where .Site.RegularPages "Type" "services") ".Params.featured" true }}
 {{if gt (len $services) 0}}
 <div class="strip">
@@ -65,8 +45,14 @@
 
 {{if .Site.Data.features}}
 <div class="strip strip-grey">
-  <div class="container pt-6 pb-6 pt-md-10 pb-md-10">
+  <div class="container pt-3 pb-3 pb-md-10">
     <div class="row justify-content-center">
+      <div class="pricing-intro">
+        <h1>Features</h1>
+      </div>
+      <p>
+        While most templates only solves the basic functionality, we are aiming to solve most of the common problems when creating applications from initial status to production.
+      </p>
       {{ range .Site.Data.features }}
       <div class="col-12 col-md-6 col-lg-4 mb-2">
         <div class="feature">
@@ -81,6 +67,32 @@
         </div>
       </div>
       {{end}}
+    </div>
+  </div>
+</div>
+{{end}}
+
+{{ $pricing := where (where .Site.RegularPages "Type" "pricing") ".Params.featured" true }}
+{{if gt (len $pricing) 0}}
+<div class="strip">
+  <div class="container pt-3 pb-3 pb-md-10">
+    <div class="row justify-content-center">
+      <div class="pricing-intro">
+        <h1>Pricing</h1>
+      </div>
+      <p>
+        Get <b>lifetime access</b> to <b>our private Github</b> team and join <b>our Slack community</b> for support. Pay once and receive <b>unlimited updates</b> to <b>build as many apps as you want</b>.
+      </p>
+      {{ range first 3 (sort $pricing ".Params.weight") }}
+      <div class="col-14 col-md-3 mb-1 pricing">
+        {{ .Render "price-summary" }}
+        <!-- <div class="row justify-content-center"> -->
+        <div class="col-auto">
+          <a class="button button-primary" href="{{ .Params.shoppingurl | relURL }}">{{ .Params.leadtext }}</a>
+        </div>
+        <!-- </div> -->
+      </div>
+      {{ end }}
     </div>
   </div>
 </div>

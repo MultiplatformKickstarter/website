@@ -6,10 +6,13 @@ draft: false
 weight: 3
 price: "$499"
 shoppingurl: "https://blog.multiplatformkickstarter.com"
-leadtext: "BUY NOW"
+leadtext: "GET IT NOW"
 ---
 
-Business Sales refers to the process of selling a company or its assets to interested buyers, often involving the transfer of ownership and control.
+Help us build the next gen Multiplatform boilerplate template. This will give you access for ever.
+
+* Slack channel access
+* Email support
 <!--more-->
 It entails various activities such as valuing the business, identifying potential buyers, negotiating the terms of the sale, conducting due diligence, and finalizing the transaction.
 
