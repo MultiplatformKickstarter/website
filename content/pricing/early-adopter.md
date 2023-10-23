@@ -4,12 +4,12 @@ date: 2018-11-28T15:15:26+10:00
 featured: true
 draft: false
 weight: 2
-price: "$149"
+price: "$149*"
 shoppingurl: "https://blog.multiplatformkickstarter.com"
 leadtext: "GET IT NOW"
 ---
 
-Be one of the first to acquire it and you will have access for ever.
+Be one of the first to acquire the access to the Premium template and you will have access for ever.
 
 * Slack channel access
 * Email support

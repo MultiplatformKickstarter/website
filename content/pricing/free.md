@@ -9,7 +9,7 @@ shoppingurl: "https://blog.multiplatformkickstarter.com"
 leadtext: "DOWNLOAD NOW"
 ---
 
-Access to the template and be part of the community.
+Basic template is free forever. Access to the template and be part of the community.
 
 - Template
 - Community

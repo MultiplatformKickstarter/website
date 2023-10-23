@@ -13385,6 +13385,13 @@ ol {
     @media (min-width: 768px) {
       .pricing-intro p {
         width: 80%; } }
+.pricing-centered {
+  text-align: center;
+  justify-content: center; }
+
+.pricing-small {
+  font-size: 0.8rem; }
+
 .team-summary {
   display: flex;
   flex-wrap: wrap;

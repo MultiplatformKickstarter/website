@@ -80,7 +80,7 @@
       <div class="pricing-intro">
         <h1>Pricing</h1>
       </div>
-      <p>
+      <p class="col-auto pricing-centered">
         Get <b>lifetime access</b> to <b>our private Github</b> team and join <b>our Slack community</b> for support. Pay once and receive <b>unlimited updates</b> to <b>build as many apps as you want</b>.
       </p>
       {{ range first 3 (sort $pricing ".Params.weight") }}
@@ -93,6 +93,9 @@
         <!-- </div> -->
       </div>
       {{ end }}
+      <div class="col-auto pricing-centered pricing-small">
+        * price may change in the future after the promotion ends.
+      </div>
     </div>
   </div>
 </div>
