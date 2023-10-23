@@ -1,10 +1,10 @@
 ---
-title: "Early Adopter"
+title: "Founder"
 date: 2018-11-28T15:15:26+10:00
 featured: true
 draft: false
-weight: 2
-price: "$199"
+weight: 3
+price: "$499"
 shoppingurl: "https://blog.multiplatformkickstarter.com"
 leadtext: "BUY NOW"
 ---

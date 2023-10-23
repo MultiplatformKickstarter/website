@@ -18,6 +18,7 @@ title = "The Open Source template to build multiplatform applications faster"
   [params.homepage]
     show_contact_box = true      # show / hide the contaxt box on the homepage
     show_services_button = false # show / hide the "view all services" button
+    show_pricing_button = true
 
   [params.logo]
     mobile = "images/logo/MKLogo.svg"

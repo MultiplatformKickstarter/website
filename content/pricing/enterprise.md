@@ -1,9 +1,12 @@
 ---
 title: "Enterprise"
 date: 2018-11-28T15:15:26+10:00
-featured: true
-draft: false
+featured: false
+draft: true
 weight: 3
+price: "$349"
+shoppingurl: "https://blog.multiplatformkickstarter.com"
+leadtext: "SUBSCRIBE NOW"
 ---
 
 Business Sales refers to the process of selling a company or its assets to interested buyers, often involving the transfer of ownership and control.

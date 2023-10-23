@@ -4,9 +4,18 @@ date: 2018-11-28T15:15:26+10:00
 featured: true
 draft: false
 weight: 1
+price: "$0"
+shoppingurl: "https://blog.multiplatformkickstarter.com"
+leadtext: "DOWNLOAD NOW"
 ---
 
-Business Sales refers to the process of selling a company or its assets to interested buyers, often involving the transfer of ownership and control.
+Access to the template and be part of the community.
+
+- Template
+- Community
+- Exclusive opportunities
+
+
 <!--more-->
 It entails various activities such as valuing the business, identifying potential buyers, negotiating the terms of the sale, conducting due diligence, and finalizing the transaction.
 

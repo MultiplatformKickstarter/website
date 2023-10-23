@@ -7,9 +7,9 @@ intro_image_absolute: true
 intro_image_hide_on_mobile: true
 ---
 
-# Kickstart your business within minutes
+# Kickstart your business
 
-Developed by industry veterans, *Multiplatform Kickstarter* is the first **Open Source** *template* that will help you to kickstart your business.
+Developed by industry veterans, *Multiplatform Kickstarter* is the first **Open Source** *template* that will help you to kickstart your business in no time.
 
 While most templates only solves the basic functionality, we are aiming to solve most of the common problems when creating applications from initial status to production.
 
