@@ -50,16 +50,12 @@
       <div class="pricing-intro">
         <h1>Features</h1>
       </div>
-      <p>
+      <p class="pricing-centered">
         While most templates only solves the basic functionality, we are aiming to solve most of the common problems when creating applications from initial status to production.
       </p>
       {{ range .Site.Data.features }}
       <div class="col-12 col-md-6 col-lg-4 mb-2">
         <div class="feature">
-          {{ if .image }}
-          <div class="feature-image"><img width="100" height="100" alt="{{ .Title }} logo"
-              src="{{ .image | relURL }}" /></div>
-          {{ end }}
           <h2 class="feature-title">{{ .title }}</h2>
           <div class="feature-content">
             <p>{{ .description }}</p>
@@ -72,17 +68,53 @@
 </div>
 {{end}}
 
+<div class="strip strip">
+  <div class="container pt-3 pb-3 pb-md-10">
+    <div class="row justify-content-center">
+      <div class="pricing-intro">
+        <h1>What is the cost of building an app from scratch?</h1>
+      </div>
+      <p class="pricing-centered">
+        Kotlin multiplatform is a great framework to create applications but starting with it comes at a cost.
+        Multiplatform Kickstarter is an opinionated template that will save you all the trouble of researching and develop all the features and components needed to create production ready applications.
+        <b>Save months of work plus a lot of money</b> and focus on building a profitable business.
+      </p>
+
+      <p class="pricing-centered">
+        "Developing a full-fledged cross-platform mobile app costs around <b>$20,000+</b> for a <b>simple app</b>, around <b>$20,000</b> to <b>$45,000</b> for a <b>moderate app</b> and <b>$45,000</b> to <b>$75,000</b> for <b>advanced apps</b>" - <a href="https://www.auxanoglobalservices.com/cost-to-develop-cross-platform-app/#gref">Auxano Global Services</a>
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="strip strip-grey">
+  <div class="container pt-3 pb-3 pb-md-10">
+    <div class="row justify-content-center">
+      <div class="pricing-intro">
+        <h1>Designed to shine</h1>
+      </div>
+      <p class="pricing-centered">
+        Material 3 is the latest version of Google’s open-source design system. Create beautiful applications with Multiplatform Kickstarter.
+      </p>
+      <p class="pricing-centered">
+        <img src="images/pet-app-android.png" width="200" title="" alt="" />
+      </p>
+    </div>
+  </div>
+</div>
+
 {{ $pricing := where (where .Site.RegularPages "Type" "pricing") ".Params.featured" true }}
 {{if gt (len $pricing) 0}}
 <div class="strip">
   <div class="container pt-4 pb-3 pb-md-8">
     <div class="row justify-content-center">
       <div class="pricing-intro">
-        <h1>Pricing</h1>
+        <h1>Do you need more?</h1>
       </div>
       <p class="col-auto pricing-centered">
-        Do you need more?
-        Get <b>lifetime access</b> to <b>our private Github team</b> and join <b>our Slack community</b> for support. Pay once and receive <b>unlimited updates</b> to <b>build as many apps as you want</b>.
+        The <i>Basic template</i> is a good start but the <b>**Advanced template**</b> have all you need to create professional apps without a hassle.<br/>
+        Get <b>lifetime access</b> to <b>our private Github team</b> and join <b>our Slack community</b> for support. <br/>
+        Pay once and receive <b>unlimited updates to build as many apps as you want</b>.
       </p>
       {{ range first 3 (sort $pricing ".Params.weight") }}
       {{ if eq (.Params.highlighted) true }}
@@ -101,7 +133,8 @@
       </div>
       {{ end }}
       <div class="col-auto pricing-centered pricing-small">
-        * price and purchase options may change in the future after the promotion ends.
+        * price and purchase options may change in the future after the promotion ends.<br/>
+        ** Advanced template is still under development.
       </div>
     </div>
   </div>

@@ -23,3 +23,7 @@ Our components can be used by anyone, even though just starting with Compose. Th
 
 You get access to the full source code. You can use the components as is in your project, or use as a base to your own components.
 
+**How often are new features added?**
+
+New features are added constantly. Our goal is to provide you with every single pattern found in all mobile apps, so there are a lot of ideas and releases planned. New features are posted on [Twitter](https://twitter.com/mpkickstarter) as soon as they are available. We also send a monthly update [via email](https://multiplatformkickstarter.substack.com/) to notify you.
+
