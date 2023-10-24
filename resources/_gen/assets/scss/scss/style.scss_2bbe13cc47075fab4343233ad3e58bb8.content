@@ -13077,7 +13077,8 @@ ol {
     text-decoration: none; }
 
 .button-highlighted {
-  background: #f24088; }
+  background: #f24088;
+  margin: 0px 0px; }
 
 .call {
   position: relative;
@@ -13229,7 +13230,7 @@ ol {
   @media (min-width: 768px) {
     .intro {
       padding-top: 80px;
-      padding-bottom: 140px; } }
+      padding-bottom: 100px; } }
   .intro h1 {
     color: #2f2f41;
     font-size: 42px;

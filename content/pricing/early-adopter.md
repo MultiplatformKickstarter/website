@@ -10,9 +10,9 @@ leadtext: "GET IT NOW"
 highlighted: true
 ---
 
-Premium template. Be one of the first to acquire the access to the Premium template and you will have access forever.
+**Advanced template**. Be one of the first to acquire the access to the *Advanced template* and you will have access forever.
 
 * Includes all basic features
-* Advanced features
+* [Advanced features](/features)
 * Developer Plan
 * Slack channel access

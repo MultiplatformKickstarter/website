@@ -55,7 +55,7 @@ title = "The Open Source template to build multiplatform applications faster"
     summary_large_truncate = 120 # How many characters to include in the summary of the team bios (large layout) before truncating
 
   [params.footer]
-    copyright_text = 'Copyright © 2023 Multiplatform Kickstarter'
+    copyright_text = 'Copyright © 2023 Multiplatform Kickstarter. All rights reserved.'
 
 [menu]
   # Main Menu
@@ -65,32 +65,37 @@ title = "The Open Source template to build multiplatform applications faster"
     weight = 1
 
   [[menu.main]]
+    name = "Features"
+    url = "/features/"
+    weight = 2
+
+  [[menu.main]]
     name = "Pricing"
     url = "/pricing/"
-    weight = 2
+    weight = 3
 
   [[menu.main]]
     name = "FAQ"
     url = "/faq/"
-    weight = 3
+    weight = 4
 
   [[menu.main]]
     name = "Blog"
     url = "https://blog.multiplatformkickstarter.com"
-    weight = 4
+    weight = 5
 
   [[menu.main]]
     name = "Contact"
     url = "/contact/"
-    weight = 5
+    weight = 6
 
   # Footer Menu
-  #[[menu.footer]]
-  #  name = "Home"
-  #  url = "/"
-  #  weight = 1
+  [[menu.footer]]
+    name = "Home"
+    url = "/"
+    weight = 1
 
-  #[[menu.footer]]
-  #  name = "Contact"
-  #  url = "/contact/"
-  #  weight = 2
+  [[menu.footer]]
+    name = "License"
+    url = "/license"
+    weight = 2

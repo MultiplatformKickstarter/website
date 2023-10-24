@@ -18,16 +18,36 @@
   </div>
 </div>
 
-<div class="container pb-md-12">
-  <div class="row justify-content-center">
-    {{ range .Pages.ByWeight }}
-    <div class="col-14 col-md-3 mb-1 pricing">
-      {{ .Render "price-summary" }}
-      <div class="col-auto">
-        <a class="button button-primary" href="{{ .Params.shoppingurl | relURL }}">{{ .Params.leadtext }}</a>
+  {{ if .Params.is_pricing }}
+  <div class="container pb-md-12">
+    <div class="row justify-content-center">
+      <p class="col-auto pricing-centered">
+        Get <b>lifetime access</b> to <b>our private Github team</b> and join <b>our Slack community</b> for support. Pay once and receive <b>unlimited updates</b> to <b>build as many apps as you want</b>.
+      </p>
+
+      {{ range .Pages.ByWeight }}
+
+      {{ if eq (.Params.highlighted) true }}
+      <div class="col-14 col-md-3 mb-2 pricing-highlighted">
+        {{ else }}
+        <div class="col-14 col-md-3 mb-2 pricing">
+          {{ end }}
+          {{ .Render "price-summary" }}
+          <div class="col-auto">
+            {{ if eq (.Params.highlighted) true }}
+            <a class="button-expanded button-primary button-highlighted" href="{{ .Params.shoppingurl | relURL }}">{{ .Params.leadtext }}</a>
+            {{ else }}
+            <a class="button-expanded button-primary" href="{{ .Params.shoppingurl | relURL }}">{{ .Params.leadtext }}</a>
+            {{ end }}
+          </div>
+        </div>
+
+      {{ end }}
+
+      <div class="col-auto pricing-centered pricing-small">
+        * price and purchase options may change in the future after the promotion ends.
       </div>
     </div>
-    {{ end }}
   </div>
-</div>
+  {{ end }}
 {{ end }}
