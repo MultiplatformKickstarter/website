@@ -1,6 +1,6 @@
 ---
 title: 'Features'
-date: 2018-02-22T17:01:34+07:00
+date: 2023-10-25T17:01:34+07:00
 ---
 
 While most templates only solves the basic functionality, we are aiming to solve most of the common problems when creating applications from initial status to production.

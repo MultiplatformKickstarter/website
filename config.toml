@@ -60,23 +60,23 @@ title = "The Open Source template to build multiplatform applications faster"
 [menu]
   # Main Menu
   [[menu.main]]
-    name = "Docs"
-    url = "https://docs.multiplatformkickstarter.com"
-    weight = 1
-
-  [[menu.main]]
     name = "Features"
     url = "/features/"
-    weight = 2
+    weight = 1
 
   [[menu.main]]
     name = "Pricing"
     url = "/pricing/"
-    weight = 3
+    weight = 2
 
   [[menu.main]]
     name = "FAQ"
     url = "/faq/"
+    weight = 3
+
+  [[menu.main]]
+    name = "Docs"
+    url = "https://docs.multiplatformkickstarter.com"
     weight = 4
 
   #[[menu.main]]
