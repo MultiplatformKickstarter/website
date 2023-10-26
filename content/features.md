@@ -8,7 +8,7 @@ While most templates only solves the basic functionality, we are aiming to solve
 Multiplatform Kickstarter is an opinionated template and comes with these libraries built-in:
 
 - Kotlin 1.9.10
-- Compose Multiplatform 1.5
+- Compose Multiplatform 1.5.10-rc02
 - Kotlin Coroutines
 - Voyager for Navigation
 - Koin as Dependency Injection

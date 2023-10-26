@@ -5,7 +5,7 @@ featured: true
 draft: false
 weight: 3
 price: "$499*"
-shoppingurl: "https://blog.multiplatformkickstarter.com"
+shoppingurl: "https://multiplatformkickstarter.lemonsqueezy.com/checkout/buy/f75c5520-31e8-4744-befe-1e3363b9bb49"
 leadtext: "GET IT NOW"
 ---
 
