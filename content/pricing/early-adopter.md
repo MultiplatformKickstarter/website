@@ -4,7 +4,7 @@ date: 2018-11-28T15:15:26+10:00
 featured: true
 draft: false
 weight: 2
-price: "$149*"
+price: "$169*"
 shoppingurl: "https://multiplatformkickstarter.lemonsqueezy.com/checkout/buy/235fc336-6706-4357-908b-b21209ec4dba"
 leadtext: "GET IT NOW"
 highlighted: true
