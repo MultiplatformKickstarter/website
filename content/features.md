@@ -5,26 +5,31 @@ date: 2023-10-25T17:01:34+07:00
 
 While most templates only solves the basic functionality, we are aiming to solve most of the common problems when creating applications from initial status to production.
 
-Multiplatform Kickstarter is an opinionated template and comes with these libraries built-in:
+Multiplatform Kickstarter is an opinionated template and comes with this stack built-in:
 
-- Kotlin 1.9.10
-- Compose Multiplatform 1.5.10-rc02
-- Kotlin Coroutines
-- Voyager for Navigation
-- Koin as Dependency Injection
-- Ktlint and Detekt
-- Ktor as Server
-- Multiplatform-settings for storage
-- Kamel for Images
-- Clean Architecture
-- MVVM
+- **Kotlin** 1.9.10
+- **Compose Multiplatform** 1.5.10-rc02
+- **Kotlin Coroutines**
+- **Kotlin Serialization**
+- **Kotlin Datetime**
+- **Voyager** for Navigation and View Models
+- **Koin** as Dependency Injection
+- **Detekt** for static code analysis
+- **Ktlint** linter
+- **Ktor** for Client
+- **Multiplatform-settings** for storage
+- **Kamel** for Images
+- **Kermit** for logging
+- **Version Catalogs**
+- **Ktor for Server** (PostgresSQL+Tomcat)
+- **Swagger Codegen** for **OpenAPI**
 
 
 ## Features Comparison
 
-**`IMPORTANT: The Advanced template is still under development. And this table may not have the actual state of development. The order in the table does not represent the current roadmap.`**
+**`IMPORTANT: The Pro template is still under development. And this table may not have the actual state of development. The order in the table does not represent the current roadmap.`**
 
-Features | **Basic Template** | Advanced Template
+Features | Basic Template | Pro Template
 --- | --- | ---
 *Login/Sign Up* | ✔ | ✔
 *Basic listing* | ✔ | ✔
@@ -46,19 +51,10 @@ Features | **Basic Template** | Advanced Template
 *Advanced CI (deployment)* | - | `WIP`
 *A/B Test Ready* | - | `WIP`
 *Deeplinks* | - | `PLANNED`
-*Privacy and Security* | - | `PLANNED`
 *More Translations* | - | `PLANNED`
+*Saved Searches* | - | ``PLANNED``
 *Social Login* | - | `PLANNED`
-*Messaging* | - | `PLANNED`
 *Favorites* | - | `PLANNED`
 *Followers* | - | `PLANNED`
-*Shopping Cart* | - | `PLANNED`
-*Payments* | - | `PLANNED`
-*Assistant (ML/ChatGPT)* | - | `PLANNED`
-*Geolocated Searches* | - | `PLANNED`
-*Saved Searches* | - | ``PLANNED``
-*User preferences* | - | ``PLANNED``
-*Security Checks* | - | `PLANNED`
-*Secure Server* | - | `PLANNED`
-*GDPR Consents* | - | `PLANNED`
-*3rd Party Integrations* | - | `PLANNED`
+
+And a lot more planned for the Pro version!

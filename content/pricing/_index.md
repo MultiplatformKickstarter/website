@@ -9,4 +9,4 @@ is_pricing: true
 
 # Pricing
 
-Buy once and gain **life time access** to our **Advanced template**. Perfect for developers that want to **speed up** their development time.
+Buy once and gain **life time access** to our **Pro template**. Perfect for developers that want to **speed up** their development time.
