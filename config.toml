@@ -52,7 +52,7 @@ title = "The Open Source template to build multiplatform applications faster"
     summary_truncate = 120
 
   [params.team]
-    summary_large_truncate = 120 # How many characters to include in the summary of the team bios (large layout) before truncating
+    summary_large_truncate = 200 # How many characters to include in the summary of the team bios (large layout) before truncating
 
   [params.footer]
     copyright_text = 'Copyright © 2023 Multiplatform Kickstarter. All rights reserved.'
@@ -85,9 +85,14 @@ title = "The Open Source template to build multiplatform applications faster"
   #  weight = 5
 
   [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 6
+
+  [[menu.main]]
     name = "Contact"
     url = "/contact/"
-    weight = 6
+    weight = 7
 
   # Footer Menu
   [[menu.footer]]

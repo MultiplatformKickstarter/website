@@ -10,7 +10,7 @@ leadtext: "GET IT NOW"
 highlighted: true
 ---
 
-**Pro template**. Be one of the first to acquire the access to the *Pro template* and you will have access forever.
+**Pro template**. We are not there yet but be one of the first to acquire the access to the *Pro template* and you will have access forever.
 
 * Includes all basic features
 * **[Pro features](/features)****
