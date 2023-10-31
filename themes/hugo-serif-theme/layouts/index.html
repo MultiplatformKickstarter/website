@@ -128,9 +128,9 @@
         {{ .Render "price-summary" }}
         <div class="col-auto">
           {{ if eq (.Params.highlighted) true }}
-          <a class="button-expanded button-primary button-highlighted" href="{{ .Params.shoppingurl | relURL }}">{{ .Params.leadtext }}</a>
+          <a class="button-expanded button-primary button-highlighted" href="{{ .Params.shoppingurl | relURL }}" target="_blank" rel="noopener noreferrer">{{ .Params.leadtext }}</a>
           {{ else }}
-          <a class="button-expanded button-primary" href="{{ .Params.shoppingurl | relURL }}">{{ .Params.leadtext }}</a>
+          <a class="button-expanded button-primary" href="{{ .Params.shoppingurl | relURL }}" target="_blank" rel="noopener noreferrer">{{ .Params.leadtext }}</a>
           {{ end }}
         </div>
       </div>
