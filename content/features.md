@@ -7,8 +7,9 @@ While most templates only solves the basic functionality, we are aiming to solve
 
 Multiplatform Kickstarter is an opinionated template and comes with this stack built-in:
 
-- **Kotlin** 1.9.10
-- **Compose Multiplatform** 1.5.10-rc02
+- **Shared UI and Logic for all platforms**
+- **Kotlin Multiplatform**
+- **Compose Multiplatform**
 - **Kotlin Coroutines**
 - **Kotlin Serialization**
 - **Kotlin Datetime**

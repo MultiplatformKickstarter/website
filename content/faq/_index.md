@@ -17,7 +17,7 @@ You can use the template for as many projects as you like, forever. We do not ch
 
 **Do I need to be an expert in Compose to use this?**
 
-Our components can be used by anyone, even though just starting with Compose. They are designed to be easy to add to your copy to your project, modify and read.
+Our components can be used by anyone, even though just starting with Compose. They are designed to be easy to add to your project, modify and read.
 
 **How customizable are the components?**
 
