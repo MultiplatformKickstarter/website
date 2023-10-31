@@ -12,7 +12,7 @@ is_pricing: false
 
 Developed by industry veterans, *Multiplatform Kickstarter* is the first **Open Source** *template* with all the boilerplate code needed to help you to kickstart your business in no time.
 
-Based in **Kotlin Multiplatform (KMP)** and **Compose Multiplatform**, with few simple steps you will have up and running applications for **Android**, **iOS** and **Desktop** using **Ktor** as the server. (and in the near future also **Web**)
+Based in **Kotlin Multiplatform (KMP)** and **Compose Multiplatform**, with few simple steps you will have up and running applications for **Android**, **iOS** and **Desktop** using **Ktor** as the server. (in the future also **Web**)
 
 It will be available on *late 2023*.
 
