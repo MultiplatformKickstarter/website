@@ -12905,6 +12905,15 @@ ol {
   .logo-mobile img {
     width: auto; }
 
+.logo-title {
+  color: #2f2f41;
+  font-size: 2.0rem;
+  font-family: Poppins, serif, -apple-system;
+  font-weight: bold;
+  margin-bottom: 10px; }
+  @media (min-width: 576px) {
+    .logo-title {
+      margin: 0; } }
 .main-menu {
   display: none; }
   @media (min-width: 768px) {
@@ -13043,6 +13052,36 @@ ol {
     background-color: #f570a6;
     transform: translateY(-1px);
     text-decoration: none; }
+
+.button-expanded {
+  white-space: nowrap;
+  display: block;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 20px;
+  text-align: center;
+  background: #6c757d;
+  border-radius: 4px;
+  font-size: 18px;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  color: #ffffff;
+  text-decoration: none;
+  -webkit-transition: all 0.15s ease;
+  transition: all 0.15s ease; }
+  .button-expanded:hover {
+    color: #ffffff;
+    background-color: #f570a6;
+    transform: translateY(-1px);
+    text-decoration: none; }
+
+.button-highlighted {
+  background: #f24088;
+  margin: 0px 0px; }
+
+.button-secondary {
+  background: #6c757d; }
 
 .call {
   position: relative;
@@ -13193,8 +13232,8 @@ ol {
   overflow: hidden; }
   @media (min-width: 768px) {
     .intro {
-      padding-top: 140px;
-      padding-bottom: 140px; } }
+      padding-top: 80px;
+      padding-bottom: 100px; } }
   .intro h1 {
     color: #2f2f41;
     font-size: 42px;
@@ -13237,7 +13276,7 @@ ol {
   margin-bottom: 30px; }
   @media (min-width: 768px) {
     .intro-image-absolute {
-      position: absolute;
+      position: relative;
       bottom: -50px;
       left: -50px;
       width: 700px; } }
@@ -13330,6 +13369,64 @@ ol {
     display: inline-block; }
     .social a:hover {
       opacity: 0.8; }
+
+.pricing {
+  border: 2px solid #e5e7eb;
+  margin-right: 10px;
+  padding: 26px;
+  border-radius: 12px; }
+
+.pricing-highlighted {
+  border: 4px solid #2f2f41;
+  margin-right: 10px;
+  padding: 26px;
+  border-radius: 12px; }
+
+.pricing-intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  overflow: hidden;
+  text-align: center; }
+  @media (min-width: 768px) {
+    .pricing-intro {
+      padding-top: 20px;
+      padding-bottom: 20px; } }
+  .pricing-intro h1 {
+    color: #2f2f41;
+    font-size: 42px;
+    font-weight: bold;
+    line-height: 1.2; }
+    @media (min-width: 768px) {
+      .pricing-intro h1 {
+        width: 80%;
+        font-size: 48px; } }
+    @media (min-width: 992px) {
+      .pricing-intro h1 {
+        font-size: 50px; } }
+  .pricing-intro h2 {
+    width: 80%;
+    font-size: 1.2rem;
+    line-height: 1.4;
+    margin-bottom: 30px;
+    color: #2f2f41;
+    font-family: Poppins, Helvetica, Arial, sans-serif, -apple-system; }
+  .pricing-intro p {
+    font-size: 1.2rem;
+    font-weight: light;
+    line-height: 1.5;
+    color: #5C5A5A; }
+    @media (min-width: 768px) {
+      .pricing-intro p {
+        width: 80%; } }
+.pricing-centered {
+  text-align: center;
+  justify-content: center; }
+
+.pricing-small {
+  font-size: 0.8rem; }
 
 .team-summary {
   display: flex;

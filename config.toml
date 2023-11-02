@@ -2,7 +2,7 @@ baseURL = "/"
 themesDir = "themes"
 theme = "hugo-serif-theme"
 languageCode = "en-us"
-title = "Multiplatform Kickstarter | The Open Source template to build multiplatform applications faster"
+title = "The Open Source template to build multiplatform applications faster"
 
 [module]
   [module.hugoVersion]
@@ -18,12 +18,13 @@ title = "Multiplatform Kickstarter | The Open Source template to build multiplat
   [params.homepage]
     show_contact_box = true      # show / hide the contaxt box on the homepage
     show_services_button = false # show / hide the "view all services" button
+    show_pricing_button = true
 
   [params.logo]
     mobile = "images/logo/MKLogo.svg"
-    mobile_height = "36px"
+    mobile_height = "60px"
     desktop = "images/logo/MKLogo.svg"
-    desktop_height = "36px"
+    desktop_height = "60px"
     alt = "Multiplatform Kickstarter"
 
   [params.fonts]
@@ -47,41 +48,59 @@ title = "Multiplatform Kickstarter | The Open Source template to build multiplat
   [params.services]
     summary_truncate = 120 # How many characters to include in the summary of the services before truncating
 
+  [params.pricing]
+    summary_truncate = 120
+
   [params.team]
-    summary_large_truncate = 120 # How many characters to include in the summary of the team bios (large layout) before truncating
+    summary_large_truncate = 200 # How many characters to include in the summary of the team bios (large layout) before truncating
 
   [params.footer]
-    copyright_text = 'Copyright © 2023 Multiplatform Kickstarter'
+    copyright_text = 'Copyright © 2023 Multiplatform Kickstarter. All rights reserved.'
 
 [menu]
   # Main Menu
-  #[[menu.main]]
-  #  name = "Docs"
-  #  url = "https://docs.multiplatformkickstarter.com"
-  #  weight = 1
+  [[menu.main]]
+    name = "Features"
+    url = "/features/"
+    weight = 1
+
+  [[menu.main]]
+    name = "Pricing"
+    url = "/pricing/"
+    weight = 2
+
+  [[menu.main]]
+    name = "FAQ"
+    url = "/faq/"
+    weight = 3
+
+  [[menu.main]]
+    name = "Docs"
+    url = "https://docs.multiplatformkickstarter.com"
+    weight = 4
 
   #[[menu.main]]
   #  name = "Blog"
   #  url = "https://blog.multiplatformkickstarter.com"
-  #  weight = 2
+  #  weight = 5
 
-  #[[menu.main]]
-  #  name = "About"
-  #  url = "/about/"
-  #  weight = 3
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 6
 
-  #[[menu.main]]
-  #  name = "Contact"
-  #  url = "/contact/"
-  #  weight = 4
+  [[menu.main]]
+    name = "Contact"
+    url = "/contact/"
+    weight = 7
 
   # Footer Menu
-  #[[menu.footer]]
-  #  name = "Home"
-  #  url = "/"
-  #  weight = 1
+  [[menu.footer]]
+    name = "Home"
+    url = "/"
+    weight = 1
 
-  #[[menu.footer]]
-  #  name = "Contact"
-  #  url = "/contact/"
-  #  weight = 2
+  [[menu.footer]]
+    name = "License"
+    url = "/license"
+    weight = 2
