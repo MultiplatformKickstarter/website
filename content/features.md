@@ -39,7 +39,7 @@ Features | Free Template | Pro Template
 *Basic Settings* | ✔             | ✔
 *Basic Profile* | ✔             | ✔
 *Basic Permissions* | ✔             | ✔
-*Basic CI* | `WIP`         | `WIP`
+*Basic CI* | ✔         | `WIP`
 *Basic Composable Components* | ✔             | ✔
 *Dark mode ready* | ✔             | ✔
 *Navigation* | ✔             | ✔
