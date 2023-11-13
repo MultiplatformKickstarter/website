@@ -2,7 +2,13 @@
     <h2>
       <a href="{{ .RelPermalink }}">{{ .Title }}</a>
     </h2>
-    <h1>{{ .Params.price }}</h1>
+    <h1>
+        {{if gt (len .Params.price) 1}}
+            {{ .Params.price | lang.FormatCurrency 2 "USD" }}/<small>month</small>*
+        {{else}}
+            {{ 0.00 | lang.FormatCurrency 2 "USD" }}
+        {{end}}
+    </h1>
     <p>
         {{ .Content }}
     </p>

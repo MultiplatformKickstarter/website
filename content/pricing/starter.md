@@ -4,7 +4,7 @@ date: 2018-11-28T15:15:26+10:00
 featured: true
 draft: false
 weight: 2
-price: "$49/month*"
+price: "49.99"
 shoppingurl: "https://multiplatformkickstarter.lemonsqueezy.com/checkout/buy/cb91765d-b736-4c8d-a5a0-2d07ddf2e87b"
 leadtext: "SUBSCRIBE NOW"
 highlighted: true

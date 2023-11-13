@@ -28,7 +28,7 @@ Multiplatform Kickstarter is an opinionated template and comes with this stack b
 
 ## Features Comparison
 
-**`IMPORTANT: The Pro template is still under development. And this table may not have the actual state of development. The order in the table does not represent the current roadmap.`**
+**`IMPORTANT: The Pro template is in constant development. And this table may not have the actual state of development. The order in the table does not represent the current roadmap.`**
 
 Features | Free Template | Pro Template
 --- |---------------| ---
@@ -39,18 +39,18 @@ Features | Free Template | Pro Template
 *Basic Settings* | ✔             | ✔
 *Basic Profile* | ✔             | ✔
 *Basic Permissions* | ✔             | ✔
-*Basic CI* | ✔         | `WIP`
+*Basic CI* | ✔         | ✔
 *Basic Composable Components* | ✔             | ✔
 *Dark mode ready* | ✔             | ✔
 *Navigation* | ✔             | ✔
 *Accessibility (and color accessible themes)* | ✔             | ✔
 *Tracking system* | ✔             | ✔
 *Multilanguage (FIGS)* | ✔             | ✔
+*OnBoarding Carousel* | ✔             | ✔
 *Tested (UI, Unit)* | `WIP`         | `WIP`
 *Documentation* | `WIP`         | `WIP`
-*OnBoarding Carousel* | -             | `WIP`
 *Advanced CI (deployment)* | -             | `WIP`
-*A/B Test Ready* | -             | `WIP`
+*A/B Test Ready* | -             | `PLANNED`
 *Deeplinks* | -             | `PLANNED`
 *More Translations* | -             | `PLANNED`
 *Saved Searches* | -             | ``PLANNED``
