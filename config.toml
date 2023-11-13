@@ -100,10 +100,10 @@ title = "The Open Source template to build multiplatform applications faster"
     url = "/"
     weight = 1
 
-#  [[menu.footer]]
-#    name = "Blog"
-#    url = "https://blog.multiplatformkickstarter.com"
-#    weight = 2
+  [[menu.footer]]
+    name = "Blog"
+    url = "https://blog.multiplatformkickstarter.com"
+    weight = 2
 
   [[menu.footer]]
     name = "License"
