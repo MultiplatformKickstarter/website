@@ -14,6 +14,4 @@ Developed by industry veterans, *Multiplatform Kickstarter* is the first **Open 
 
 Based in **Kotlin Multiplatform (KMP)** and **Compose Multiplatform**, with few simple steps you will have up and running applications for **Android**, **iOS** and **Desktop** using **Ktor** as the server. (in the future also **Web**)
 
-It will be available on *late 2023*.
-
-Subscribe to our [newsletter](https://multiplatformkickstarter.substack.com/) if you want to be the first to know when it's released.
+Subscribe to our [newsletter](https://multiplatformkickstarter.substack.com/) if you want to be up-to-date on building modern fullstack applications using Kotlin Multiplatform.

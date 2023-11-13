@@ -30,32 +30,32 @@ Multiplatform Kickstarter is an opinionated template and comes with this stack b
 
 **`IMPORTANT: The Pro template is still under development. And this table may not have the actual state of development. The order in the table does not represent the current roadmap.`**
 
-Features | Basic Template | Pro Template
---- | --- | ---
-*Login/Sign Up* | ✔ | ✔
-*Basic listing* | ✔ | ✔
-*Basic insertion form* | ✔ | ✔
-*Basic Detail* | ✔ | ✔
-*Basic Settings* | ✔ | ✔
-*Basic Profile* | ✔ | ✔
-*Basic Permissions* | ✔ | ✔
-*Basic CI* | `WIP` | `WIP`
-*Basic Composable Components* | ✔ | ✔
-*Dark mode ready* | ✔ | ✔
-*Navigation* | ✔ | ✔
-*Accessibility (and color accessible themes)* | ✔ | ✔
-*Tracking system* | ✔ | ✔
-*Multilanguage (FIGS)* | ✔ | ✔
-*Tested (UI, Unit)* | `WIP` | `WIP`
-*Documentation* | `WIP` | `WIP`
-*OnBoarding Carousel* | - | `WIP`
-*Advanced CI (deployment)* | - | `WIP`
-*A/B Test Ready* | - | `WIP`
-*Deeplinks* | - | `PLANNED`
-*More Translations* | - | `PLANNED`
-*Saved Searches* | - | ``PLANNED``
-*Social Login* | - | `PLANNED`
-*Favorites* | - | `PLANNED`
-*Followers* | - | `PLANNED`
+Features | Free Template | Pro Template
+--- |---------------| ---
+*Login/Sign Up* | ✔             | ✔
+*Basic listing* | ✔             | ✔
+*Basic insertion form* | ✔             | ✔
+*Basic Detail* | ✔             | ✔
+*Basic Settings* | ✔             | ✔
+*Basic Profile* | ✔             | ✔
+*Basic Permissions* | ✔             | ✔
+*Basic CI* | `WIP`         | `WIP`
+*Basic Composable Components* | ✔             | ✔
+*Dark mode ready* | ✔             | ✔
+*Navigation* | ✔             | ✔
+*Accessibility (and color accessible themes)* | ✔             | ✔
+*Tracking system* | ✔             | ✔
+*Multilanguage (FIGS)* | ✔             | ✔
+*Tested (UI, Unit)* | `WIP`         | `WIP`
+*Documentation* | `WIP`         | `WIP`
+*OnBoarding Carousel* | -             | `WIP`
+*Advanced CI (deployment)* | -             | `WIP`
+*A/B Test Ready* | -             | `WIP`
+*Deeplinks* | -             | `PLANNED`
+*More Translations* | -             | `PLANNED`
+*Saved Searches* | -             | ``PLANNED``
+*Social Login* | -             | `PLANNED`
+*Favorites* | -             | `PLANNED`
+*Followers* | -             | `PLANNED`
 
 And a lot more planned for the Pro version!

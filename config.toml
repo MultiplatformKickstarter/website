@@ -64,35 +64,35 @@ title = "The Open Source template to build multiplatform applications faster"
     url = "/features/"
     weight = 1
 
+#  [[menu.main]]
+#    name = "Components"
+#    url = "/components/"
+#    weight = 2
+
   [[menu.main]]
     name = "Pricing"
     url = "/pricing/"
-    weight = 2
+    weight = 3
 
   [[menu.main]]
     name = "FAQ"
     url = "/faq/"
-    weight = 3
+    weight = 4
 
   [[menu.main]]
     name = "Docs"
     url = "https://docs.multiplatformkickstarter.com"
-    weight = 4
-
-  #[[menu.main]]
-  #  name = "Blog"
-  #  url = "https://blog.multiplatformkickstarter.com"
-  #  weight = 5
+    weight = 5
 
   [[menu.main]]
     name = "About"
     url = "/about/"
-    weight = 6
+    weight = 7
 
   [[menu.main]]
     name = "Contact"
     url = "/contact/"
-    weight = 7
+    weight = 8
 
   # Footer Menu
   [[menu.footer]]
@@ -100,7 +100,12 @@ title = "The Open Source template to build multiplatform applications faster"
     url = "/"
     weight = 1
 
+#  [[menu.footer]]
+#    name = "Blog"
+#    url = "https://blog.multiplatformkickstarter.com"
+#    weight = 2
+
   [[menu.footer]]
     name = "License"
     url = "/license"
-    weight = 2
+    weight = 3
