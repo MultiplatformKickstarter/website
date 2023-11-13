@@ -12,7 +12,7 @@ highlighted: true
 
 **Pro template** is perfect for startups. 
 
-Acquire the *Pro template* and you will have **access forever**.
+Get the *Pro template* and gain **access** to the **latest updates** and **features**.
 
 * All Free Features
 * **[Pro features](/features)**
