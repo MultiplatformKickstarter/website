@@ -11,7 +11,7 @@ leadtext: "SUBSCRIBE NOW"
 
 For **serious businesses**. 
 
-Gain **opinion on the roadmap** and access to the **new app templates**.
+Help shape the roadmap and get access to the **new app templates**.
 
 * All Pro template features
 * Developer plan
