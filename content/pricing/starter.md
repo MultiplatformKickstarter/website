@@ -5,6 +5,8 @@ featured: true
 draft: false
 weight: 2
 price: "49.99"
+priceyearly: "540.00"
+discount: "10%"
 shoppingurl: "https://multiplatformkickstarter.lemonsqueezy.com/checkout/buy/cb91765d-b736-4c8d-a5a0-2d07ddf2e87b"
 leadtext: "SUBSCRIBE NOW"
 highlighted: true

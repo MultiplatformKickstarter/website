@@ -9,6 +9,9 @@
             <b>{{ 0.00 | lang.FormatCurrency 2 "USD" }}</b>
         {{end}}
     </h2>
+    {{if gt (len .Params.price) 1}}
+        <small>{{ .Params.priceyearly | lang.FormatCurrency 2 "USD" }} yearly ({{ .Params.discount }} discount)</small>
+    {{end}}
     <p>
         {{ .Content }}
     </p>
