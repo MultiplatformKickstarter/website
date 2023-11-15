@@ -3,6 +3,8 @@ themesDir = "themes"
 theme = "hugo-serif-theme"
 languageCode = "en-us"
 title = "The Open Source template to build multiplatform applications faster"
+defaultContentLanguage = 'en'
+defaultContentLanguageInSubdir = true
 
 [module]
   [module.hugoVersion]
@@ -56,6 +58,52 @@ title = "The Open Source template to build multiplatform applications faster"
 
   [params.footer]
     copyright_text = 'Copyright © 2023 Multiplatform Kickstarter. All rights reserved.'
+
+[languages]
+  [languages.en]
+    contentDir = 'content/en'
+    disabled = false
+    languageCode = 'en-US'
+    languageDirection = 'ltr'
+    languageName = 'English'
+    title = 'The Open Source template to build multiplatform applications faster'
+    weight = 0
+
+  [languages.fr]
+    contentDir = 'content/fr'
+    disabled = true
+    languageCode = 'fr'
+    languageDirection = 'ltr'
+    languageName = 'Français'
+    title = 'The Open Source template to build multiplatform applications faster'
+    weight = 1
+
+  [languages.it]
+    contentDir = 'content/it'
+    disabled = true
+    languageCode = 'it'
+    languageDirection = 'ltr'
+    languageName = 'Italiano'
+    title = 'The Open Source template to build multiplatform applications faster'
+    weight = 2
+
+  [languages.de]
+    contentDir = 'content/de'
+    disabled = true
+    languageCode = 'de-DE'
+    languageDirection = 'ltr'
+    languageName = 'Deutsch'
+    title = 'The Open Source template to build multiplatform applications faster'
+    weight = 3
+
+  [languages.es]
+    contentDir = 'content/es'
+    disabled = false
+    languageCode = 'es-ES'
+    languageDirection = 'ltr'
+    languageName = 'Español'
+    title = 'La plantilla para crear aplicaciones multiplataforma rápidamente'
+    weight = 4
 
 [menu]
   # Main Menu
