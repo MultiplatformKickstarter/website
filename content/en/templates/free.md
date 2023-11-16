@@ -5,6 +5,7 @@ featured: true
 draft: false
 weight: 1
 price: "0"
+currency: "USD"
 shoppingurl: "https://github.com/MultiplatformKickstarter/kmp-template"
 leadtext: "DOWNLOAD NOW"
 ---

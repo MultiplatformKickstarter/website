@@ -5,6 +5,7 @@ featured: true
 draft: false
 weight: 3
 price: "149.99"
+currency: "USD"
 shoppingurl: "https://multiplatformkickstarter.lemonsqueezy.com/checkout/buy/e079be3b-613d-4f2a-a117-197f12c98586"
 leadtext: "SUBSCRIBE NOW"
 ---

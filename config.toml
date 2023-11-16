@@ -98,7 +98,7 @@ defaultContentLanguageInSubdir = true
 
   [languages.es]
     contentDir = 'content/es'
-    disabled = false
+    disabled = true
     languageCode = 'es-ES'
     languageDirection = 'ltr'
     languageName = 'Español'
