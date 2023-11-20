@@ -1,0 +1,25 @@
+<div class="price-summary">
+    <img src="{{ .Params.image }}" width="100" title="" alt="" />
+    <h2>
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+    </h2>
+    <h2>
+        {{if gt (len .Params.price) 1}}
+            <b>{{ .Params.price | lang.FormatCurrency 2 .Params.currency }}</b>
+        {{else}}
+            <b>{{ 0.00 | lang.FormatCurrency 2 .Params.currency }}</b>
+            <div class="pricing-small">&nbsp;</div>
+        {{end}}
+    </h2>
+    <p>
+        {{ .Params.description }}
+    </p>
+
+    <div class="col-auto">
+        {{ if eq (.Params.highlighted) true }}
+        <a class="button-expanded button-primary button-highlighted" href="{{ .Params.shoppingurl | relURL }}" target="_blank" rel="noopener noreferrer">{{ .Params.leadtext }}</a>
+        {{ else }}
+        <a class="button-expanded button-primary" href="{{ .Params.shoppingurl | relURL }}" target="_blank" rel="noopener noreferrer">{{ .Params.leadtext }}</a>
+        {{ end }}
+    </div>
+</div>

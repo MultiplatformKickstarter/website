@@ -117,10 +117,10 @@ defaultContentLanguageInSubdir = true
 #    url = "/components/"
 #    weight = 2
 
-#  [[menu.main]]
-#    name = "Templates"
-#    url = "/templates/"
-#    weight = 3
+  [[menu.main]]
+    name = "Templates"
+    url = "/templates/"
+    weight = 3
 
   [[menu.main]]
     name = "Pricing"

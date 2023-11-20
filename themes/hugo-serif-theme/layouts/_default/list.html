@@ -52,4 +52,24 @@
     </div>
   </div>
   {{ end }}
+
+
+    {{ if .Params.is_templates }}
+    <div class="container pb-md-16">
+      <div class="row justify-content-center">
+        {{ range .Pages.ByWeight }}
+
+        {{ if eq (.Params.highlighted) true }}
+        <div class="col-16 col-md-4 mb-2 pricing-highlighted">
+          {{ else }}
+          <div class="col-16 col-md-4 mb-2 pricing">
+            {{ end }}
+            {{ .Render "template-summary" }}
+          </div>
+
+          {{ end }}
+        </div>
+      </div>
+      {{ end }}
+
 {{ end }}
