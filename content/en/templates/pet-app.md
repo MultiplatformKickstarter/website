@@ -12,6 +12,8 @@ image: "/images/pet-app-android.png"
 is_coming_soon: false
 ---
 
+![screenshot1](/images/pet-app-android.png)
+
 Petify is a premium Kotlin Multiplatform template for building marketplace style applications. 
 It's build using the Kotlin Multiplatform framework and styled with Compose multiplatform, ofering a fast, modern user interface.
 With Petify, you can create a professional-looking marketplace application with ease, saving you time and effort.

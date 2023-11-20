@@ -10,4 +10,4 @@ is_templates: true
 
 # Templates
 
-Choose from our great application templates. Explore high quality templates with high performance.
+Alternatively you are able to access to our templates. Choose from our great application templates. Explore high quality templates with high performance.
