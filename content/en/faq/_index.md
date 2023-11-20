@@ -1,15 +1,11 @@
 ---
 title: 'FAQ'
-description: 'We offer a range of services to help your business'
+description: 'Frequently Asked Questions.'
 intro_image: "images/illustrations/curiosity-search-amico.svg"
 intro_image_absolute: false
 intro_image_hide_on_mobile: false
 is_pricing: false
 ---
-
-# FAQ
-
-Frequently Asked Questions.
 
 **What does 'Lifetime Access' mean?**
 

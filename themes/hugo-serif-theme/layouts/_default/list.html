@@ -5,7 +5,8 @@
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-12 col-md-7 col-lg-6 order-2 order-md-1">
-        {{ .Content }}
+        <h1>{{ .Params.title }}</h1>
+        <p>{{ .Params.description | .RenderString }}</p>
       </div>
       {{ if .Params.intro_image }}
       <div class="col-12 col-md-5 col-lg-3 order-1 order-md-2 position-relative">
@@ -15,6 +16,7 @@
       </div>
       {{ end }}
     </div>
+    {{ .Content }}
   </div>
 </div>
 
