@@ -2,7 +2,7 @@
 title: "Whatsapp Clone App"
 description: "Marketplace style app"
 featured: true
-draft: false
+draft: true
 weight: 2
 price: "49.99"
 currency: "USD"

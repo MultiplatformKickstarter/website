@@ -138,14 +138,9 @@ defaultContentLanguageInSubdir = true
     weight = 6
 
   [[menu.main]]
-    name = "About"
-    url = "/about/"
-    weight = 8
-
-  [[menu.main]]
     name = "Contact"
     url = "/contact/"
-    weight = 9
+    weight = 7
 
   # Footer Menu
   [[menu.footer]]
@@ -162,3 +157,8 @@ defaultContentLanguageInSubdir = true
     name = "License"
     url = "/license"
     weight = 3
+
+  [[menu.footer]]
+    name = "About"
+    url = "/about/"
+    weight = 4

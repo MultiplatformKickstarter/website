@@ -1,8 +1,8 @@
 ---
 title: "Maps App"
-description: "Marketplace style app"
+description: "Multiplatform Template for Marketplace style app Startups"
 featured: true
-draft: false
+draft: true
 weight: 4
 price: "49.99"
 currency: "USD"
@@ -12,4 +12,4 @@ image: "/images/pet-app-android.png"
 is_coming_soon: true
 ---
 
-Marketplace style app
+Multiplatform Template for Marketplace style app Startups
