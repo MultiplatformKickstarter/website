@@ -12,7 +12,7 @@
         <a href="{{ .RelPermalink }}">{{ .Title }}</a>
     </h2>
     <p>
-        {{ .Params.description }}
+        {{ .Params.description | .RenderString }}
     </p>
 
     <div class="col-auto">

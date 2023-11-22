@@ -1,6 +1,6 @@
 ---
 title: "Adoptme"
-description: "Multiplatform Template for Marketplace style apps"
+description: "Basic Kotlin Multiplatform template for Marketplace style apps."
 featured: true
 draft: false
 weight: 1
@@ -14,9 +14,9 @@ is_coming_soon: false
 
 ![screenshot1](/images/pet-app-android.png)
 
-Petify is a premium Kotlin Multiplatform template for building marketplace style applications. 
-It's build using the Kotlin Multiplatform framework and styled with Compose multiplatform, ofering a fast, modern user interface.
-With Petify, you can create a professional-looking marketplace application with ease, saving you time and effort.
+Adoptme is a premium Kotlin Multiplatform template for building marketplace style applications. 
+It's build using the Kotlin Multiplatform framework and styled with Compose multiplatform, offering a fast, modern user interface.
+With Adoptme, you can create a professional-looking marketplace application with ease, saving you time and effort.
 
 ## Features
 
@@ -38,5 +38,5 @@ With Petify, you can create a professional-looking marketplace application with 
 - **Ktor for Server** (PostgresSQL+Tomcat)
 - **Swagger Codegen** for **OpenAPI**
 
-Petify is a powerful and flexible marketplace application template that offers a range of features to help you build a professional looking application.
-With its design and customizable options, Petify is an excellent choice for anyone looking to create a marketplace.
+Adoptme is a powerful and flexible marketplace application template that offers a range of features to help you build a professional looking application.
+With its design and customizable options, Adoptme is an excellent choice for anyone looking to create a marketplace.

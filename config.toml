@@ -2,7 +2,7 @@ baseURL = "/"
 themesDir = "themes"
 theme = "hugo-serif-theme"
 languageCode = "en-us"
-title = "The Kotlin Multiplatform Template to build applications faster"
+title = "Kotlin Multiplatform Templates to build applications faster"
 defaultContentLanguage = 'en'
 defaultContentLanguageInSubdir = true
 
@@ -66,7 +66,7 @@ defaultContentLanguageInSubdir = true
     languageCode = 'en-US'
     languageDirection = 'ltr'
     languageName = 'English'
-    title = 'The Kotlin Multiplatform Template to build applications faster'
+    title = 'Kotlin Multiplatform Templates to build applications faster'
     weight = 0
 
   [languages.fr]
@@ -75,7 +75,7 @@ defaultContentLanguageInSubdir = true
     languageCode = 'fr'
     languageDirection = 'ltr'
     languageName = 'Français'
-    title = 'The Kotlin Multiplatform Template to build applications faster'
+    title = 'Kotlin Multiplatform Templates to build applications faster'
     weight = 1
 
   [languages.it]
@@ -84,7 +84,7 @@ defaultContentLanguageInSubdir = true
     languageCode = 'it'
     languageDirection = 'ltr'
     languageName = 'Italiano'
-    title = 'The Kotlin Multiplatform Template to build applications faster'
+    title = 'Kotlin Multiplatform Templates to build applications faster'
     weight = 2
 
   [languages.de]
@@ -93,7 +93,7 @@ defaultContentLanguageInSubdir = true
     languageCode = 'de-DE'
     languageDirection = 'ltr'
     languageName = 'Deutsch'
-    title = 'The Kotlin Multiplatform Template to build applications faster'
+    title = 'Kotlin Multiplatform Templates to build applications faster'
     weight = 3
 
   [languages.es]
@@ -102,7 +102,7 @@ defaultContentLanguageInSubdir = true
     languageCode = 'es-ES'
     languageDirection = 'ltr'
     languageName = 'Español'
-    title = 'La plantilla para crear aplicaciones multiplataforma rápidamente'
+    title = 'La plantillas de Kotlin Multiplatform para crear aplicaciones rápidamente'
     weight = 4
 
 [menu]

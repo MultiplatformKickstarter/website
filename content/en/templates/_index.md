@@ -8,7 +8,7 @@ is_pricing: false
 is_templates: true
 ---
 
-#### Premium
+#### Best of the market
 
 Our premium Kotlin Multiplatform App Templates are fully functional starter codebases, to help developers and entrepreneurs launch their mobile and desktop apps much faster and at a fraction of the cost. 
 
