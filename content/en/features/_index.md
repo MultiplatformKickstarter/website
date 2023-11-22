@@ -1,9 +1,11 @@
 ---
 title: 'Features'
-date: 2023-10-25T17:01:34+07:00
+description: "While most templates only solves the basic functionality, we are aiming to solve most of the common problems when creating applications from initial status to production."
+intro_image: "images/illustrations/personal-settings-pana.svg"
+intro_image_absolute: false
+intro_image_hide_on_mobile: false
+is_pricing: false
 ---
-
-While most templates only solves the basic functionality, we are aiming to solve most of the common problems when creating applications from initial status to production.
 
 Multiplatform Kickstarter is an opinionated template and comes with this stack built-in:
 
@@ -26,9 +28,9 @@ Multiplatform Kickstarter is an opinionated template and comes with this stack b
 - **Swagger Codegen** for **OpenAPI**
 
 
-## Features Comparison
+#### Features Comparison
 
-**`IMPORTANT: The Pro template is in constant development. And this table may not have the actual state of development. The order in the table does not represent the current roadmap.`**
+**`IMPORTANT: PRO templates are in constant development. And this table may not have the actual state of development. The order in the table does not represent the current roadmap.`**
 
 Features | Free Template | Pro Template
 --- |---------------| ---
