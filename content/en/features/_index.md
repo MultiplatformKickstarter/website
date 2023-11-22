@@ -32,7 +32,7 @@ Multiplatform Kickstarter is an opinionated template and comes with this stack b
 
 **`IMPORTANT: PRO templates are in constant development. And this table may not have the actual state of development. The order in the table does not represent the current roadmap.`**
 
-Features | Free Template | Pro Template
+Features | Free Template | PRO Templates
 --- |---------------| ---
 *Login/Sign Up* | ✔             | ✔
 *Basic listing* | ✔             | ✔

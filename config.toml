@@ -61,7 +61,7 @@ defaultContentLanguageInSubdir = true
 
 [languages]
   [languages.en]
-    contentDir = 'content/'
+    contentDir = 'content/en'
     disabled = false
     languageCode = 'en-US'
     languageDirection = 'ltr'
