@@ -43,6 +43,7 @@ $font-family-heading: {{ .Site.Params.fonts.heading }}, serif, -apple-system;
 @import 'components/feature';
 @import 'components/social';
 @import 'components/pricing';
+@import 'components/dropdown-menu';
 
 // Pages
 @import 'pages/home';
