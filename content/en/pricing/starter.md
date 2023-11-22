@@ -8,7 +8,7 @@ price: "49.99"
 priceyearly: "540.00"
 currency: "USD"
 discount: "10%"
-shoppingurl: "https://multiplatformkickstarter.lemonsqueezy.com/checkout/buy/cb91765d-b736-4c8d-a5a0-2d07ddf2e87b"
+shoppingurl: "https://multiplatformkickstarter.lemonsqueezy.com/checkout/buy/1310894e-e1ff-4071-84c3-7c230c8af878"
 leadtext: "SUBSCRIBE NOW"
 highlighted: true
 ---

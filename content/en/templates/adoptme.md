@@ -6,7 +6,7 @@ draft: false
 weight: 1
 price: "0.00"
 currency: "USD"
-shoppingurl: "https://multiplatformkickstarter.lemonsqueezy.com/checkout/buy/e079be3b-613d-4f2a-a117-197f12c98586"
+shoppingurl: "https://github.com/MultiplatformKickstarter/kmp-template"
 leadtext: "DOWNLOAD NOW"
 image: "/images/screenshots/pet-app-android.png"
 is_coming_soon: false
