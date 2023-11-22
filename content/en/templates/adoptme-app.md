@@ -1,13 +1,13 @@
 ---
-title: "Petify"
+title: "Adoptme"
 description: "Multiplatform Template for Marketplace style apps"
 featured: true
 draft: false
 weight: 1
-price: "49.99"
+price: "0.00"
 currency: "USD"
 shoppingurl: "https://multiplatformkickstarter.lemonsqueezy.com/checkout/buy/e079be3b-613d-4f2a-a117-197f12c98586"
-leadtext: "GET IT NOW"
+leadtext: "DOWNLOAD NOW"
 image: "/images/pet-app-android.png"
 is_coming_soon: false
 ---

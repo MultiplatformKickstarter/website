@@ -3,11 +3,11 @@
       <a href="{{ .RelPermalink }}">{{ .Title }}</a>
     </h2>
     <h2>
-        {{if gt (len .Params.price) 1}}
+        {{if gt .Params.price 0 }}
             <b>{{ .Params.price | lang.FormatCurrency 2 .Params.currency }}</b><small class="pricing-small">/month</small>*
-            <div class="pricing-small">{{ .Params.priceyearly | lang.FormatCurrency 2 "USD" }} yearly ({{ .Params.discount }} discount)</div>
+            <div class="pricing-small">{{ .Params.priceyearly | lang.FormatCurrency 2 .Params.currency }} yearly ({{ .Params.discount }} discount)</div>
         {{else}}
-            <b>{{ 0.00 | lang.FormatCurrency 2 .Params.currency }}</b>
+            <b>FREE</b>
             <div class="pricing-small">&nbsp;</div>
         {{end}}
     </h2>

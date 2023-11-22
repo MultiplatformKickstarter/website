@@ -12,7 +12,7 @@ shoppingurl: "https://multiplatformkickstarter.lemonsqueezy.com/checkout/buy/e07
 leadtext: "SUBSCRIBE NOW"
 ---
 
-For **serious businesses**. 
+**For serious businesses**. 
 
 Help shape the roadmap and get access to the **new app templates**.
 

@@ -13,9 +13,9 @@ leadtext: "SUBSCRIBE NOW"
 highlighted: true
 ---
 
-**Pro template** is perfect for startups. 
+**Perfect for startups**. 
 
-Get the *Pro template* and gain **access** to the **latest updates** and **features**.
+Subscribe to the *Starter* plan and gain **access** to the **latest updates** and **features** for all **PRO templates**.
 
 * All Free Features
 * **[Pro features](/features)**

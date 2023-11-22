@@ -1,6 +1,6 @@
 ---
 title: 'Pricing'
-description: "Subscribe and gain **access** to our **Pro template**. Perfect for developers that want to **speed up** their development time."
+description: "Subscribe and gain **access** to our **PRO templates**. Perfect for developers that want to **speed up** their development time."
 intro_image: "images/illustrations/team-goals-pana.svg"
 intro_image_absolute: false
 intro_image_hide_on_mobile: false
