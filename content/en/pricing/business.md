@@ -14,12 +14,12 @@ leadtext: "SUBSCRIBE NOW"
 
 **For serious businesses**. 
 
-Help shape the roadmap and get access to the **new app templates**.
+Shape the roadmap and get **priority access** to the **new app templates**.
 
 * All Pro template features
 * Developer plan
 * Advanced integrations
 * Slack channel access
 * **Roadmap shaping**
-* **App templates access**
+* **Priority access**
 * **Email support**
