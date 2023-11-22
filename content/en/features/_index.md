@@ -32,32 +32,32 @@ Multiplatform Kickstarter is an opinionated template and comes with this stack b
 
 **`IMPORTANT: PRO templates are in constant development. And this table may not have the actual state of development. The order in the table does not represent the current roadmap.`**
 
-Features | Free Template | PRO Templates
---- |---------------| ---
-*Login/Sign Up* | ✔             | ✔
-*Basic listing* | ✔             | ✔
-*Basic insertion form* | ✔             | ✔
-*Basic Detail* | ✔             | ✔
-*Basic Settings* | ✔             | ✔
-*Basic Profile* | ✔             | ✔
-*Basic Permissions* | ✔             | ✔
-*Basic CI* | ✔         | ✔
-*Basic Composable Components* | ✔             | ✔
-*Dark mode ready* | ✔             | ✔
-*Navigation* | ✔             | ✔
-*Accessibility (and color accessible themes)* | ✔             | ✔
-*Tracking system* | ✔             | ✔
-*Multilanguage (FIGS)* | ✔             | ✔
-*OnBoarding Carousel* | ✔             | ✔
-*Tested (UI, Unit)* | `WIP`         | `WIP`
-*Documentation* | `WIP`         | `WIP`
-*Advanced CI (deployment)* | -             | `WIP`
-*A/B Test Ready* | -             | `PLANNED`
-*Deeplinks* | -             | `PLANNED`
-*More Translations* | -             | `PLANNED`
-*Saved Searches* | -             | ``PLANNED``
-*Social Login* | -             | `PLANNED`
-*Favorites* | -             | `PLANNED`
-*Followers* | -             | `PLANNED`
+| Features                                      | Free Template | PRO Templates |
+|-----------------------------------------------|---------------|---------------|
+| *Login/Sign Up*                               | ✔             | ✔             |
+| *Basic listing*                               | ✔             | ✔             |
+| *Basic insertion form*                        | ✔             | ✔             |
+| *Basic Detail*                                | ✔             | ✔             |
+| *Basic Settings*                              | ✔             | ✔             |
+| *Basic Profile*                               | ✔             | ✔             |
+| *Basic Permissions*                           | ✔             | ✔             |
+| *Basic CI*                                    | ✔             | ✔             |
+| *Basic Composable Components*                 | ✔             | ✔             |
+| *Dark mode ready*                             | ✔             | ✔             |
+| *Navigation*                                  | ✔             | ✔             |
+| *Accessibility (and color accessible themes)* | ✔             | ✔             |
+| *Tracking system*                             | ✔             | ✔             |
+| *Multilanguage (FIGS)*                        | ✔             | ✔             |
+| *OnBoarding Carousel*                         | ✔             | ✔             |
+| *Tested (UI, Unit)*                           | ✔             | ✔             |
+| *Documentation*                               | ✔             | ✔             |
+| *Advanced CI (deployment)*                    | -             | ✔             |
+| *A/B Test Ready*                              | -             | ✔             |
+| *Deeplinks*                                   | -             | ✔             |
+| *More Translations*                           | -             | ✔             |
+| *Saved Searches*                              | -             | ✔             |
+| *Social Login*                                | -             | ✔             |
+| *Favorites*                                   | -             | ✔             |
+| *Followers*                                   | -             | ✔             |
 
-And a lot more planned for the Pro version!
+And a lot more planned for the PRO templates!
