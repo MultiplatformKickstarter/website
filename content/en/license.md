@@ -3,7 +3,7 @@ title: 'Software License Agreement'
 date: 2023-10-25T17:01:34+07:00
 ---
 
-Last updated: November 2nd, 2023
+Last updated: November 22nd, 2023
 
 ## License Agreement
 This License Agreement (“Agreement”) is a legal agreement between Multiplatform Kickstarter and you, the end user (“Licensee”), for the Multiplatform Kickstarter product (“Software”). By installing, copying, or otherwise using the Software, you agree to be bound by the terms of this Agreement. If you do not agree to the terms of this Agreement, the Software should be immediately removed from your devices and you should not use the Software in any way.
@@ -19,9 +19,6 @@ Licensee is granted one license to use the Software as the basis of up to three 
 Licensee reasonably ensures that the Software is not distributed in any form that allows it to be reused by any application other than Licensee’s solution. Licensee must inform customers that they are not allowed to use the Software independently and that to redistribute the Software, they must obtain an appropriate license from Multiplatform Kickstarter.
 
 Licensee may not redistribute the Software to anyone via any means other than to customers as part of a purchased, integrated solution that includes functionality beyond that provided solely by the Software.
-
-## Refunds
-Due to the non-returnable nature of the Software, refunds will not be provided under any circumstances. If issues arise with the Software, Licensee should contact Multiplatform Kickstarter support for assistance.
 
 ## Other Rights and Limitations
 At no time may the Software be used for development purposes by individuals other than licensed developers. The Software may not be distributed for use with solutions or packaged products other than those developed by Licensee.

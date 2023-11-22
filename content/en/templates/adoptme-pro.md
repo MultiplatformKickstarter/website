@@ -2,7 +2,7 @@
 title: "Adoptme PRO"
 description: "Multiplatform Template for Marketplace style apps **with all premium features**."
 featured: true
-draft: false
+draft: true
 weight: 2
 price: "49.99"
 currency: "USD"
