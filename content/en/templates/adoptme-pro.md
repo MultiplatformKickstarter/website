@@ -9,11 +9,11 @@ currency: "USD"
 shoppingurl: "https://multiplatformkickstarter.lemonsqueezy.com/checkout/buy/e079be3b-613d-4f2a-a117-197f12c98586"
 leadtext: "PURCHASE NOW"
 highlighted: true
-image: "/images/pet-app-android.png"
+image: "/images/screenshots/pet-app-android.png"
 is_coming_soon: false
 ---
 
-![screenshot1](/images/pet-app-android.png)
+![screenshot1](/images/screenshots/pet-app-android.png)
 
 Adoptme is a premium Kotlin Multiplatform template for building marketplace style applications. 
 It's build using the Kotlin Multiplatform framework and styled with Compose multiplatform, ofering a fast, modern user interface.
