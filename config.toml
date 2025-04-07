@@ -57,7 +57,7 @@ defaultContentLanguageInSubdir = false
     summary_large_truncate = 200 # How many characters to include in the summary of the team bios (large layout) before truncating
 
   [params.footer]
-    copyright_text = 'Copyright © 2023-2024 Multiplatform Kickstarter. All rights reserved.'
+    copyright_text = 'Copyright © 2023-2025 Multiplatform Kickstarter. All rights reserved.'
 
 [languages]
   [languages.en]
