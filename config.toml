@@ -4,7 +4,7 @@ theme = "hugo-serif-theme"
 languageCode = "en-us"
 title = "Kotlin Multiplatform Templates to build applications faster"
 defaultContentLanguage = 'en'
-defaultContentLanguageInSubdir = false
+defaultContentLanguageInSubdir = true
 
 [module]
   [module.hugoVersion]
@@ -105,6 +105,52 @@ defaultContentLanguageInSubdir = false
     title = 'La plantillas de Kotlin Multiplatform para crear aplicaciones rápidamente'
     weight = 4
 
+[languages]
+  [languages.en]
+    contentDir = 'content/en'
+    disabled = false
+    languageCode = 'en-US'
+    languageDirection = 'ltr'
+    languageName = 'English'
+    title = 'Kotlin Multiplatform Templates to build applications faster'
+    weight = 0
+
+  [languages.fr]
+    contentDir = 'content/fr'
+    disabled = true
+    languageCode = 'fr'
+    languageDirection = 'ltr'
+    languageName = 'Français'
+    title = 'Kotlin Multiplatform Templates to build applications faster'
+    weight = 1
+
+  [languages.it]
+    contentDir = 'content/it'
+    disabled = true
+    languageCode = 'it'
+    languageDirection = 'ltr'
+    languageName = 'Italiano'
+    title = 'Kotlin Multiplatform Templates to build applications faster'
+    weight = 2
+
+  [languages.de]
+    contentDir = 'content/de'
+    disabled = true
+    languageCode = 'de-DE'
+    languageDirection = 'ltr'
+    languageName = 'Deutsch'
+    title = 'Kotlin Multiplatform Templates to build applications faster'
+    weight = 3
+
+  [languages.es]
+    contentDir = 'content/es'
+    disabled = true
+    languageCode = 'es-ES'
+    languageDirection = 'ltr'
+    languageName = 'Español'
+    title = 'La plantillas de Kotlin Multiplatform para crear aplicaciones rápidamente'
+    weight = 4
+
 [menu]
   # Main Menu
   [[menu.main]]
@@ -122,10 +168,10 @@ defaultContentLanguageInSubdir = false
     url = "/templates/"
     weight = 3
 
-#  [[menu.main]]
-#    name = "Pricing"
-#    url = "/pricing/"
-#    weight = 4
+  [[menu.main]]
+    name = "Pricing"
+    url = "/pricing/"
+    weight = 4
 
   [[menu.main]]
     name = "FAQ"
