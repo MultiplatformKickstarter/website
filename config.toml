@@ -36,10 +36,10 @@ defaultContentLanguageInSubdir = false
     base = "Poppins"
 
   [params.colors]
-    primary = "#0D6EFD"
+    primary = "#007BFF"
     black = "#2f2f41"
     white = "#ffffff"
-    white_offset = "#f6f7ff"
+    white_offset = "#F4F4F4"
     grey = "#5C5A5A"
 
   [params.seo]
