@@ -15,3 +15,5 @@ Developed by industry veterans, *Multiplatform Kickstarter* is the first **templ
 Based in **Kotlin Multiplatform** (KMP) and **Compose Multiplatform**, with few simple steps you will have up and running applications for **Android**, **iOS** and **Desktop** using **Ktor** as the server.
 
 **Save months** of work plus a **lot of money** and focus on building a **profitable business**.
+
+You can **access to all** our **current** and **future PRO templates** by subscribing to our developer plan.
