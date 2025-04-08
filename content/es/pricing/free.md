@@ -6,7 +6,7 @@ draft: false
 weight: 1
 price: "0"
 currency: "EUR"
-shoppingurl: "https://github.com/MultiplatformKickstarter/kmp-template"
+shoppingurl: "https://github.com/MultiplatformKickstarter/adoptme"
 leadtext: "DOWNLOAD NOW"
 ---
 
