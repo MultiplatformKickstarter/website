@@ -16,10 +16,10 @@ leadtext: "SUBSCRIBE NOW"
 
 Shape the roadmap and get **priority access** to the **new app templates**.
 
-* All Pro template features
-* Developer plan
-* Advanced integrations
 * Slack channel access
+* **Access to all PRO templates**
+* **Developer plan**
+* **Advanced integrations**
 * **Roadmap shaping**
 * **Priority access**
 * **Email support**

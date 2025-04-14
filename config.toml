@@ -16,6 +16,7 @@ defaultContentLanguageInSubdir = true
   google_analytics_id = ""
   google_tag_manager_id = ""
   favicon = "favicon-32x32.png"
+  showPricing = false
 
   [params.homepage]
     show_contact_box = true      # show / hide the contaxt box on the homepage
@@ -39,7 +40,7 @@ defaultContentLanguageInSubdir = true
     primary = "#007BFF"
     black = "#2f2f41"
     white = "#ffffff"
-    white_offset = "#F4F4F4"
+    white_offset = "#e5f1ff"
     grey = "#5C5A5A"
 
   [params.seo]
