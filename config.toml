@@ -4,7 +4,7 @@ theme = "hugo-serif-theme"
 languageCode = "en-us"
 title = "Kotlin Multiplatform Templates to build applications faster"
 defaultContentLanguage = 'en'
-defaultContentLanguageInSubdir = false
+defaultContentLanguageInSubdir = true
 
 [module]
   [module.hugoVersion]
@@ -16,6 +16,7 @@ defaultContentLanguageInSubdir = false
   google_analytics_id = ""
   google_tag_manager_id = ""
   favicon = "favicon-32x32.png"
+  showPricing = false
 
   [params.homepage]
     show_contact_box = true      # show / hide the contaxt box on the homepage
@@ -39,7 +40,7 @@ defaultContentLanguageInSubdir = false
     primary = "#007BFF"
     black = "#2f2f41"
     white = "#ffffff"
-    white_offset = "#F4F4F4"
+    white_offset = "#e5f1ff"
     grey = "#5C5A5A"
 
   [params.seo]
@@ -107,10 +108,10 @@ defaultContentLanguageInSubdir = false
 
 [menu]
   # Main Menu
-  [[menu.main]]
-    name = "Features"
-    url = "/features/"
-    weight = 1
+#  [[menu.main]]
+#    name = "Features"
+#    url = "/features/"
+#    weight = 1
 
 #  [[menu.main]]
 #    name = "Components"
@@ -120,27 +121,32 @@ defaultContentLanguageInSubdir = false
   [[menu.main]]
     name = "Templates"
     url = "/templates/"
-    weight = 3
+    weight = 1
 
-#  [[menu.main]]
-#    name = "Pricing"
-#    url = "/pricing/"
-#    weight = 4
+  [[menu.main]]
+    name = "Apps"
+    url = "/apps/"
+    weight = 2
+
+  [[menu.main]]
+    name = "Pricing"
+    url = "/pricing/"
+    weight = 3
 
   [[menu.main]]
     name = "FAQ"
     url = "/faq/"
-    weight = 5
+    weight = 4
 
   [[menu.main]]
     name = "Docs"
     url = "https://docs.multiplatformkickstarter.com"
-    weight = 6
+    weight = 5
 
   [[menu.main]]
     name = "Contact"
     url = "/contact/"
-    weight = 7
+    weight = 6
 
   # Footer Menu
   [[menu.footer]]
