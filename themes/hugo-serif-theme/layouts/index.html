@@ -21,6 +21,24 @@
   </div>
 </div>
 
+<div class="strip">
+  <div class="container pt-6 pb-6 pb-md-10">
+    <div class="row justify-content-start">
+      <h3 class="pricing-centered">Our Tech Stack</h3>
+      <br/><br/><br/>
+      <p class="pricing-centered">
+        <img src="/images/logo/KotlinFullColorLogoOnWhiteRGB.png" width="120" title="" alt="Kotlin Language" />
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <img src="/images/logo/KtorLogo.png" width="110" title="" alt="Ktor Server" />
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <img src="/images/logo/ComposeMultiplatformLogo.png" width="40" title="" alt="Ktor Server" /> Compose Multiplatform
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <img src="/images/logo/MaterialDesign3Logo.png" width="40" title="" alt="Ktor Server" /> Material Design 3
+      </p>
+    </div>
+  </div>
+</div>
+
 {{ $services := where (where .Site.RegularPages "Type" "services") ".Params.featured" true }}
 {{if gt (len $services) 0}}
 <div class="strip">
@@ -118,7 +136,7 @@
   </div>
 </div>
 {{end}}
-<!--
+
 {{ $pricing := where (where .Site.RegularPages "Type" "pricing") ".Params.featured" true }}
 {{if gt (len $pricing) 0}}
 <div class="strip">
@@ -155,7 +173,7 @@
   </div>
 </div>
 {{end}}
--->
+
 <div class="strip strip-grey">
   <div class="container pt-6 pb-6 pt-md-10 pb-md-10">
     <div class="row justify-content-center">

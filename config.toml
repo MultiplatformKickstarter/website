@@ -105,58 +105,12 @@ defaultContentLanguageInSubdir = true
     title = 'La plantillas de Kotlin Multiplatform para crear aplicaciones rápidamente'
     weight = 4
 
-[languages]
-  [languages.en]
-    contentDir = 'content/en'
-    disabled = false
-    languageCode = 'en-US'
-    languageDirection = 'ltr'
-    languageName = 'English'
-    title = 'Kotlin Multiplatform Templates to build applications faster'
-    weight = 0
-
-  [languages.fr]
-    contentDir = 'content/fr'
-    disabled = true
-    languageCode = 'fr'
-    languageDirection = 'ltr'
-    languageName = 'Français'
-    title = 'Kotlin Multiplatform Templates to build applications faster'
-    weight = 1
-
-  [languages.it]
-    contentDir = 'content/it'
-    disabled = true
-    languageCode = 'it'
-    languageDirection = 'ltr'
-    languageName = 'Italiano'
-    title = 'Kotlin Multiplatform Templates to build applications faster'
-    weight = 2
-
-  [languages.de]
-    contentDir = 'content/de'
-    disabled = true
-    languageCode = 'de-DE'
-    languageDirection = 'ltr'
-    languageName = 'Deutsch'
-    title = 'Kotlin Multiplatform Templates to build applications faster'
-    weight = 3
-
-  [languages.es]
-    contentDir = 'content/es'
-    disabled = true
-    languageCode = 'es-ES'
-    languageDirection = 'ltr'
-    languageName = 'Español'
-    title = 'La plantillas de Kotlin Multiplatform para crear aplicaciones rápidamente'
-    weight = 4
-
 [menu]
   # Main Menu
-  [[menu.main]]
-    name = "Features"
-    url = "/features/"
-    weight = 1
+#  [[menu.main]]
+#    name = "Features"
+#    url = "/features/"
+#    weight = 1
 
 #  [[menu.main]]
 #    name = "Components"
@@ -166,27 +120,32 @@ defaultContentLanguageInSubdir = true
   [[menu.main]]
     name = "Templates"
     url = "/templates/"
-    weight = 3
+    weight = 1
+
+  [[menu.main]]
+    name = "Apps"
+    url = "/apps/"
+    weight = 2
 
   [[menu.main]]
     name = "Pricing"
     url = "/pricing/"
-    weight = 4
+    weight = 3
 
   [[menu.main]]
     name = "FAQ"
     url = "/faq/"
-    weight = 5
+    weight = 4
 
   [[menu.main]]
     name = "Docs"
     url = "https://docs.multiplatformkickstarter.com"
-    weight = 6
+    weight = 5
 
   [[menu.main]]
     name = "Contact"
     url = "/contact/"
-    weight = 7
+    weight = 6
 
   # Footer Menu
   [[menu.footer]]
