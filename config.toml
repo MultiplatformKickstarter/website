@@ -4,7 +4,7 @@ theme = "hugo-serif-theme"
 languageCode = "en-us"
 title = "Kotlin Multiplatform Templates to build applications faster"
 defaultContentLanguage = 'en'
-defaultContentLanguageInSubdir = true
+defaultContentLanguageInSubdir = false
 
 [module]
   [module.hugoVersion]
@@ -129,13 +129,13 @@ defaultContentLanguageInSubdir = true
     weight = 2
 
   [[menu.main]]
-    name = "Pricing"
-    url = "/pricing/"
+    name = "Open Source"
+    url = "/opensource/"
     weight = 3
 
   [[menu.main]]
-    name = "FAQ"
-    url = "/faq/"
+    name = "Pricing"
+    url = "/pricing/"
     weight = 4
 
   [[menu.main]]
@@ -157,6 +157,11 @@ defaultContentLanguageInSubdir = true
   [[menu.footer]]
     name = "Blog"
     url = "https://blog.multiplatformkickstarter.com"
+    weight = 2
+
+  [[menu.footer]]
+    name = "FAQ"
+    url = "/faq/"
     weight = 2
 
   [[menu.footer]]
