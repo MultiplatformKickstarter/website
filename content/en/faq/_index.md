@@ -1,28 +1,37 @@
 ---
 title: 'FAQ'
-description: 'Frequently Asked Questions.'
-intro_image: "images/illustrations/curiosity-search-amico.svg"
-intro_image_absolute: false
-intro_image_hide_on_mobile: false
-is_pricing: false
+meta_title: 'FAQ — Multiplatform Kickstarter'
+description: "Frequently asked questions about Multiplatform Kickstarter — the local AI app builder for Kotlin Multiplatform developers."
 ---
 
-**How customizable are the components?**
+## Is Multiplatform Kickstarter a SaaS?
 
-You get access to the full source code. You can use the components as is in your project, or use as a base to your own components.
+No. Multiplatform Kickstarter is a desktop app that runs entirely on your machine. Code generation uses your local LLM — no data is sent to any cloud service. A subscription unlocks features inside the app; generation itself stays local.
 
-**How often are new features added?**
+## Which platforms can it generate?
 
-New features are added constantly. Our goal is to provide you with every single pattern found in all mobile apps, so there are a lot of ideas and releases planned. New features are posted on [Twitter](https://twitter.com/mpkickstarter) as soon as they are available. We also send a monthly update [via email](https://multiplatformkickstarter.substack.com/) to notify you.
+It generates Kotlin Multiplatform projects targeting Android, iOS, desktop (JVM — macOS, Windows, Linux), and WASM (browser). All targets share the same Compose Multiplatform UI and Kotlin business logic.
 
-**What is your refund policy for PRO Templates?**
+## Do I need Android Studio or Xcode installed?
 
-We offer a 7-day money back guarantee, no questions asked. If you are not satisfied with your purchase, you can request a refund within 7 days of your purchase.
+You need Android Studio or IntelliJ IDEA to build and run the generated projects. Xcode is needed to build and deploy to real iOS devices. The generator itself runs as a standalone desktop app — you can generate and inspect code without either IDE installed.
 
-**What is Kotlin Multiplatform?**
+## Which local models are supported?
 
-Is a technology designed and created by JetBrains to simplify the development of cross-platform projects. It reduces time spent writing and maintaining the same code for different platforms while retaining the flexibility and benefits of native programming.
+Any model compatible with the Ollama API is supported out of the box. You can also connect via any OpenAI-compatible local API endpoint (LM Studio, Jan, llama.cpp). We recommend code-focused models like `qwen2.5-coder`, `deepseek-coder-v2`, or `codestral` for best KMP output quality.
 
-**What is Compose Multiplatform?**
+## Can I inspect the generated code?
 
-Is a declarative framework for sharing UIs across multiple platforms with Kotlin. It is based on Jetpack Compose and developed by JetBrains and open-source contributors.
+Yes. The workspace includes a full file tree browser and code viewer. You can read every generated file — screens, ViewModels, repositories, build scripts — before exporting. In-app editing is on the roadmap.
+
+## Will it publish directly to app stores?
+
+Not yet. Store publishing is planned for a future release. The current MVP focuses on project generation, code inspection, and ZIP export. Git integration and automated publishing workflows will follow.
+
+## How are subscriptions handled?
+
+Subscriptions and one-time purchases are handled by Lemon Squeezy, our merchant of record. After purchase you receive a license key by email. Enter the key inside the desktop app to unlock Pro features. No server-side validation is performed by this website.
+
+## Can I use my own model?
+
+Yes. Any Ollama-compatible or OpenAI-compatible API endpoint running locally works. Fine-tuned models, quantized GGUF models, and custom endpoints are all supported as long as they speak the correct protocol.

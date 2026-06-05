@@ -1,0 +1,20 @@
+{{ define "body_classes" }}mpk-inner-page{{ end }}
+
+{{ define "main" }}
+<div style="background:var(--mpk-bg);min-height:100vh;color:var(--mpk-text);font-family:'Inter',sans-serif">
+  <div class="mpk-container" style="padding-top:72px;padding-bottom:96px;max-width:800px">
+
+    <span class="mpk-section-label">FAQ</span>
+    <h1 class="mpk-section-title" style="margin-bottom:8px">Frequently asked questions</h1>
+    <p style="color:var(--mpk-muted);margin-bottom:48px">Can't find an answer? Email us at <a href="mailto:hello@multiplatformkickstarter.com" style="color:var(--mpk-purple)">hello@multiplatformkickstarter.com</a></p>
+
+    <div class="mpk-article">
+      {{ .Content }}
+    </div>
+
+    <div style="text-align:center;margin-top:64px">
+      <a href="/download/" class="btn-primary-mpk" style="display:inline-flex">Join Early Access — It's Free</a>
+    </div>
+  </div>
+</div>
+{{ end }}

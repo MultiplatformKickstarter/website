@@ -1,0 +1,20 @@
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="footer-inner">
+          <div style="margin-bottom:16px">
+            <a href="/" style="display:inline-flex;align-items:center;gap:8px;text-decoration:none">
+              {{- with .Site.Params.logo.desktop -}}
+              <img height="24" alt="{{ $.Site.Params.logo.alt }}" src="{{ . | relURL }}" loading="lazy">
+              {{- end -}}
+              <span style="font-weight:600;font-size:0.9rem">{{ .Site.Params.logo.alt }}</span>
+            </a>
+            <p style="font-size:0.82rem;margin:8px 0 0;line-height:1.5;max-width:360px">Local AI app builder for Kotlin Multiplatform developers.</p>
+          </div>
+          {{ partial "footer-menu" . }}
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

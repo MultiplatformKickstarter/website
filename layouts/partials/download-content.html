@@ -1,0 +1,67 @@
+<div style="background:var(--mpk-bg);min-height:100vh;color:var(--mpk-text);font-family:'Inter',sans-serif">
+  <div class="mpk-container" style="padding-top:80px;padding-bottom:96px;max-width:840px">
+
+    <div style="text-align:center;margin-bottom:56px">
+      <span class="mpk-section-label">Early Access</span>
+      <h1 class="mpk-section-title" style="text-align:center;margin-bottom:16px">Download Multiplatform Kickstarter</h1>
+      <p style="color:var(--mpk-muted);font-size:1.05rem;line-height:1.7;max-width:540px;margin:0 auto">The desktop app is in active development. Join early access to be notified when the first build is available and influence the roadmap.</p>
+    </div>
+
+    <!-- Early access form -->
+    <div style="background:var(--mpk-surface);border:1px solid var(--mpk-border);border-radius:16px;padding:40px;text-align:center;margin-bottom:48px">
+      <h2 style="font-size:1.3rem;font-weight:600;color:#fff;margin:0 0 12px">Join the Early Access List</h2>
+      <p style="color:var(--mpk-muted);font-size:0.9rem;margin:0 0 28px;line-height:1.6">Get notified when the first build ships. No spam, unsubscribe any time.</p>
+      <iframe src="https://multiplatformkickstarter.substack.com/embed"
+        width="100%" height="150"
+        style="border:1px solid var(--mpk-border);background:transparent;border-radius:8px;max-width:480px"
+        frameborder="0"
+        scrolling="no"
+        title="Subscribe to Multiplatform Kickstarter early access">
+      </iframe>
+    </div>
+
+    <!-- Requirements -->
+    <div style="background:var(--mpk-surface);border:1px solid var(--mpk-border);border-radius:16px;padding:32px;margin-bottom:32px">
+      <h2 style="font-size:1.1rem;font-weight:600;color:#fff;margin:0 0 20px">System Requirements</h2>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px">
+        <div>
+          <h3 style="font-size:0.85rem;font-weight:600;color:var(--mpk-purple);text-transform:uppercase;letter-spacing:0.08em;margin:0 0 10px">macOS</h3>
+          <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:6px;font-size:0.875rem;color:var(--mpk-muted)">
+            <li>macOS 13 Ventura or later</li>
+            <li>Apple Silicon or Intel</li>
+            <li>8 GB RAM minimum (16 GB recommended)</li>
+            <li>Ollama installed for local generation</li>
+          </ul>
+        </div>
+        <div>
+          <h3 style="font-size:0.85rem;font-weight:600;color:var(--mpk-purple);text-transform:uppercase;letter-spacing:0.08em;margin:0 0 10px">Windows / Linux</h3>
+          <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:6px;font-size:0.875rem;color:var(--mpk-muted)">
+            <li>Windows 10 / 11 or Ubuntu 22.04+</li>
+            <li>JVM 17+ required</li>
+            <li>8 GB RAM minimum (16 GB recommended)</li>
+            <li>Ollama or compatible local API</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Setup steps -->
+    <div style="background:var(--mpk-surface);border:1px solid var(--mpk-border);border-radius:16px;padding:32px;margin-bottom:32px">
+      <h2 style="font-size:1.1rem;font-weight:600;color:#fff;margin:0 0 20px">Getting started (once available)</h2>
+      <ol style="padding-left:20px;margin:0;display:flex;flex-direction:column;gap:14px;color:var(--mpk-muted);font-size:0.9rem;line-height:1.6">
+        <li><strong style="color:var(--mpk-text)">Install Ollama</strong> — download from ollama.com and pull a code model: <code style="background:var(--mpk-code-bg);padding:2px 6px;border-radius:4px;font-size:0.85em">ollama pull qwen2.5-coder</code></li>
+        <li><strong style="color:var(--mpk-text)">Download Multiplatform Kickstarter</strong> — install the desktop app for your platform</li>
+        <li><strong style="color:var(--mpk-text)">Connect your model</strong> — point the app at your Ollama instance (default: localhost:11434)</li>
+        <li><strong style="color:var(--mpk-text)">Describe your app</strong> — type a prompt and generate your first KMP project</li>
+        <li><strong style="color:var(--mpk-text)">Export and build</strong> — download the ZIP and open in Android Studio</li>
+      </ol>
+    </div>
+
+    <!-- CTA to pricing -->
+    <div style="text-align:center;padding:32px;background:rgba(108,99,255,0.08);border:1px solid rgba(108,99,255,0.25);border-radius:16px">
+      <p style="color:var(--mpk-text);font-size:1rem;margin:0 0 20px;line-height:1.6">Want unlimited projects and architecture presets? <br><strong style="color:#fff">Upgrade to Pro after early access.</strong></p>
+      <a href="/pricing/" class="btn-secondary-mpk">View Pricing Plans</a>
+    </div>
+
+  </div>
+</div>

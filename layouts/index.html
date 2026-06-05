@@ -1,0 +1,660 @@
+{{ define "body_classes" }}page-home{{ end }}
+
+{{ define "title" }}
+<title>Multiplatform Kickstarter — Local AI App Builder for Kotlin Multiplatform</title>
+{{ end }}
+
+{{ define "meta_tags" }}
+<meta name="description" content="Generate Kotlin Multiplatform apps from prompts using local LLMs. Build Android, iOS, desktop, and WASM projects with Compose Multiplatform and export complete source code.">
+<link rel="canonical" href="{{ .Permalink }}">
+<meta property="og:title" content="Multiplatform Kickstarter — Local AI App Builder for Kotlin Multiplatform">
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{ .Permalink }}">
+{{ with .Site.Params.seo.meta_og_image }}<meta property="og:image" content="{{ . }}">{{ end }}
+<meta property="og:description" content="Generate Kotlin Multiplatform apps from prompts using local LLMs. Build Android, iOS, desktop, and WASM projects with Compose Multiplatform and export complete source code.">
+<meta property="og:site_name" content="Multiplatform Kickstarter">
+<meta name="twitter:card" content="summary_large_image">
+{{ with .Site.Params.seo.meta_twitter_site }}<meta name="twitter:site" content="{{ . }}">{{ end }}
+{{ with .Site.Params.seo.meta_twitter_creator }}<meta name="twitter:creator" content="{{ . }}">{{ end }}
+<meta name="twitter:title" content="Multiplatform Kickstarter — Local AI App Builder for Kotlin Multiplatform">
+<meta name="twitter:description" content="Generate Kotlin Multiplatform apps from prompts using local LLMs. Build Android, iOS, desktop, and WASM projects with Compose Multiplatform and export complete source code.">
+
+<!-- JSON-LD: SoftwareApplication -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Multiplatform Kickstarter",
+  "description": "Local AI app builder for Kotlin Multiplatform developers. Generate Android, iOS, desktop, and WASM apps from prompts using local LLMs.",
+  "applicationCategory": "DeveloperApplication",
+  "operatingSystem": "macOS, Windows, Linux",
+  "url": "https://multiplatformkickstarter.com",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+
+<!-- JSON-LD: FAQ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is Multiplatform Kickstarter a SaaS?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Multiplatform Kickstarter is a desktop app that runs entirely on your machine. Code generation uses your local LLM — no data is sent to any cloud service."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which platforms can it generate?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It generates Kotlin Multiplatform projects targeting Android, iOS, desktop (JVM/macOS/Windows/Linux), and WASM (browser)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which local models are supported?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Any model compatible with the Ollama API is supported. You can also connect models via OpenAI-compatible endpoints running locally."
+      }
+    }
+  ]
+}
+</script>
+{{ end }}
+
+{{ define "main" }}
+
+<!-- ===== HERO ===== -->
+<section class="mpk-hero">
+  <div class="mpk-container">
+    <div class="mpk-hero-inner">
+      <div class="mpk-hero-badge">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true"><circle cx="6" cy="6" r="5" fill="#6C63FF" opacity="0.3"/><circle cx="6" cy="6" r="3" fill="#6C63FF"/></svg>
+        Early Access — Kotlin Multiplatform AI Builder
+      </div>
+
+      <h1>Build <span class="highlight">Kotlin Multiplatform</span> apps from prompts — locally.</h1>
+      <p class="mpk-hero-sub">Generate Android, iOS, desktop, and WASM projects with local LLMs. Iterate with prompts, inspect the code, and export a complete KMP project.</p>
+
+      <div class="mpk-hero-ctas">
+        <a href="/download/" class="btn-primary-mpk">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+          Join Early Access
+        </a>
+        <a href="#how-it-works" class="btn-secondary-mpk">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polygon points="10,8 16,12 10,16"/></svg>
+          See How It Works
+        </a>
+      </div>
+
+      <!-- Product Mockup -->
+      <div class="mpk-product-mockup" role="img" aria-label="Product UI mockup showing prompt panel, generated file tree, and app preview">
+        <div class="mpk-mockup-titlebar">
+          <span class="mpk-mockup-dot"></span>
+          <span class="mpk-mockup-dot"></span>
+          <span class="mpk-mockup-dot"></span>
+          <span class="mpk-mockup-title-text">Multiplatform Kickstarter — my-pet-app</span>
+        </div>
+        <div class="mpk-mockup-body">
+          <!-- Prompt Panel -->
+          <div class="mpk-mockup-prompt-col">
+            <div class="mpk-prompt-label">Prompt</div>
+            <div class="mpk-prompt-box">Create a pet adoption app with a home screen, list view, and detail screen. Use Material 3 and MVVM.</div>
+            <div class="mpk-prompt-box active" style="opacity:0.5; font-size:0.72rem;">→ Generating KMP project…</div>
+            <button class="mpk-prompt-send" aria-label="Send prompt">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22,2 15,22 11,13 2,9"/></svg>
+              Send
+            </button>
+          </div>
+          <!-- File Tree + Code -->
+          <div class="mpk-mockup-filetree-col">
+            <div class="mpk-filetree-header">Generated Project</div>
+            <ul class="mpk-filetree" aria-label="Generated file tree">
+              <li class="folder">composeApp/</li>
+              <li style="padding-left:28px">src/commonMain/</li>
+              <li class="folder" style="padding-left:40px">kotlin/</li>
+              <li style="padding-left:52px" class="active">HomeScreen.kt</li>
+              <li style="padding-left:52px">PetListScreen.kt</li>
+              <li style="padding-left:52px">PetDetailScreen.kt</li>
+              <li style="padding-left:52px">PetViewModel.kt</li>
+              <li style="padding-left:52px">PetRepository.kt</li>
+              <li class="folder">shared/</li>
+              <li style="padding-left:28px">src/commonMain/</li>
+              <li style="padding-left:40px">Pet.kt</li>
+              <li style="padding-left:40px">PetStore.kt</li>
+              <li class="folder">androidApp/</li>
+              <li class="folder">iosApp/</li>
+              <li class="folder">desktopApp/</li>
+            </ul>
+            <div class="mpk-code-snippet">
+              <pre aria-label="Generated Kotlin code snippet"><span class="ann">@Composable</span>
+<span class="kw">fun</span> <span class="fn">HomeScreen</span>(
+  viewModel: <span class="fn">PetViewModel</span>
+) {
+  <span class="kw">val</span> pets <span class="kw">by</span> viewModel
+    .pets.collectAsState()
+  <span class="fn">LazyColumn</span> {
+    items(pets) { pet <span class="kw">-></span>
+      <span class="fn">PetCard</span>(pet)
+    }
+  }
+}</pre>
+            </div>
+          </div>
+          <!-- Phone Preview -->
+          <div class="mpk-mockup-preview-col" aria-hidden="true">
+            <div class="mpk-preview-label">Live Preview</div>
+            <div class="mpk-device-frame">
+              <div class="mpk-device-notch"></div>
+              <div class="mpk-device-screen">
+                <div class="mpk-device-bar"></div>
+                <div class="mpk-device-bar short"></div>
+                <div class="mpk-device-card">
+                  <div class="mpk-device-avatar"></div>
+                  <div class="mpk-device-lines">
+                    <div class="mpk-device-line"></div>
+                    <div class="mpk-device-line s"></div>
+                  </div>
+                </div>
+                <div class="mpk-device-card" style="opacity:0.7">
+                  <div class="mpk-device-avatar" style="background:linear-gradient(135deg,#a78bfa,#60a5fa)"></div>
+                  <div class="mpk-device-lines">
+                    <div class="mpk-device-line"></div>
+                    <div class="mpk-device-line s"></div>
+                  </div>
+                </div>
+                <div class="mpk-device-card" style="opacity:0.4">
+                  <div class="mpk-device-avatar" style="background:linear-gradient(135deg,#34d399,#60a5fa)"></div>
+                  <div class="mpk-device-lines">
+                    <div class="mpk-device-line"></div>
+                    <div class="mpk-device-line s"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mpk-preview-label">Android · iOS · Desktop · WASM</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PROBLEM ===== -->
+<section class="mpk-section-alt" aria-labelledby="problem-heading">
+  <div class="mpk-container">
+    <span class="mpk-section-label">The Problem</span>
+    <h2 class="mpk-section-title" id="problem-heading">SaaS app builders are useful — until they aren't.</h2>
+    <p class="mpk-section-subtitle">Cloud app builders send your code, architecture decisions, and prompts to external servers. For developers who care about privacy, IP ownership, and local toolchains, that's a non-starter.</p>
+
+    <div style="margin-top:48px">
+      <h3 style="font-size:1.1rem;font-weight:600;color:#fff;margin-bottom:24px">SaaS AI builders vs. Multiplatform Kickstarter</h3>
+      <div class="mpk-comparison">
+        <div class="mpk-comparison-col saas">
+          <h3>SaaS AI Builders</h3>
+          <ul class="mpk-comparison-list">
+            <li><span class="mpk-cmp-icon">✗</span> Cloud code execution — your project leaves your machine</li>
+            <li><span class="mpk-cmp-icon">✗</span> Remote previews require internet connectivity</li>
+            <li><span class="mpk-cmp-icon">✗</span> Subscription required just to generate code</li>
+            <li><span class="mpk-cmp-icon">✗</span> Generic web/React output — not KMP-native</li>
+            <li><span class="mpk-cmp-icon">✗</span> Vendor lock-in to their runtime or hosting</li>
+            <li><span class="mpk-cmp-icon">✗</span> No Compose Multiplatform or KMP architecture</li>
+          </ul>
+        </div>
+        <div class="mpk-comparison-col mpk">
+          <h3>Multiplatform Kickstarter</h3>
+          <ul class="mpk-comparison-list">
+            <li><span class="mpk-cmp-icon" style="color:#6C63FF">✓</span> Runs 100% locally — your code never leaves your machine</li>
+            <li><span class="mpk-cmp-icon" style="color:#6C63FF">✓</span> Local preview and workspace — no internet required</li>
+            <li><span class="mpk-cmp-icon" style="color:#6C63FF">✓</span> Use free open-source models via Ollama or compatible APIs</li>
+            <li><span class="mpk-cmp-icon" style="color:#6C63FF">✓</span> Native KMP output — Compose Multiplatform, Kotlin arch</li>
+            <li><span class="mpk-cmp-icon" style="color:#6C63FF">✓</span> You own the generated source code, no strings attached</li>
+            <li><span class="mpk-cmp-icon" style="color:#6C63FF">✓</span> Built on years of Kotlin Multiplatform template experience</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== HOW IT WORKS ===== -->
+<section class="mpk-section" id="how-it-works" aria-labelledby="how-heading">
+  <div class="mpk-container">
+    <span class="mpk-section-label">How It Works</span>
+    <h2 class="mpk-section-title" id="how-heading">From prompt to production-ready KMP project</h2>
+    <p class="mpk-section-subtitle">Five steps from idea to exported source code. No cloud required.</p>
+
+    <div class="mpk-steps" style="margin-top:48px;background:var(--mpk-surface);border:1px solid var(--mpk-border);border-radius:16px;overflow:hidden">
+      <div class="mpk-step">
+        <div class="mpk-step-num">1</div>
+        <h3 class="mpk-step-title">Describe your app</h3>
+        <p class="mpk-step-desc">Write a natural-language prompt describing your app idea, screens, and features. No boilerplate configuration needed.</p>
+      </div>
+      <div class="mpk-step">
+        <div class="mpk-step-num">2</div>
+        <h3 class="mpk-step-title">Generate a full KMP project</h3>
+        <p class="mpk-step-desc">The local LLM generates a complete Kotlin Multiplatform project with Compose Multiplatform UI, ViewModels, and KMP architecture.</p>
+      </div>
+      <div class="mpk-step">
+        <div class="mpk-step-num">3</div>
+        <h3 class="mpk-step-title">Preview and iterate</h3>
+        <p class="mpk-step-desc">See an interactive preview inside the workspace. Refine with follow-up prompts — "add a search bar", "use a dark theme".</p>
+      </div>
+      <div class="mpk-step">
+        <div class="mpk-step-num">4</div>
+        <h3 class="mpk-step-title">Inspect and edit the code</h3>
+        <p class="mpk-step-desc">Browse the generated file tree, read the Kotlin code, and make edits directly. Your code, your rules.</p>
+      </div>
+      <div class="mpk-step">
+        <div class="mpk-step-num">5</div>
+        <h3 class="mpk-step-title">Export ZIP / connect Git</h3>
+        <p class="mpk-step-desc">Download a complete, buildable project ZIP ready to open in Android Studio. Git and store publishing workflows coming soon.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== LOCAL-FIRST AI ===== -->
+<section class="mpk-section-alt" aria-labelledby="localfirst-heading">
+  <div class="mpk-container">
+    <div class="mpk-localfirst-grid">
+      <div>
+        <span class="mpk-section-label">Local-First AI</span>
+        <h2 class="mpk-section-title" id="localfirst-heading">Your code stays on your machine. Always.</h2>
+        <p class="mpk-section-subtitle">Multiplatform Kickstarter is designed from the ground up to keep your work private. Generation runs on your local GPU or CPU — no API calls to cloud services.</p>
+        <ul class="mpk-localfirst-points">
+          <li>
+            <span class="mpk-check-icon" aria-hidden="true">✓</span>
+            <span><strong style="color:#fff">Local models via Ollama</strong> — runs on your machine with no internet required for generation</span>
+          </li>
+          <li>
+            <span class="mpk-check-icon" aria-hidden="true">✓</span>
+            <span><strong style="color:#fff">Private by design</strong> — your prompts, code, and architecture decisions never leave your environment</span>
+          </li>
+          <li>
+            <span class="mpk-check-icon" aria-hidden="true">✓</span>
+            <span><strong style="color:#fff">No required SaaS backend</strong> — generation works fully offline once the model is downloaded</span>
+          </li>
+          <li>
+            <span class="mpk-check-icon" aria-hidden="true">✓</span>
+            <span><strong style="color:#fff">Bring your own model</strong> — use any Ollama-compatible model or OpenAI-compatible local endpoint</span>
+          </li>
+          <li>
+            <span class="mpk-check-icon" aria-hidden="true">✓</span>
+            <span><strong style="color:#fff">You own the generated code</strong> — export complete source, no platform dependencies</span>
+          </li>
+          <li>
+            <span class="mpk-check-icon" aria-hidden="true">✓</span>
+            <span><strong style="color:#fff">Fits your toolchain</strong> — open generated projects directly in Android Studio or any Kotlin IDE</span>
+          </li>
+        </ul>
+      </div>
+      <div aria-hidden="true">
+        <!-- SVG illustration: local-first concept -->
+        <svg viewBox="0 0 400 320" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:420px;margin:0 auto;display:block" role="presentation">
+          <!-- Laptop body -->
+          <rect x="60" y="80" width="280" height="180" rx="12" fill="#1e1e2e" stroke="rgba(108,99,255,0.3)" stroke-width="1.5"/>
+          <!-- Screen -->
+          <rect x="78" y="96" width="244" height="148" rx="6" fill="#12121c"/>
+          <!-- Screen content lines -->
+          <rect x="94" y="112" width="100" height="6" rx="3" fill="rgba(108,99,255,0.6)"/>
+          <rect x="94" y="126" width="160" height="4" rx="2" fill="rgba(255,255,255,0.12)"/>
+          <rect x="94" y="138" width="130" height="4" rx="2" fill="rgba(255,255,255,0.08)"/>
+          <!-- Code block -->
+          <rect x="94" y="152" width="212" height="76" rx="6" fill="#0a0a12" stroke="rgba(108,99,255,0.2)" stroke-width="1"/>
+          <rect x="106" y="164" width="60" height="4" rx="2" fill="#c084fc" opacity="0.7"/>
+          <rect x="116" y="176" width="80" height="4" rx="2" fill="#60a5fa" opacity="0.7"/>
+          <rect x="126" y="188" width="40" height="4" rx="2" fill="#86efac" opacity="0.6"/>
+          <rect x="116" y="200" width="60" height="4" rx="2" fill="rgba(255,255,255,0.2)"/>
+          <!-- Base -->
+          <rect x="40" y="260" width="320" height="14" rx="7" fill="#1a1a2e"/>
+          <rect x="160" y="256" width="80" height="4" rx="2" fill="#16161f"/>
+          <!-- Local shield icon -->
+          <path d="M290 120 L310 128 L310 152 Q310 164 300 170 Q290 164 290 152 Z" fill="rgba(108,99,255,0.2)" stroke="rgba(108,99,255,0.5)" stroke-width="1.5"/>
+          <path d="M297 148 L301 152 L308 142" stroke="#6C63FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <!-- No-cloud cross -->
+          <circle cx="320" cy="190" r="14" fill="#12121c" stroke="rgba(255,90,90,0.3)" stroke-width="1.5"/>
+          <path d="M313 183 L327 197 M327 183 L313 197" stroke="#ef4444" stroke-width="1.5" stroke-linecap="round"/>
+          <text x="302" y="212" font-size="8" fill="rgba(239,68,68,0.7)" font-family="Inter, sans-serif">No cloud</text>
+          <!-- Arrow label -->
+          <path d="M200 78 L200 64" stroke="rgba(108,99,255,0.4)" stroke-width="1.5" stroke-dasharray="4 3"/>
+          <text x="164" y="60" font-size="9" fill="#6C63FF" font-family="Inter, sans-serif" font-weight="600">Local LLM</text>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FEATURES ===== -->
+<section class="mpk-section" id="features" aria-labelledby="features-heading">
+  <div class="mpk-container">
+    <span class="mpk-section-label">Features</span>
+    <h2 class="mpk-section-title" id="features-heading">Everything a KMP developer needs to ship faster</h2>
+    <p class="mpk-section-subtitle">Built specifically for Kotlin Multiplatform — not a generic web tool bolted onto mobile.</p>
+
+    <div class="mpk-feature-grid" style="margin-top:48px">
+      <div class="mpk-feature-card">
+        <div class="mpk-feature-icon" aria-hidden="true">⚡</div>
+        <h3>Prompt-to-project generation</h3>
+        <p>Describe your app in natural language and get a buildable Kotlin Multiplatform project with all targets configured.</p>
+      </div>
+      <div class="mpk-feature-card">
+        <div class="mpk-feature-icon" aria-hidden="true">🎨</div>
+        <h3>Compose Multiplatform UI</h3>
+        <p>AI-generated Composables following Material 3 design guidelines, shared across Android, iOS, desktop, and WASM.</p>
+      </div>
+      <div class="mpk-feature-card">
+        <div class="mpk-feature-icon" aria-hidden="true">📱</div>
+        <h3>All KMP targets</h3>
+        <p>Android, iOS, Desktop (JVM / macOS / Windows / Linux), and WASM Browser — all from a single codebase.</p>
+      </div>
+      <div class="mpk-feature-card">
+        <div class="mpk-feature-icon" aria-hidden="true">🔍</div>
+        <h3>Interactive workspace</h3>
+        <p>Navigate the generated file tree, read code, and iterate with follow-up prompts from inside the app.</p>
+      </div>
+      <div class="mpk-feature-card">
+        <div class="mpk-feature-icon" aria-hidden="true">📂</div>
+        <h3>Code inspection</h3>
+        <p>Inspect every generated file — ViewModels, repositories, screens, build scripts — before you export.</p>
+      </div>
+      <div class="mpk-feature-card">
+        <div class="mpk-feature-icon" aria-hidden="true">📦</div>
+        <h3>ZIP export</h3>
+        <p>Download a complete, buildable project ZIP ready to open in Android Studio or IntelliJ IDEA.</p>
+      </div>
+      <div class="mpk-feature-card">
+        <div class="mpk-feature-icon" aria-hidden="true">🌿</div>
+        <h3>Git integration</h3>
+        <p>Push generated projects directly to your Git repositories and branch from within the app.</p>
+        <span class="badge-soon">Coming soon</span>
+      </div>
+      <div class="mpk-feature-card">
+        <div class="mpk-feature-icon" aria-hidden="true">🚀</div>
+        <h3>Store publishing</h3>
+        <p>Automated workflows to publish to Google Play and the Apple App Store from the workspace.</p>
+        <span class="badge-soon">Coming soon</span>
+      </div>
+      <div class="mpk-feature-card">
+        <div class="mpk-feature-icon" aria-hidden="true">🤖</div>
+        <h3>Local LLM support</h3>
+        <p>Connect any Ollama-compatible model or local OpenAI-compatible endpoint. No API key required.</p>
+      </div>
+      <div class="mpk-feature-card">
+        <div class="mpk-feature-icon" aria-hidden="true">🏗️</div>
+        <h3>KMP architecture presets</h3>
+        <p>MVVM, MVI, clean architecture — choose your pattern and the generator applies it throughout the codebase.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== USE CASES ===== -->
+<section class="mpk-section-alt" aria-labelledby="usecases-heading">
+  <div class="mpk-container">
+    <span class="mpk-section-label">Use Cases</span>
+    <h2 class="mpk-section-title" id="usecases-heading">Who is it for?</h2>
+    <p class="mpk-section-subtitle">From indie hackers shipping an MVP this weekend to agencies prototyping for clients — Multiplatform Kickstarter removes the friction.</p>
+
+    <div class="mpk-usecase-grid" style="margin-top:40px">
+      <div class="mpk-usecase-card">
+        <h3>MVP generation</h3>
+        <p>Turn a product idea into a working Android + iOS prototype in hours, not weeks.</p>
+      </div>
+      <div class="mpk-usecase-card">
+        <h3>Agency prototypes</h3>
+        <p>Generate high-fidelity KMP prototypes for client pitches, no setup overhead required.</p>
+      </div>
+      <div class="mpk-usecase-card">
+        <h3>Internal tools</h3>
+        <p>Build desktop and mobile utilities for your team using Compose Multiplatform with minimal boilerplate.</p>
+      </div>
+      <div class="mpk-usecase-card">
+        <h3>Learning Compose Multiplatform</h3>
+        <p>Generate real-world apps with correct KMP patterns and study the generated code as a learning resource.</p>
+      </div>
+      <div class="mpk-usecase-card">
+        <h3>Startup experiments</h3>
+        <p>Validate product ideas quickly with complete cross-platform apps before committing to a full build.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PRICING PREVIEW ===== -->
+<section class="mpk-section" id="pricing" aria-labelledby="pricing-heading">
+  <div class="mpk-container">
+    <span class="mpk-section-label">Pricing</span>
+    <h2 class="mpk-section-title" id="pricing-heading">Start free. Upgrade when you ship.</h2>
+    <p class="mpk-section-subtitle">No credit card required for early access. Subscriptions are handled by Lemon Squeezy. License activation happens inside the desktop app.</p>
+
+    <div class="mpk-pricing-grid" style="margin-top:48px">
+      <!-- Free -->
+      <div class="mpk-pricing-card">
+        <div>
+          <div class="mpk-pricing-plan">Free</div>
+          <div class="mpk-pricing-price"><span class="mpk-price-amount">$0</span><span class="mpk-price-period">forever</span></div>
+          <p class="mpk-pricing-desc">Get started with the core generator. Perfect for exploring local AI app generation.</p>
+        </div>
+        <ul class="mpk-pricing-features">
+          <li><span class="tick">✓</span> Prompt-to-KMP project generation</li>
+          <li><span class="tick">✓</span> Local LLM support (Ollama)</li>
+          <li><span class="tick">✓</span> All platform targets (Android/iOS/Desktop/WASM)</li>
+          <li><span class="tick">✓</span> Code inspection</li>
+          <li><span class="tick">✓</span> ZIP export</li>
+          <li><span class="tick">✓</span> 3 projects</li>
+        </ul>
+        <a href="/download/" class="btn-secondary-mpk" style="justify-content:center;text-align:center">Download Free</a>
+      </div>
+
+      <!-- Pro -->
+      <div class="mpk-pricing-card highlighted">
+        <div class="mpk-pricing-badge">Most Popular</div>
+        <div>
+          <div class="mpk-pricing-plan">Pro</div>
+          <div class="mpk-pricing-price">
+            <span class="mpk-price-amount" id="pro-price">$12</span>
+            <span class="mpk-price-period" id="pro-period">/ month</span>
+          </div>
+          <!-- Toggle monthly / yearly -->
+          <div style="display:flex;gap:8px;margin-top:12px;margin-bottom:4px">
+            <button onclick="showMonthly()" id="btn-monthly" style="background:rgba(108,99,255,0.2);border:1px solid var(--mpk-purple);color:#fff;padding:4px 12px;border-radius:6px;font-size:0.75rem;cursor:pointer;font-family:inherit">Monthly</button>
+            <button onclick="showYearly()" id="btn-yearly" style="background:none;border:1px solid rgba(255,255,255,0.15);color:var(--mpk-muted);padding:4px 12px;border-radius:6px;font-size:0.75rem;cursor:pointer;font-family:inherit">Yearly <span style="color:#86efac;font-size:0.7rem">Save 30%</span></button>
+          </div>
+          <p class="mpk-pricing-desc">For developers actively building products. Unlimited projects and priority features.</p>
+        </div>
+        <ul class="mpk-pricing-features">
+          <li><span class="tick">✓</span> Everything in Free</li>
+          <li><span class="tick">✓</span> Unlimited projects</li>
+          <li><span class="tick">✓</span> KMP architecture presets (MVVM, MVI, Clean)</li>
+          <li><span class="tick">✓</span> Iterate with unlimited prompts per project</li>
+          <li><span class="tick">✓</span> Priority support</li>
+          <li><span class="tick">✓</span> Early access to new features</li>
+          <li><span class="tick" style="color:#fbbf24">◎</span> Git integration (coming soon)</li>
+          <li><span class="tick" style="color:#fbbf24">◎</span> Store publishing (coming soon)</li>
+        </ul>
+        <!-- LEMON SQUEEZY: Replace href with your actual checkout URL from .Site.Params or constants -->
+        <a href="{{ .Site.Params.lemon_squeezy_pro_monthly_url }}" id="pro-buy-btn" class="btn-primary-mpk" style="justify-content:center" target="_blank" rel="noopener noreferrer">Get Pro Monthly</a>
+      </div>
+
+      <!-- Lifetime -->
+      <div class="mpk-pricing-card">
+        <div>
+          <div class="mpk-pricing-plan">Founder Lifetime</div>
+          <div class="mpk-pricing-price"><span class="mpk-price-amount">$149</span><span class="mpk-price-period">once</span></div>
+          <p class="mpk-pricing-desc">Early access lifetime deal. Lock in the best price while we're in early development. Never pay again.</p>
+        </div>
+        <ul class="mpk-pricing-features">
+          <li><span class="tick">✓</span> Everything in Pro, forever</li>
+          <li><span class="tick">✓</span> Lifetime updates</li>
+          <li><span class="tick">✓</span> Founder Discord channel</li>
+          <li><span class="tick">✓</span> Input on roadmap priorities</li>
+          <li><span class="tick">✓</span> License key via Lemon Squeezy</li>
+        </ul>
+        <!-- LEMON SQUEEZY: Replace href with your actual lifetime checkout URL -->
+        <a href="{{ .Site.Params.lemon_squeezy_lifetime_url }}" class="btn-secondary-mpk" style="justify-content:center" target="_blank" rel="noopener noreferrer">Get Lifetime Access</a>
+        <p class="mpk-pricing-note">License activation and validation happens inside the desktop app using Lemon Squeezy license keys. No server-side validation required on the website.</p>
+      </div>
+    </div>
+
+    <div style="text-align:center;margin-top:32px">
+      <a href="/pricing/" style="color:var(--mpk-purple);font-size:0.9rem;text-decoration:none;font-weight:500">View full pricing details →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section class="mpk-section-alt" id="faq" aria-labelledby="faq-heading">
+  <div class="mpk-container" style="max-width:800px">
+    <span class="mpk-section-label">FAQ</span>
+    <h2 class="mpk-section-title" id="faq-heading">Frequently asked questions</h2>
+
+    <div class="mpk-faq-list" style="margin-top:40px">
+
+      <div class="mpk-faq-item">
+        <button class="mpk-faq-question" aria-expanded="false" onclick="toggleFaq(this)">
+          Is Multiplatform Kickstarter a SaaS?
+          <span class="mpk-faq-chevron" aria-hidden="true">▾</span>
+        </button>
+        <div class="mpk-faq-answer" role="region">
+          No. Multiplatform Kickstarter is a desktop app that runs entirely on your machine. Code generation uses your local LLM. No code, prompts, or project data is sent to any cloud service. A subscription only unlocks features inside the app — generation itself stays local.
+        </div>
+      </div>
+
+      <div class="mpk-faq-item">
+        <button class="mpk-faq-question" aria-expanded="false" onclick="toggleFaq(this)">
+          Which platforms can it generate?
+          <span class="mpk-faq-chevron" aria-hidden="true">▾</span>
+        </button>
+        <div class="mpk-faq-answer" role="region">
+          It generates Kotlin Multiplatform projects targeting Android, iOS, desktop (JVM — macOS, Windows, Linux), and WASM (browser). All targets share the same Compose Multiplatform UI and Kotlin business logic.
+        </div>
+      </div>
+
+      <div class="mpk-faq-item">
+        <button class="mpk-faq-question" aria-expanded="false" onclick="toggleFaq(this)">
+          Do I need Android Studio or Xcode installed?
+          <span class="mpk-faq-chevron" aria-hidden="true">▾</span>
+        </button>
+        <div class="mpk-faq-answer" role="region">
+          You need Android Studio (or IntelliJ IDEA) to build and run the generated projects. Xcode is needed if you want to build and deploy to real iOS devices or the App Store. The generator itself runs as a standalone desktop app and doesn't require either IDE to generate code.
+        </div>
+      </div>
+
+      <div class="mpk-faq-item">
+        <button class="mpk-faq-question" aria-expanded="false" onclick="toggleFaq(this)">
+          Which local models are supported?
+          <span class="mpk-faq-chevron" aria-hidden="true">▾</span>
+        </button>
+        <div class="mpk-faq-answer" role="region">
+          Any model compatible with the Ollama API is supported out of the box. You can also connect models via any OpenAI-compatible API endpoint running locally (e.g. LM Studio, Jan, llama.cpp server). We recommend code-focused models like Codestral, DeepSeek Coder, or Qwen2.5-Coder for best results.
+        </div>
+      </div>
+
+      <div class="mpk-faq-item">
+        <button class="mpk-faq-question" aria-expanded="false" onclick="toggleFaq(this)">
+          Can I inspect the generated code?
+          <span class="mpk-faq-chevron" aria-hidden="true">▾</span>
+        </button>
+        <div class="mpk-faq-answer" role="region">
+          Yes. The workspace includes a full file tree browser with code viewing. You can read every generated file — screens, ViewModels, repositories, build scripts, everything — before exporting. Edit support is on the roadmap.
+        </div>
+      </div>
+
+      <div class="mpk-faq-item">
+        <button class="mpk-faq-question" aria-expanded="false" onclick="toggleFaq(this)">
+          Will it publish directly to app stores?
+          <span class="mpk-faq-chevron" aria-hidden="true">▾</span>
+        </button>
+        <div class="mpk-faq-answer" role="region">
+          Not yet — store publishing is on the roadmap. The current MVP focuses on project generation, code inspection, and ZIP export. Git integration and automated publishing workflows will follow in later releases.
+        </div>
+      </div>
+
+      <div class="mpk-faq-item">
+        <button class="mpk-faq-question" aria-expanded="false" onclick="toggleFaq(this)">
+          How are subscriptions handled?
+          <span class="mpk-faq-chevron" aria-hidden="true">▾</span>
+        </button>
+        <div class="mpk-faq-answer" role="region">
+          Subscriptions and one-time purchases are handled by Lemon Squeezy, a merchant of record. After purchase you receive a license key. Enter this key inside the desktop app to unlock Pro features. No server-side validation is performed by the website itself.
+        </div>
+      </div>
+
+      <div class="mpk-faq-item">
+        <button class="mpk-faq-question" aria-expanded="false" onclick="toggleFaq(this)">
+          Can I use my own model?
+          <span class="mpk-faq-chevron" aria-hidden="true">▾</span>
+        </button>
+        <div class="mpk-faq-answer" role="region">
+          Yes. As long as your model serves an Ollama-compatible or OpenAI-compatible API locally, you can connect it. Fine-tuned models, quantized models, and custom GGUF models are all supported as long as the endpoint speaks the right protocol.
+        </div>
+      </div>
+
+    </div>
+
+    <div style="text-align:center;margin-top:36px">
+      <a href="/download/" class="btn-primary-mpk" style="display:inline-flex">Get Early Access — It's Free</a>
+    </div>
+  </div>
+</section>
+
+{{ end }}
+
+{{ define "footer_js" }}
+<script>
+/* FAQ accordion */
+function toggleFaq(btn) {
+  var item = btn.parentElement;
+  var isOpen = item.classList.contains('open');
+  document.querySelectorAll('.mpk-faq-item').forEach(function(el) {
+    el.classList.remove('open');
+    el.querySelector('.mpk-faq-question').setAttribute('aria-expanded', 'false');
+  });
+  if (!isOpen) {
+    item.classList.add('open');
+    btn.setAttribute('aria-expanded', 'true');
+  }
+}
+
+/* Pricing toggle */
+var proMonthlyUrl = "{{ .Site.Params.lemon_squeezy_pro_monthly_url }}";
+var proYearlyUrl  = "{{ .Site.Params.lemon_squeezy_pro_yearly_url }}";
+
+function showMonthly() {
+  document.getElementById('pro-price').textContent = '$12';
+  document.getElementById('pro-period').textContent = '/ month';
+  document.getElementById('pro-buy-btn').href = proMonthlyUrl;
+  document.getElementById('pro-buy-btn').textContent = 'Get Pro Monthly';
+  document.getElementById('btn-monthly').style.background = 'rgba(108,99,255,0.2)';
+  document.getElementById('btn-monthly').style.borderColor = '#6C63FF';
+  document.getElementById('btn-monthly').style.color = '#fff';
+  document.getElementById('btn-yearly').style.background = 'none';
+  document.getElementById('btn-yearly').style.borderColor = 'rgba(255,255,255,0.15)';
+  document.getElementById('btn-yearly').style.color = 'var(--mpk-muted)';
+}
+
+function showYearly() {
+  document.getElementById('pro-price').textContent = '$99';
+  document.getElementById('pro-period').textContent = '/ year';
+  document.getElementById('pro-buy-btn').href = proYearlyUrl;
+  document.getElementById('pro-buy-btn').textContent = 'Get Pro Yearly';
+  document.getElementById('btn-yearly').style.background = 'rgba(108,99,255,0.2)';
+  document.getElementById('btn-yearly').style.borderColor = '#6C63FF';
+  document.getElementById('btn-yearly').style.color = '#fff';
+  document.getElementById('btn-monthly').style.background = 'none';
+  document.getElementById('btn-monthly').style.borderColor = 'rgba(255,255,255,0.15)';
+  document.getElementById('btn-monthly').style.color = 'var(--mpk-muted)';
+}
+</script>
+{{ end }}

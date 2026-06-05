@@ -1,0 +1,48 @@
+{{ define "body_classes" }}mpk-inner-page{{ end }}
+
+{{ define "meta_tags" }}
+<meta name="description" content="Multiplatform Kickstarter blog — articles on Kotlin Multiplatform, local AI app generation, Compose Multiplatform, and KMP development workflows.">
+<link rel="canonical" href="{{ .Permalink }}">
+<meta property="og:title" content="Blog — Multiplatform Kickstarter">
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:description" content="Articles on Kotlin Multiplatform AI app generation, local LLMs, and Compose Multiplatform.">
+{{ end }}
+
+{{ define "main" }}
+<div style="background:var(--mpk-bg);min-height:100vh;color:var(--mpk-text);font-family:'Inter',sans-serif">
+  <div class="mpk-container" style="padding-top:72px;padding-bottom:96px">
+
+    <div style="margin-bottom:48px">
+      <span class="mpk-section-label">Blog</span>
+      <h1 class="mpk-section-title" style="margin-bottom:8px">Articles &amp; guides</h1>
+      <p style="color:var(--mpk-muted);font-size:1rem;line-height:1.6">Kotlin Multiplatform, local AI generation, and Compose Multiplatform development.</p>
+    </div>
+
+    <div class="mpk-blog-grid">
+      {{ range .Pages }}
+      <a href="{{ .Permalink }}" class="mpk-blog-card">
+        <div class="mpk-blog-card-img" aria-hidden="true">
+          {{ .Params.emoji | default "📝" }}
+        </div>
+        <div class="mpk-blog-card-body">
+          {{ with .Params.tags }}<div class="mpk-blog-tag">{{ index . 0 }}</div>{{ end }}
+          <h2>{{ .Title }}</h2>
+          {{ with .Description }}<p>{{ . }}</p>{{ end }}
+          <div class="mpk-blog-card-meta">
+            {{ .Date.Format "Jan 2, 2006" }} · {{ .ReadingTime }} min read
+          </div>
+        </div>
+      </a>
+      {{ end }}
+    </div>
+
+    {{ if eq (len .Pages) 0 }}
+    <div style="text-align:center;padding:80px 24px;color:var(--mpk-muted)">
+      <p style="font-size:1.1rem">No posts yet — check back soon.</p>
+    </div>
+    {{ end }}
+
+  </div>
+</div>
+{{ end }}

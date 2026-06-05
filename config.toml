@@ -1,10 +1,15 @@
-baseURL = "/"
+baseURL = "https://multiplatformkickstarter.com/"
 themesDir = "themes"
 theme = "hugo-serif-theme"
 languageCode = "en-us"
-title = "Kotlin Multiplatform Templates to build applications faster"
+title = "Multiplatform Kickstarter — Local AI App Builder for Kotlin Multiplatform"
 defaultContentLanguage = 'en'
 defaultContentLanguageInSubdir = false
+enableRobotsTXT = true
+
+[sitemap]
+  changefreq = "weekly"
+  priority = 0.5
 
 [module]
   [module.hugoVersion]
@@ -12,53 +17,49 @@ defaultContentLanguageInSubdir = false
     min = "0.55.0"
 
 [params]
-  # In most cases you will only want to set the google_analytics_id OR the google_tag_manager_id. If you have Google Analytics included in your GTM tags don't put your GA ID here. Otherwise your data might be useless.
   google_analytics_id = ""
   google_tag_manager_id = ""
   favicon = "favicon-32x32.png"
   showPricing = false
 
+  description = "Generate Kotlin Multiplatform apps from prompts using local LLMs. Build Android, iOS, desktop, and WASM projects with Compose Multiplatform and export complete source code."
+
+  # Lemon Squeezy checkout URLs — replace these with your real checkout links
+  lemon_squeezy_pro_monthly_url = "https://multiplatformkickstarter.lemonsqueezy.com/checkout/buy/REPLACE_PRO_MONTHLY"
+  lemon_squeezy_pro_yearly_url  = "https://multiplatformkickstarter.lemonsqueezy.com/checkout/buy/REPLACE_PRO_YEARLY"
+  lemon_squeezy_lifetime_url    = "https://multiplatformkickstarter.lemonsqueezy.com/checkout/buy/REPLACE_LIFETIME"
+
   [params.homepage]
-    show_contact_box = true      # show / hide the contaxt box on the homepage
-    show_services_button = false # show / hide the "view all services" button
-    show_pricing_button = true
+    show_contact_box = false
+    show_services_button = false
+    show_pricing_button = false
 
   [params.logo]
     mobile = "images/logo/MKLogo.svg"
-    mobile_height = "60px"
+    mobile_height = "36px"
     desktop = "images/logo/MKLogo.svg"
-    desktop_height = "60px"
+    desktop_height = "36px"
     alt = "Multiplatform Kickstarter"
 
   [params.fonts]
-    # sets the google font link in layouts/partials/google-fonts.html
-    google_fonts = 'https://fonts.googleapis.com/css2?family=Poppins+Display:wght@600&family=Poppins:wght@400;700&display=swap'
-    heading = "Poppins"
-    base = "Poppins"
+    google_fonts = 'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap'
+    heading = "Inter"
+    base = "Inter"
 
   [params.colors]
-    primary = "#007BFF"
-    black = "#2f2f41"
+    primary = "#6C63FF"
+    black = "#0f0f1a"
     white = "#ffffff"
-    white_offset = "#e5f1ff"
-    grey = "#5C5A5A"
+    white_offset = "#f8f7ff"
+    grey = "#6b7280"
 
   [params.seo]
     meta_twitter_site = "@mpkickstarter"
     meta_twitter_creator = "@mpkickstarter"
-    meta_og_image = "https://multiplatformkickstarter.com/images/logo/MKLogo.svg"
-
-  [params.services]
-    summary_truncate = 120 # How many characters to include in the summary of the services before truncating
-
-  [params.pricing]
-    summary_truncate = 120
-
-  [params.team]
-    summary_large_truncate = 200 # How many characters to include in the summary of the team bios (large layout) before truncating
+    meta_og_image = "https://multiplatformkickstarter.com/images/og-image.png"
 
   [params.footer]
-    copyright_text = 'Copyright © 2023-2025 Multiplatform Kickstarter. All rights reserved.'
+    copyright_text = 'Copyright &copy; 2023–2025 Multiplatform Kickstarter. All rights reserved.'
 
 [languages]
   [languages.en]
@@ -67,86 +68,34 @@ defaultContentLanguageInSubdir = false
     languageCode = 'en-US'
     languageDirection = 'ltr'
     languageName = 'English'
-    title = 'Kotlin Multiplatform Templates to build applications faster'
+    title = 'Multiplatform Kickstarter — Local AI App Builder for Kotlin Multiplatform'
     weight = 0
 
-  [languages.fr]
-    contentDir = 'content/fr'
-    disabled = true
-    languageCode = 'fr'
-    languageDirection = 'ltr'
-    languageName = 'Français'
-    title = 'Kotlin Multiplatform Templates to build applications faster'
-    weight = 1
-
-  [languages.it]
-    contentDir = 'content/it'
-    disabled = true
-    languageCode = 'it'
-    languageDirection = 'ltr'
-    languageName = 'Italiano'
-    title = 'Kotlin Multiplatform Templates to build applications faster'
-    weight = 2
-
-  [languages.de]
-    contentDir = 'content/de'
-    disabled = true
-    languageCode = 'de-DE'
-    languageDirection = 'ltr'
-    languageName = 'Deutsch'
-    title = 'Kotlin Multiplatform Templates to build applications faster'
-    weight = 3
-
-  [languages.es]
-    contentDir = 'content/es'
-    disabled = true
-    languageCode = 'es-ES'
-    languageDirection = 'ltr'
-    languageName = 'Español'
-    title = 'La plantillas de Kotlin Multiplatform para crear aplicaciones rápidamente'
-    weight = 4
-
 [menu]
-  # Main Menu
-#  [[menu.main]]
-#    name = "Features"
-#    url = "/features/"
-#    weight = 1
-
-#  [[menu.main]]
-#    name = "Components"
-#    url = "/components/"
-#    weight = 2
-
   [[menu.main]]
-    name = "Templates"
-    url = "/templates/"
+    name = "How it works"
+    url = "/#how-it-works"
     weight = 1
 
   [[menu.main]]
-    name = "Apps"
-    url = "/apps/"
+    name = "Features"
+    url = "/#features"
     weight = 2
-
-  [[menu.main]]
-    name = "Open Source"
-    url = "/opensource/"
-    weight = 3
 
   [[menu.main]]
     name = "Pricing"
     url = "/pricing/"
+    weight = 3
+
+  [[menu.main]]
+    name = "Blog"
+    url = "/blog/"
     weight = 4
 
   [[menu.main]]
-    name = "Docs"
-    url = "https://docs.multiplatformkickstarter.com"
+    name = "Download"
+    url = "/download/"
     weight = 5
-
-  [[menu.main]]
-    name = "Contact"
-    url = "/contact/"
-    weight = 6
 
   # Footer Menu
   [[menu.footer]]
@@ -155,21 +104,31 @@ defaultContentLanguageInSubdir = false
     weight = 1
 
   [[menu.footer]]
-    name = "Blog"
-    url = "https://blog.multiplatformkickstarter.com"
+    name = "Pricing"
+    url = "/pricing/"
     weight = 2
 
   [[menu.footer]]
-    name = "FAQ"
-    url = "/faq/"
-    weight = 2
-
-  [[menu.footer]]
-    name = "License"
-    url = "/license"
+    name = "Download"
+    url = "/download/"
     weight = 3
 
   [[menu.footer]]
-    name = "About"
-    url = "/about/"
+    name = "Blog"
+    url = "/blog/"
     weight = 4
+
+  [[menu.footer]]
+    name = "FAQ"
+    url = "/#faq"
+    weight = 5
+
+  [[menu.footer]]
+    name = "Privacy"
+    url = "/privacy/"
+    weight = 6
+
+  [[menu.footer]]
+    name = "Terms"
+    url = "/terms/"
+    weight = 7

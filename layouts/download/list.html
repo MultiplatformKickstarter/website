@@ -1,0 +1,14 @@
+{{ define "body_classes" }}mpk-inner-page{{ end }}
+
+{{ define "meta_tags" }}
+<meta name="description" content="Download Multiplatform Kickstarter — the local AI app builder for Kotlin Multiplatform developers. Join early access today.">
+<link rel="canonical" href="{{ .Permalink }}">
+<meta property="og:title" content="Download — Multiplatform Kickstarter">
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:description" content="Download Multiplatform Kickstarter. Local AI app builder for Kotlin Multiplatform.">
+{{ end }}
+
+{{ define "main" }}
+{{ partial "download-content.html" . }}
+{{ end }}

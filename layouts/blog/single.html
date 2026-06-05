@@ -1,0 +1,74 @@
+{{ define "body_classes" }}mpk-inner-page{{ end }}
+
+{{ define "meta_tags" }}
+{{ $desc := .Description | default .Summary }}
+<meta name="description" content="{{ $desc }}">
+<link rel="canonical" href="{{ .Permalink }}">
+<meta property="og:title" content="{{ .Title }} — Multiplatform Kickstarter">
+<meta property="og:type" content="article">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:description" content="{{ $desc }}">
+{{ with .Site.Params.seo.meta_og_image }}<meta property="og:image" content="{{ . }}">{{ end }}
+<meta name="twitter:card" content="summary_large_image">
+{{ with .Site.Params.seo.meta_twitter_site }}<meta name="twitter:site" content="{{ . }}">{{ end }}
+<meta name="twitter:title" content="{{ .Title }}">
+<meta name="twitter:description" content="{{ $desc }}">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": {{ .Title | jsonify }},
+  "description": {{ $desc | jsonify }},
+  "datePublished": "{{ .Date.Format "2006-01-02" }}",
+  "dateModified": "{{ .Lastmod.Format "2006-01-02" }}",
+  "author": {
+    "@type": "Organization",
+    "name": "Multiplatform Kickstarter"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Multiplatform Kickstarter",
+    "url": "https://multiplatformkickstarter.com"
+  },
+  "url": {{ .Permalink | jsonify }}
+}
+</script>
+{{ end }}
+
+{{ define "main" }}
+<div style="background:var(--mpk-bg);min-height:100vh;color:var(--mpk-text);font-family:'Inter',sans-serif">
+  <div style="max-width:720px;margin:0 auto;padding:60px 24px 96px">
+
+    <nav style="margin-bottom:32px">
+      <a href="/blog/" style="color:var(--mpk-purple);text-decoration:none;font-size:0.875rem;font-weight:500">← Blog</a>
+    </nav>
+
+    {{ with .Params.tags }}
+    <div style="margin-bottom:16px">
+      {{ range . }}<span class="mpk-section-label" style="margin-right:8px">{{ . }}</span>{{ end }}
+    </div>
+    {{ end }}
+
+    <h1 style="font-size:clamp(1.8rem,3.5vw,2.4rem);font-weight:700;color:#fff;line-height:1.2;margin:0 0 16px">{{ .Title }}</h1>
+
+    <div style="display:flex;align-items:center;gap:16px;font-size:0.85rem;color:var(--mpk-muted);margin-bottom:40px;padding-bottom:24px;border-bottom:1px solid var(--mpk-border)">
+      <span>{{ .Date.Format "January 2, 2006" }}</span>
+      <span>·</span>
+      <span>{{ .ReadingTime }} min read</span>
+    </div>
+
+    <div class="mpk-article">
+      {{ .Content }}
+    </div>
+
+    <!-- CTA at end of post -->
+    <div style="margin-top:64px;padding:32px;background:rgba(108,99,255,0.08);border:1px solid rgba(108,99,255,0.25);border-radius:16px;text-align:center">
+      <h3 style="color:#fff;font-size:1.1rem;font-weight:600;margin:0 0 8px">Try Multiplatform Kickstarter</h3>
+      <p style="color:var(--mpk-muted);font-size:0.9rem;margin:0 0 20px;line-height:1.5">Generate Kotlin Multiplatform apps from prompts using local LLMs. Free to start.</p>
+      <a href="/download/" class="btn-primary-mpk" style="display:inline-flex">Join Early Access</a>
+    </div>
+
+  </div>
+</div>
+{{ end }}

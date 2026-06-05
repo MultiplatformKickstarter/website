@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Lang }}">
+<head>
+  {{ if .Site.Params.google_analytics_id }}
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{ .Site.Params.google_analytics_id }}"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','{{ .Site.Params.google_analytics_id }}');</script>
+  {{ end }}
+
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  {{ block "title" . }}
+  <title>{{ .Params.meta_title | default (printf "%s | %s" .Title .Site.Title) }}</title>
+  {{ end }}
+
+  {{ with .Site.Params.favicon }}<link rel="icon" type="image/png" href="{{ . | relURL }}">{{ end }}
+
+  <!-- Preconnect fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  {{ with .Site.Params.fonts.google_fonts }}
+  <link href="{{ . }}" rel="stylesheet">
+  {{ end }}
+
+  <!-- Theme CSS -->
+  {{ $css_options := dict "targetPath" "css/style.css" "enableSourceMap" (not hugo.IsProduction) }}
+  {{ $style := resources.Get "scss/style.scss" | resources.ExecuteAsTemplate "style.scss" . | toCSS $css_options }}
+  {{ if hugo.IsProduction }}{{ $style = $style | minify | fingerprint }}{{ end }}
+  <link rel="stylesheet" href="{{ $style.RelPermalink }}">
+
+  <!-- Custom CSS -->
+  {{ $custom := resources.Get "scss/custom.scss" | toCSS }}
+  {{ if hugo.IsProduction }}{{ $custom = $custom | minify | fingerprint }}{{ end }}
+  <link rel="stylesheet" href="{{ $custom.RelPermalink }}">
+
+  {{ block "header_css" . }}{{ end }}
+
+  {{ block "meta_tags" . }}
+  {{ $desc := .Params.description | default .Site.Params.description }}
+  {{ with $desc }}<meta name="description" content="{{ . }}">{{ end }}
+  <link rel="canonical" href="{{ .Permalink }}">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="{{ .Params.meta_title | default .Title }}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ .Permalink }}">
+  {{ with .Params.image | default .Site.Params.seo.meta_og_image }}<meta property="og:image" content="{{ . }}">{{ end }}
+  {{ with $desc }}<meta property="og:description" content="{{ . }}">{{ end }}
+  <meta property="og:site_name" content="Multiplatform Kickstarter">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  {{ with .Site.Params.seo.meta_twitter_site }}<meta name="twitter:site" content="{{ . }}">{{ end }}
+  {{ with .Site.Params.seo.meta_twitter_creator }}<meta name="twitter:creator" content="{{ . }}">{{ end }}
+  <meta name="twitter:title" content="{{ .Params.meta_title | default .Title }}">
+  {{ with $desc }}<meta name="twitter:description" content="{{ . }}">{{ end }}
+  {{ with .Site.Params.seo.meta_og_image }}<meta name="twitter:image" content="{{ . }}">{{ end }}
+  {{ end }}
+</head>
+
+<body class="page {{ block "body_classes" . }}{{ end }}">
+  {{ partial "main-menu-mobile.html" . }}
+  <div class="wrapper">
+    {{ partial "header.html" . }}
+    {{ block "main" . }}{{ end }}
+  </div>
+  {{ partial "footer.html" . }}
+  {{ partial "sub-footer.html" . }}
+
+  {{ $scripts := resources.Get "js/scripts.js" }}
+  {{ if hugo.IsProduction }}{{ $scripts = $scripts | minify | fingerprint }}{{ end }}
+  <script type="text/javascript" src="{{ $scripts.RelPermalink }}" defer></script>
+  {{ block "footer_js" . }}{{ end }}
+</body>
+</html>

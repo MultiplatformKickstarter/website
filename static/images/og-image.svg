@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f0f1a"/>
+      <stop offset="100%" stop-color="#16161f"/>
+    </linearGradient>
+    <linearGradient id="purple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6C63FF"/>
+      <stop offset="100%" stop-color="#a78bfa"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Purple glow -->
+  <ellipse cx="600" cy="200" rx="500" ry="200" fill="#6C63FF" opacity="0.08"/>
+
+  <!-- Logo mark -->
+  <rect x="80" y="60" width="56" height="56" rx="14" fill="url(#purple)"/>
+  <text x="108" y="98" font-family="Inter, sans-serif" font-size="28" font-weight="700" fill="white" text-anchor="middle">K</text>
+
+  <!-- Product name -->
+  <text x="152" y="86" font-family="Inter, sans-serif" font-size="22" font-weight="700" fill="white">Multiplatform Kickstarter</text>
+  <text x="152" y="108" font-family="Inter, sans-serif" font-size="14" font-weight="400" fill="#6b7280">Local AI App Builder for Kotlin Multiplatform</text>
+
+  <!-- Main headline -->
+  <text x="80" y="240" font-family="Inter, sans-serif" font-size="56" font-weight="700" fill="white" letter-spacing="-1">Build KMP apps</text>
+  <text x="80" y="310" font-family="Inter, sans-serif" font-size="56" font-weight="700" fill="url(#purple)" letter-spacing="-1">from prompts — locally.</text>
+
+  <!-- Sub -->
+  <text x="80" y="370" font-family="Inter, sans-serif" font-size="22" fill="#94a3b8">Generate Android, iOS, Desktop, and WASM projects with local LLMs.</text>
+  <text x="80" y="400" font-family="Inter, sans-serif" font-size="22" fill="#94a3b8">Export complete Compose Multiplatform source code.</text>
+
+  <!-- Mock UI (simplified) -->
+  <rect x="80" y="460" width="220" height="36" rx="8" fill="#6C63FF"/>
+  <text x="190" y="483" font-family="Inter, sans-serif" font-size="16" font-weight="600" fill="white" text-anchor="middle">Join Early Access</text>
+
+  <rect x="320" y="460" width="200" height="36" rx="8" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1.5"/>
+  <text x="420" y="483" font-family="Inter, sans-serif" font-size="16" font-weight="500" fill="#94a3b8" text-anchor="middle">See How It Works</text>
+
+  <!-- Right side mockup -->
+  <rect x="780" y="80" width="340" height="460" rx="16" fill="#16161f" stroke="rgba(108,99,255,0.3)" stroke-width="1.5"/>
+  <rect x="780" y="80" width="340" height="44" rx="16" fill="#1e1e2e"/>
+  <rect x="780" y="104" width="340" height="20" fill="#1e1e2e"/>
+  <circle cx="802" cy="102" r="6" fill="#ff5f57"/>
+  <circle cx="820" cy="102" r="6" fill="#febc2e"/>
+  <circle cx="838" cy="102" r="6" fill="#28c840"/>
+
+  <!-- File tree lines -->
+  <text x="800" y="154" font-family="monospace" font-size="11" fill="#a78bfa">▶ composeApp/</text>
+  <text x="816" y="172" font-family="monospace" font-size="11" fill="#94a3b8">  HomeScreen.kt</text>
+  <text x="816" y="190" font-family="monospace" font-size="11" fill="#6C63FF" font-weight="600">▶ HomeScreen.kt</text>
+  <text x="816" y="208" font-family="monospace" font-size="11" fill="#94a3b8">  PetListScreen.kt</text>
+  <text x="816" y="226" font-family="monospace" font-size="11" fill="#94a3b8">  PetViewModel.kt</text>
+  <text x="800" y="248" font-family="monospace" font-size="11" fill="#a78bfa">▶ shared/</text>
+  <text x="800" y="266" font-family="monospace" font-size="11" fill="#a78bfa">▶ androidApp/</text>
+  <text x="800" y="284" font-family="monospace" font-size="11" fill="#a78bfa">▶ iosApp/</text>
+
+  <!-- Code snippet -->
+  <rect x="796" y="300" width="308" height="120" rx="8" fill="#12121c" stroke="rgba(108,99,255,0.2)" stroke-width="1"/>
+  <text x="810" y="322" font-family="monospace" font-size="10" fill="#fbbf24">@Composable</text>
+  <text x="810" y="340" font-family="monospace" font-size="10" fill="#c084fc">fun </text>
+  <text x="836" y="340" font-family="monospace" font-size="10" fill="#60a5fa">HomeScreen</text>
+  <text x="910" y="340" font-family="monospace" font-size="10" fill="#e2e8f0">() {</text>
+  <text x="820" y="358" font-family="monospace" font-size="10" fill="#94a3b8">val pets by viewModel</text>
+  <text x="820" y="376" font-family="monospace" font-size="10" fill="#94a3b8">  .pets.collectAsState()</text>
+  <text x="820" y="394" font-family="monospace" font-size="10" fill="#60a5fa">LazyColumn</text>
+  <text x="880" y="394" font-family="monospace" font-size="10" fill="#e2e8f0"> { ... }</text>
+  <text x="810" y="412" font-family="monospace" font-size="10" fill="#e2e8f0">}</text>
+
+  <!-- Bottom URL -->
+  <text x="600" y="600" font-family="Inter, sans-serif" font-size="18" fill="#6b7280" text-anchor="middle">multiplatformkickstarter.com</text>
+</svg>

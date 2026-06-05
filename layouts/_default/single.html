@@ -1,0 +1,12 @@
+{{ define "body_classes" }}mpk-inner-page{{ end }}
+
+{{ define "main" }}
+<div style="background:var(--mpk-bg);min-height:100vh;color:var(--mpk-text);font-family:'Inter',sans-serif">
+  <div style="max-width:720px;margin:0 auto;padding:60px 24px 96px">
+    <h1 style="font-size:clamp(1.6rem,3vw,2.2rem);font-weight:700;color:#fff;line-height:1.2;margin:0 0 32px">{{ .Title }}</h1>
+    <div class="mpk-article">
+      {{ .Content }}
+    </div>
+  </div>
+</div>
+{{ end }}
