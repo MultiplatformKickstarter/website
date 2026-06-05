@@ -36,7 +36,7 @@ A proper **AI app builder for Kotlin Multiplatform** must:
 
 Most SaaS AI builders run your prompts through their cloud infrastructure. Your app description, architecture decisions, and possibly sensitive domain logic all travel to an external server.
 
-For teams working on proprietary applications — internal enterprise tools, agency client work, startup MVPs — this is a hard constraint. Multiplatform Kickstarter uses local LLMs (via Ollama or compatible APIs) so generation happens entirely on your machine.
+For teams working on proprietary applications — internal enterprise tools, agency client work, startup MVPs — this is a hard constraint. Multiplatform Kickstarter runs generation entirely on your machine so no code ever leaves your environment.
 
 The benefits:
 

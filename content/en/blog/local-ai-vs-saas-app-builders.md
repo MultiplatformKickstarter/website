@@ -2,7 +2,7 @@
 title: "Local AI vs SaaS App Builders: What Developers Need to Know"
 description: "A practical comparison of local AI app generation versus SaaS app builders for developers who care about privacy, code ownership, and long-term control."
 date: 2025-05-15
-tags: ["AI", "Local LLM"]
+tags: ["AI", "Local AI"]
 emoji: "⚖️"
 weight: 2
 ---
@@ -26,7 +26,7 @@ The trade-offs become visible when you need:
 
 ## How local AI builders work
 
-Local AI generation runs the LLM on your machine using tools like [Ollama](https://ollama.com), [LM Studio](https://lmstudio.ai), or [Jan](https://jan.ai). The model reads your prompt locally and writes code to local files.
+Local AI generation runs the AI model on your machine. The model reads your prompt locally and writes code to local files — no data travels to external servers.
 
 The key differences:
 
@@ -40,11 +40,11 @@ SaaS builders typically charge per token or per generation through their own API
 
 ### Works offline
 
-After the initial model download, local generation requires no internet. This is useful for environments with poor connectivity, air-gapped systems, or simply developers who prefer to work offline.
+Local generation requires no internet after setup. This is useful for environments with poor connectivity, air-gapped systems, or simply developers who prefer to work offline.
 
 ### Model flexibility
 
-With Ollama and similar tools, you can run models optimised for code generation: Codestral, DeepSeek Coder, Qwen2.5-Coder, and others. You can switch models, use quantized variants that fit your GPU, and update models without waiting for a platform to upgrade.
+Local AI tools give you control over which generation engine you use, and you can update it independently without waiting for a platform to upgrade.
 
 ## The trade-offs of local AI
 
@@ -52,9 +52,9 @@ Local generation isn't without its own trade-offs:
 
 **Hardware requirements**: Running a useful code model locally requires a reasonably capable machine. For best results you want 16 GB RAM and ideally a discrete GPU. Smaller models (3B–7B parameters) run on most modern machines but may produce less accurate output than large cloud models.
 
-**Setup complexity**: You need to install Ollama, download a model, and configure your tool to connect to it. This is a one-time setup that takes 10–15 minutes but is non-trivial compared to signing up for a web app.
+**Setup complexity**: Local AI tools require more setup than opening a browser tab. It's a one-time process but non-trivial compared to signing up for a web app.
 
-**Model quality ceiling**: The best cloud models (GPT-4o, Claude Sonnet) are still generally better than the best locally-runnable models on complex tasks. For KMP code generation specifically, models like Qwen2.5-Coder 32B or DeepSeek Coder V3 are competitive, but the gap exists.
+**Quality ceiling**: The best cloud AI is still generally ahead on complex reasoning tasks. The gap is narrowing quickly, and for focused tasks like structured code generation the quality is very usable today.
 
 ## Which approach makes sense for whom?
 
@@ -73,7 +73,7 @@ Local generation isn't without its own trade-offs:
 
 ## Multiplatform Kickstarter's approach
 
-Multiplatform Kickstarter is built for the second category: developers who want local generation, complete code ownership, and KMP-native output. The tool connects to your local Ollama instance and generates full Kotlin Multiplatform projects with Compose Multiplatform UI.
+Multiplatform Kickstarter is built for the second category: developers who want local generation, complete code ownership, and KMP-native output. It generates full Kotlin Multiplatform projects with Compose Multiplatform UI, entirely on your machine.
 
 The pricing model reflects this too. You pay for the app features, not for generation API calls. There's no metered usage. You download a model once and generate as many projects as your subscription allows.
 

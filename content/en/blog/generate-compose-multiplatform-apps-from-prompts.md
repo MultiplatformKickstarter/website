@@ -1,6 +1,6 @@
 ---
 title: "How to Generate Compose Multiplatform Apps from Prompts"
-description: "A practical guide to generating Compose Multiplatform apps using AI and local LLMs — covering prompting strategies, architecture, and what to look for in generated code."
+description: "A practical guide to generating Compose Multiplatform apps using AI — covering prompting strategies, architecture patterns, and what to look for in generated code."
 date: 2025-05-01
 tags: ["Compose Multiplatform", "Tutorial"]
 emoji: "✨"
@@ -13,19 +13,7 @@ AI generation changes this significantly. With the right tooling, you can descri
 
 ## What you need
 
-To generate Compose Multiplatform apps locally you need:
-
-1. **Ollama** — the local model runtime. Install at `ollama.com`
-2. **A code-capable model** — `qwen2.5-coder:32b` or `deepseek-coder-v2:16b` are solid choices
-3. **Multiplatform Kickstarter** — the desktop app that connects to Ollama and generates full KMP projects
-
-After installing Ollama, pull your chosen model:
-
-```bash
-ollama pull qwen2.5-coder:32b
-```
-
-Then point Multiplatform Kickstarter at `http://localhost:11434` in its settings.
+To generate Compose Multiplatform apps you need a single thing: **Multiplatform Kickstarter**, the desktop app. Install it, open it, and you're ready to generate — no external tools or configuration required. Generation happens on your machine; no code leaves your environment.
 
 ## Writing effective prompts for KMP generation
 
@@ -183,11 +171,11 @@ Open the root folder in Android Studio, sync Gradle, and run. For iOS, open `ios
 
 Generating Compose Multiplatform apps with AI is practical today, with the right tools and prompting approach:
 
-- Use Ollama with a code-focused model
+- Use Multiplatform Kickstarter for the generation workflow
 - Write specific, structured prompts that name screens, data models, and architecture patterns
 - Review generated code for source set placement, dependencies, and state management
 - Iterate with follow-up prompts rather than starting over
 
-Multiplatform Kickstarter handles the scaffolding, model connection, and project structure so you can focus on describing what you want to build rather than configuring the build system.
+Multiplatform Kickstarter handles the scaffolding, generation, and project structure so you can focus on describing what you want to build rather than configuring the build system.
 
 [Join early access](/download/) to try it when the first build ships.

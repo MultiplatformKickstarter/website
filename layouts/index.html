@@ -5,19 +5,19 @@
 {{ end }}
 
 {{ define "meta_tags" }}
-<meta name="description" content="Generate Kotlin Multiplatform apps from prompts using local LLMs. Build Android, iOS, desktop, and WASM projects with Compose Multiplatform and export complete source code.">
+<meta name="description" content="Generate Kotlin Multiplatform apps from prompts. Build Android, iOS, desktop, and WASM projects with Compose Multiplatform — privately, on your machine.">
 <link rel="canonical" href="{{ .Permalink }}">
 <meta property="og:title" content="Multiplatform Kickstarter — Local AI App Builder for Kotlin Multiplatform">
 <meta property="og:type" content="website">
 <meta property="og:url" content="{{ .Permalink }}">
 {{ with .Site.Params.seo.meta_og_image }}<meta property="og:image" content="{{ . }}">{{ end }}
-<meta property="og:description" content="Generate Kotlin Multiplatform apps from prompts using local LLMs. Build Android, iOS, desktop, and WASM projects with Compose Multiplatform and export complete source code.">
+<meta property="og:description" content="Generate Kotlin Multiplatform apps from prompts. Build Android, iOS, desktop, and WASM projects with Compose Multiplatform — privately, on your machine.">
 <meta property="og:site_name" content="Multiplatform Kickstarter">
 <meta name="twitter:card" content="summary_large_image">
 {{ with .Site.Params.seo.meta_twitter_site }}<meta name="twitter:site" content="{{ . }}">{{ end }}
 {{ with .Site.Params.seo.meta_twitter_creator }}<meta name="twitter:creator" content="{{ . }}">{{ end }}
 <meta name="twitter:title" content="Multiplatform Kickstarter — Local AI App Builder for Kotlin Multiplatform">
-<meta name="twitter:description" content="Generate Kotlin Multiplatform apps from prompts using local LLMs. Build Android, iOS, desktop, and WASM projects with Compose Multiplatform and export complete source code.">
+<meta name="twitter:description" content="Generate Kotlin Multiplatform apps from prompts. Build Android, iOS, desktop, and WASM projects with Compose Multiplatform — privately, on your machine.">
 
 <!-- JSON-LD: SoftwareApplication -->
 <script type="application/ld+json">
@@ -25,7 +25,7 @@
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
   "name": "Multiplatform Kickstarter",
-  "description": "Local AI app builder for Kotlin Multiplatform developers. Generate Android, iOS, desktop, and WASM apps from prompts using local LLMs.",
+  "description": "Local AI app builder for Kotlin Multiplatform developers. Generate Android, iOS, desktop, and WASM apps from prompts — privately, on your machine.",
   "applicationCategory": "DeveloperApplication",
   "operatingSystem": "macOS, Windows, Linux",
   "url": "https://multiplatformkickstarter.com",
@@ -48,7 +48,7 @@
       "name": "Is Multiplatform Kickstarter a SaaS?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No. Multiplatform Kickstarter is a desktop app that runs entirely on your machine. Code generation uses your local LLM — no data is sent to any cloud service."
+        "text": "No. Multiplatform Kickstarter is a desktop app that runs entirely on your machine. No code or prompts are sent to any cloud service."
       }
     },
     {
@@ -61,10 +61,10 @@
     },
     {
       "@type": "Question",
-      "name": "Which local models are supported?",
+      "name": "Can I inspect the generated code?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Any model compatible with the Ollama API is supported. You can also connect models via OpenAI-compatible endpoints running locally."
+        "text": "Yes. The workspace includes a full file tree browser and code viewer so you can read every generated file before exporting."
       }
     }
   ]
@@ -84,7 +84,7 @@
       </div>
 
       <h1>Build <span class="highlight">Kotlin Multiplatform</span> apps from prompts — locally.</h1>
-      <p class="mpk-hero-sub">Generate Android, iOS, desktop, and WASM projects with local LLMs. Iterate with prompts, inspect the code, and export a complete KMP project.</p>
+      <p class="mpk-hero-sub">Generate Android, iOS, desktop, and WASM projects with on-device AI. Iterate with prompts, inspect the code, and export a complete KMP project.</p>
 
       <div class="mpk-hero-ctas">
         <a href="/download/" class="btn-primary-mpk">
@@ -216,7 +216,7 @@
           <ul class="mpk-comparison-list">
             <li><span class="mpk-cmp-icon" style="color:#6C63FF">✓</span> Runs 100% locally — your code never leaves your machine</li>
             <li><span class="mpk-cmp-icon" style="color:#6C63FF">✓</span> Local preview and workspace — no internet required</li>
-            <li><span class="mpk-cmp-icon" style="color:#6C63FF">✓</span> Use free open-source models via Ollama or compatible APIs</li>
+            <li><span class="mpk-cmp-icon" style="color:#6C63FF">✓</span> Generation runs on your device — no API keys, no usage fees</li>
             <li><span class="mpk-cmp-icon" style="color:#6C63FF">✓</span> Native KMP output — Compose Multiplatform, Kotlin arch</li>
             <li><span class="mpk-cmp-icon" style="color:#6C63FF">✓</span> You own the generated source code, no strings attached</li>
             <li><span class="mpk-cmp-icon" style="color:#6C63FF">✓</span> Built on years of Kotlin Multiplatform template experience</li>
@@ -243,7 +243,7 @@
       <div class="mpk-step">
         <div class="mpk-step-num">2</div>
         <h3 class="mpk-step-title">Generate a full KMP project</h3>
-        <p class="mpk-step-desc">The local LLM generates a complete Kotlin Multiplatform project with Compose Multiplatform UI, ViewModels, and KMP architecture.</p>
+        <p class="mpk-step-desc">The on-device AI engine generates a complete Kotlin Multiplatform project with Compose Multiplatform UI, ViewModels, and KMP architecture.</p>
       </div>
       <div class="mpk-step">
         <div class="mpk-step-num">3</div>
@@ -275,7 +275,7 @@
         <ul class="mpk-localfirst-points">
           <li>
             <span class="mpk-check-icon" aria-hidden="true">✓</span>
-            <span><strong style="color:#fff">Local models via Ollama</strong> — runs on your machine with no internet required for generation</span>
+            <span><strong style="color:#fff">On-device AI</strong> — generation runs entirely on your machine with no internet required</span>
           </li>
           <li>
             <span class="mpk-check-icon" aria-hidden="true">✓</span>
@@ -283,11 +283,11 @@
           </li>
           <li>
             <span class="mpk-check-icon" aria-hidden="true">✓</span>
-            <span><strong style="color:#fff">No required SaaS backend</strong> — generation works fully offline once the model is downloaded</span>
+            <span><strong style="color:#fff">No required SaaS backend</strong> — generate apps fully offline, no subscription just to run the AI</span>
           </li>
           <li>
             <span class="mpk-check-icon" aria-hidden="true">✓</span>
-            <span><strong style="color:#fff">Bring your own model</strong> — use any Ollama-compatible model or OpenAI-compatible local endpoint</span>
+            <span><strong style="color:#fff">No API keys or usage fees</strong> — you pay for the app, not for every generation</span>
           </li>
           <li>
             <span class="mpk-check-icon" aria-hidden="true">✓</span>
@@ -328,7 +328,7 @@
           <text x="302" y="212" font-size="8" fill="rgba(239,68,68,0.7)" font-family="Inter, sans-serif">No cloud</text>
           <!-- Arrow label -->
           <path d="M200 78 L200 64" stroke="rgba(108,99,255,0.4)" stroke-width="1.5" stroke-dasharray="4 3"/>
-          <text x="164" y="60" font-size="9" fill="#6C63FF" font-family="Inter, sans-serif" font-weight="600">Local LLM</text>
+          <text x="158" y="60" font-size="9" fill="#6C63FF" font-family="Inter, sans-serif" font-weight="600">On-device AI</text>
         </svg>
       </div>
     </div>
@@ -387,8 +387,8 @@
       </div>
       <div class="mpk-feature-card">
         <div class="mpk-feature-icon" aria-hidden="true">🤖</div>
-        <h3>Local LLM support</h3>
-        <p>Connect any Ollama-compatible model or local OpenAI-compatible endpoint. No API key required.</p>
+        <h3>On-device AI engine</h3>
+        <p>Generation happens entirely on your machine. No API key required, no usage fees, no data sent externally.</p>
       </div>
       <div class="mpk-feature-card">
         <div class="mpk-feature-icon" aria-hidden="true">🏗️</div>
@@ -448,7 +448,7 @@
         </div>
         <ul class="mpk-pricing-features">
           <li><span class="tick">✓</span> Prompt-to-KMP project generation</li>
-          <li><span class="tick">✓</span> Local LLM support (Ollama)</li>
+          <li><span class="tick">✓</span> On-device AI generation</li>
           <li><span class="tick">✓</span> All platform targets (Android/iOS/Desktop/WASM)</li>
           <li><span class="tick">✓</span> Code inspection</li>
           <li><span class="tick">✓</span> ZIP export</li>
@@ -527,7 +527,7 @@
           <span class="mpk-faq-chevron" aria-hidden="true">▾</span>
         </button>
         <div class="mpk-faq-answer" role="region">
-          No. Multiplatform Kickstarter is a desktop app that runs entirely on your machine. Code generation uses your local LLM. No code, prompts, or project data is sent to any cloud service. A subscription only unlocks features inside the app — generation itself stays local.
+          No. Multiplatform Kickstarter is a desktop app that runs entirely on your machine. No code, prompts, or project data is sent to any cloud service. A subscription only unlocks features inside the app — generation itself stays local.
         </div>
       </div>
 
@@ -548,16 +548,6 @@
         </button>
         <div class="mpk-faq-answer" role="region">
           You need Android Studio (or IntelliJ IDEA) to build and run the generated projects. Xcode is needed if you want to build and deploy to real iOS devices or the App Store. The generator itself runs as a standalone desktop app and doesn't require either IDE to generate code.
-        </div>
-      </div>
-
-      <div class="mpk-faq-item">
-        <button class="mpk-faq-question" aria-expanded="false" onclick="toggleFaq(this)">
-          Which local models are supported?
-          <span class="mpk-faq-chevron" aria-hidden="true">▾</span>
-        </button>
-        <div class="mpk-faq-answer" role="region">
-          Any model compatible with the Ollama API is supported out of the box. You can also connect models via any OpenAI-compatible API endpoint running locally (e.g. LM Studio, Jan, llama.cpp server). We recommend code-focused models like Codestral, DeepSeek Coder, or Qwen2.5-Coder for best results.
         </div>
       </div>
 
@@ -588,16 +578,6 @@
         </button>
         <div class="mpk-faq-answer" role="region">
           Subscriptions and one-time purchases are handled by Lemon Squeezy, a merchant of record. After purchase you receive a license key. Enter this key inside the desktop app to unlock Pro features. No server-side validation is performed by the website itself.
-        </div>
-      </div>
-
-      <div class="mpk-faq-item">
-        <button class="mpk-faq-question" aria-expanded="false" onclick="toggleFaq(this)">
-          Can I use my own model?
-          <span class="mpk-faq-chevron" aria-hidden="true">▾</span>
-        </button>
-        <div class="mpk-faq-answer" role="region">
-          Yes. As long as your model serves an Ollama-compatible or OpenAI-compatible API locally, you can connect it. Fine-tuned models, quantized models, and custom GGUF models are all supported as long as the endpoint speaks the right protocol.
         </div>
       </div>
 

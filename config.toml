@@ -22,7 +22,7 @@ enableRobotsTXT = true
   favicon = "favicon-32x32.png"
   showPricing = false
 
-  description = "Generate Kotlin Multiplatform apps from prompts using local LLMs. Build Android, iOS, desktop, and WASM projects with Compose Multiplatform and export complete source code."
+  description = "Generate Kotlin Multiplatform apps from prompts. Build Android, iOS, desktop, and WASM projects with Compose Multiplatform — privately, on your machine."
 
   # Lemon Squeezy checkout URLs — replace these with your real checkout links
   lemon_squeezy_pro_monthly_url = "https://multiplatformkickstarter.lemonsqueezy.com/checkout/buy/REPLACE_PRO_MONTHLY"

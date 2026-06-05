@@ -14,7 +14,7 @@ Multiplatform Kickstarter ("we", "our", "us") operates the Multiplatform Kicksta
 
 **Website:** We collect standard server logs (IP addresses, pages visited, browser type) for security and analytics. If you subscribe to our newsletter we collect your email address.
 
-**Desktop app:** Multiplatform Kickstarter is designed to run locally. Code generation happens on your machine using your local LLM. We do not collect, transmit, or store your prompts, generated code, or project files.
+**Desktop app:** Multiplatform Kickstarter is designed to run locally. Code generation happens entirely on your machine. We do not collect, transmit, or store your prompts, generated code, or project files.
 
 **Purchases:** Purchases are processed by Lemon Squeezy, our merchant of record. We receive your email address and license information from Lemon Squeezy to activate your license. See [Lemon Squeezy's Privacy Policy](https://www.lemonsqueezy.com/privacy) for details on their data handling.
 

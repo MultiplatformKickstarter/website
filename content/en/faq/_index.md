@@ -6,7 +6,7 @@ description: "Frequently asked questions about Multiplatform Kickstarter — the
 
 ## Is Multiplatform Kickstarter a SaaS?
 
-No. Multiplatform Kickstarter is a desktop app that runs entirely on your machine. Code generation uses your local LLM — no data is sent to any cloud service. A subscription unlocks features inside the app; generation itself stays local.
+No. Multiplatform Kickstarter is a desktop app that runs entirely on your machine. No code or prompts are sent to any cloud service. A subscription only unlocks features inside the app — generation itself stays local.
 
 ## Which platforms can it generate?
 
@@ -15,10 +15,6 @@ It generates Kotlin Multiplatform projects targeting Android, iOS, desktop (JVM 
 ## Do I need Android Studio or Xcode installed?
 
 You need Android Studio or IntelliJ IDEA to build and run the generated projects. Xcode is needed to build and deploy to real iOS devices. The generator itself runs as a standalone desktop app — you can generate and inspect code without either IDE installed.
-
-## Which local models are supported?
-
-Any model compatible with the Ollama API is supported out of the box. You can also connect via any OpenAI-compatible local API endpoint (LM Studio, Jan, llama.cpp). We recommend code-focused models like `qwen2.5-coder`, `deepseek-coder-v2`, or `codestral` for best KMP output quality.
 
 ## Can I inspect the generated code?
 
@@ -31,7 +27,3 @@ Not yet. Store publishing is planned for a future release. The current MVP focus
 ## How are subscriptions handled?
 
 Subscriptions and one-time purchases are handled by Lemon Squeezy, our merchant of record. After purchase you receive a license key by email. Enter the key inside the desktop app to unlock Pro features. No server-side validation is performed by this website.
-
-## Can I use my own model?
-
-Yes. Any Ollama-compatible or OpenAI-compatible API endpoint running locally works. Fine-tuned models, quantized GGUF models, and custom endpoints are all supported as long as they speak the correct protocol.
