@@ -75,7 +75,7 @@ Local generation isn't without its own trade-offs:
 
 Multiplatform Kickstarter is built for the second category: developers who want local generation, complete code ownership, and KMP-native output. It generates full Kotlin Multiplatform projects with Compose Multiplatform UI, entirely on your machine.
 
-The pricing model reflects this too. You pay for the app features, not for generation API calls. There's no metered usage. You download a model once and generate as many projects as your subscription allows.
+The pricing model reflects this too. You pay for the app features, not for generation API calls. There's no metered usage — you generate as many projects as your plan allows.
 
 The generated code is yours: no attribution requirements, no platform dependencies, no proprietary runtime. You export a ZIP and open it in Android Studio — the same workflow you'd use for any other KMP project.
 

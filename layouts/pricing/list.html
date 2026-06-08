@@ -1,12 +1,12 @@
 {{ define "body_classes" }}mpk-inner-page{{ end }}
 
 {{ define "meta_tags" }}
-<meta name="description" content="Multiplatform Kickstarter pricing — Free, Pro, and Founder Lifetime plans. Generate Kotlin Multiplatform apps locally with a local AI app builder.">
+<meta name="description" content="Multiplatform Kickstarter pricing — Free and Early Adopter Lifetime plans. Generate production-ready Kotlin Multiplatform projects locally.">
 <link rel="canonical" href="{{ .Permalink }}">
 <meta property="og:title" content="Pricing — Multiplatform Kickstarter">
 <meta property="og:type" content="website">
 <meta property="og:url" content="{{ .Permalink }}">
-<meta property="og:description" content="Multiplatform Kickstarter pricing — Free, Pro, and Founder Lifetime plans.">
+<meta property="og:description" content="Multiplatform Kickstarter pricing — Free and Early Adopter Lifetime plans.">
 {{ end }}
 
 {{ define "main" }}
@@ -15,23 +15,23 @@
 
     <div style="text-align:center;max-width:600px;margin:0 auto 64px">
       <span class="mpk-section-label">Pricing</span>
-      <h1 class="mpk-section-title" style="text-align:center">Start free. Upgrade when you ship.</h1>
-      <p style="color:var(--mpk-muted);font-size:1.05rem;line-height:1.7;margin:0 auto">No cloud required. No API keys to manage. Subscriptions handled by Lemon Squeezy — license activation happens inside the desktop app.</p>
+      <h1 class="mpk-section-title" style="text-align:center">Start free. Upgrade when you're ready to build seriously.</h1>
+      <p style="color:var(--mpk-muted);font-size:1.05rem;line-height:1.7;margin:0 auto">Use the free version to explore the local KMP generator. Upgrade to a lifetime license for unlimited projects and advanced workflows. Payments and license keys are handled by Lemon Squeezy.</p>
     </div>
 
-    <!-- Pricing Cards -->
+    <!-- Pricing Cards — 3-column on desktop, stacked on mobile -->
     <div class="mpk-pricing-grid">
 
       <!-- Free -->
       <div class="mpk-pricing-card">
         <div>
           <div class="mpk-pricing-plan">Free</div>
-          <div class="mpk-pricing-price"><span class="mpk-price-amount">$0</span><span class="mpk-price-period">forever</span></div>
-          <p class="mpk-pricing-desc">Core AI app generation. Great for exploring what Multiplatform Kickstarter can do.</p>
+          <div class="mpk-pricing-price"><span class="mpk-price-amount">€0</span><span class="mpk-price-period">forever</span></div>
+          <p class="mpk-pricing-desc">Explore the core generator and create your first KMP projects.</p>
         </div>
         <ul class="mpk-pricing-features">
           <li><span class="tick">✓</span> Prompt-to-KMP project generation</li>
-          <li><span class="tick">✓</span> On-device AI generation</li>
+          <li><span class="tick">✓</span> Local workspace</li>
           <li><span class="tick">✓</span> Android, iOS, Desktop, WASM targets</li>
           <li><span class="tick">✓</span> Compose Multiplatform UI generation</li>
           <li><span class="tick">✓</span> Code inspection</li>
@@ -41,59 +41,53 @@
         <a href="/download/" class="btn-secondary-mpk" style="justify-content:center">Download Free</a>
       </div>
 
-      <!-- Pro -->
+      <!-- Early Adopter Lifetime -->
       <div class="mpk-pricing-card highlighted">
-        <div class="mpk-pricing-badge">Most Popular</div>
+        <div class="mpk-pricing-badge">Best value</div>
         <div>
-          <div class="mpk-pricing-plan">Pro</div>
-          <!-- Toggle -->
-          <div style="display:flex;gap:8px;margin:16px 0 8px">
-            <button onclick="showMonthly()" id="btn-monthly" style="background:rgba(108,99,255,0.2);border:1px solid var(--mpk-purple);color:#fff;padding:5px 14px;border-radius:6px;font-size:0.8rem;cursor:pointer;font-family:inherit">Monthly</button>
-            <button onclick="showYearly()" id="btn-yearly" style="background:none;border:1px solid rgba(255,255,255,0.15);color:var(--mpk-muted);padding:5px 14px;border-radius:6px;font-size:0.8rem;cursor:pointer;font-family:inherit">Yearly <span style="color:#86efac">–30%</span></button>
-          </div>
-          <div class="mpk-pricing-price"><span class="mpk-price-amount" id="pro-price">$12</span><span class="mpk-price-period" id="pro-period">/ month</span></div>
-          <p class="mpk-pricing-desc">For developers actively building products with Kotlin Multiplatform.</p>
+          <div class="mpk-pricing-plan">Early Adopter Lifetime</div>
+          <div class="mpk-pricing-price"><span class="mpk-price-amount">€79</span><span class="mpk-price-period">one-time</span></div>
+          <p class="mpk-pricing-desc">Lock in the early price before launch. Pay once and keep using the Pro version — including all future features.</p>
         </div>
         <ul class="mpk-pricing-features">
           <li><span class="tick">✓</span> Everything in Free</li>
           <li><span class="tick">✓</span> Unlimited projects</li>
+          <li><span class="tick">✓</span> Unlimited prompt iterations</li>
           <li><span class="tick">✓</span> KMP architecture presets (MVVM, MVI, Clean)</li>
-          <li><span class="tick">✓</span> Unlimited prompt iterations per project</li>
-          <li><span class="tick">✓</span> Custom module naming and package structure</li>
-          <li><span class="tick">✓</span> Priority support</li>
-          <li><span class="tick">✓</span> Early access to new features</li>
+          <li><span class="tick">✓</span> Advanced generation workflows</li>
+          <li><span class="tick">✓</span> Priority early-access updates</li>
+          <li><span class="tick">✓</span> Founder feedback channel</li>
           <li><span class="tick" style="color:#fbbf24">◎</span> Git integration (coming soon)</li>
           <li><span class="tick" style="color:#fbbf24">◎</span> Store publishing workflows (coming soon)</li>
         </ul>
-        {{/* LEMON SQUEEZY: Replace the URL below with your Pro Monthly checkout URL */}}
-        <a href="{{ .Site.Params.lemon_squeezy_pro_monthly_url }}" id="pro-buy-btn" class="btn-primary-mpk" style="justify-content:center" target="_blank" rel="noopener noreferrer">Get Pro Monthly</a>
+        {{/* LEMON SQUEEZY: Replace the URL below with your Early Adopter Lifetime checkout URL */}}
+        <a href="{{ .Site.Params.lemon_squeezy_lifetime_url }}" class="btn-primary-mpk" style="justify-content:center" target="_blank" rel="noopener noreferrer">Get Lifetime Access</a>
+        <p class="mpk-pricing-note">Price increases to €149–€199 after the early-access period ends.</p>
       </div>
 
-      <!-- Lifetime -->
+      <!-- Future Pro Lifetime -->
       <div class="mpk-pricing-card">
         <div>
-          <div class="mpk-pricing-plan">Founder Lifetime</div>
-          <div class="mpk-pricing-price"><span class="mpk-price-amount">$149</span><span class="mpk-price-period">one-time</span></div>
-          <p class="mpk-pricing-desc">Lock in the best price during early access. Pay once, own it forever.</p>
+          <div class="mpk-pricing-plan">Future Pro Lifetime</div>
+          <div class="mpk-pricing-price"><span class="mpk-price-amount" style="font-size:2rem">€149–€199</span></div>
+          <p class="mpk-pricing-desc">Planned regular lifetime license price after the early-access period. Get the Early Adopter price now while it lasts.</p>
         </div>
         <ul class="mpk-pricing-features">
-          <li><span class="tick">✓</span> Everything in Pro, forever</li>
-          <li><span class="tick">✓</span> All future features included</li>
-          <li><span class="tick">✓</span> Lifetime updates</li>
-          <li><span class="tick">✓</span> Founder Discord access</li>
-          <li><span class="tick">✓</span> Vote on roadmap priorities</li>
-          <li><span class="tick">✓</span> License key via Lemon Squeezy</li>
+          <li><span class="tick">✓</span> Same Pro features</li>
+          <li><span class="tick">✓</span> Lifetime desktop app license</li>
+          <li><span class="tick">✓</span> License activation via Lemon Squeezy</li>
+          <li><span class="tick" style="color:#fbbf24">◎</span> Future paid upgrades may apply for major versions</li>
         </ul>
-        {{/* LEMON SQUEEZY: Replace the URL below with your Lifetime checkout URL */}}
-        <a href="{{ .Site.Params.lemon_squeezy_lifetime_url }}" class="btn-secondary-mpk" style="justify-content:center" target="_blank" rel="noopener noreferrer">Get Lifetime Access</a>
+        <a href="/download/" class="btn-secondary-mpk" style="justify-content:center">Join Early Access</a>
+        <p class="mpk-pricing-note">Get the Early Adopter Lifetime at €79 now — before this price goes away.</p>
       </div>
 
     </div>
 
-    <!-- License note -->
+    <!-- Lemon Squeezy note -->
     <div style="max-width:640px;margin:48px auto 0;text-align:center;background:var(--mpk-surface);border:1px solid var(--mpk-border);border-radius:12px;padding:24px">
       <p style="color:var(--mpk-muted);font-size:0.875rem;line-height:1.7;margin:0">
-        <strong style="color:var(--mpk-text)">How licensing works:</strong> After purchase, Lemon Squeezy sends you a license key by email. Enter the key inside the Multiplatform Kickstarter desktop app to activate Pro features. No server-side validation is performed by this website. All purchases are non-refundable after 7 days.
+        <strong style="color:var(--mpk-text)">How licensing works:</strong> Payments and license keys are handled by Lemon Squeezy. After purchase you receive a license key by email. Enter the key inside the Multiplatform Kickstarter desktop app to unlock Pro features.
       </p>
     </div>
 
@@ -106,33 +100,30 @@
             <tr style="border-bottom:1px solid var(--mpk-border)">
               <th style="text-align:left;padding:12px 16px;color:var(--mpk-muted);font-weight:500">Feature</th>
               <th style="text-align:center;padding:12px 16px;color:#fff;font-weight:600">Free</th>
-              <th style="text-align:center;padding:12px 16px;color:#a78bfa;font-weight:600">Pro</th>
-              <th style="text-align:center;padding:12px 16px;color:#fbbf24;font-weight:600">Lifetime</th>
+              <th style="text-align:center;padding:12px 16px;color:#a78bfa;font-weight:600">Early Adopter</th>
             </tr>
           </thead>
           <tbody>
             {{ $rows := slice
-              (slice "Prompt-to-KMP generation" "✓" "✓" "✓")
-              (slice "On-device AI generation" "✓" "✓" "✓")
-              (slice "All platform targets" "✓" "✓" "✓")
-              (slice "Compose Multiplatform UI" "✓" "✓" "✓")
-              (slice "Code inspection" "✓" "✓" "✓")
-              (slice "ZIP export" "✓" "✓" "✓")
-              (slice "Projects" "3" "Unlimited" "Unlimited")
-              (slice "Architecture presets" "—" "✓" "✓")
-              (slice "Unlimited iterations" "—" "✓" "✓")
-              (slice "Priority support" "—" "✓" "✓")
-              (slice "Git integration" "—" "Soon" "Soon")
-              (slice "Store publishing" "—" "Soon" "Soon")
-              (slice "Lifetime updates" "—" "—" "✓")
-              (slice "Founder Discord" "—" "—" "✓")
+              (slice "Prompt-to-KMP generation" "✓" "✓")
+              (slice "All platform targets" "✓" "✓")
+              (slice "Compose Multiplatform UI" "✓" "✓")
+              (slice "Code inspection" "✓" "✓")
+              (slice "ZIP export" "✓" "✓")
+              (slice "Projects" "3" "Unlimited")
+              (slice "Prompt iterations" "Limited" "Unlimited")
+              (slice "Architecture presets" "—" "✓")
+              (slice "Advanced workflows" "—" "✓")
+              (slice "Priority updates" "—" "✓")
+              (slice "Founder feedback channel" "—" "✓")
+              (slice "Git integration" "—" "Soon")
+              (slice "Store publishing" "—" "Soon")
             }}
             {{ range $i, $row := $rows }}
             <tr style="border-bottom:1px solid var(--mpk-border);{{ if eq (mod $i 2) 0 }}background:rgba(255,255,255,0.02);{{ end }}">
               <td style="padding:12px 16px;color:var(--mpk-text)">{{ index $row 0 }}</td>
               <td style="padding:12px 16px;text-align:center;color:{{ if eq (index $row 1) "✓" }}#86efac{{ else if eq (index $row 1) "—" }}var(--mpk-muted){{ else }}var(--mpk-text){{ end }}">{{ index $row 1 }}</td>
               <td style="padding:12px 16px;text-align:center;color:{{ if eq (index $row 2) "✓" }}#86efac{{ else if eq (index $row 2) "—" }}var(--mpk-muted){{ else if eq (index $row 2) "Soon" }}#fbbf24{{ else }}var(--mpk-text){{ end }}">{{ index $row 2 }}</td>
-              <td style="padding:12px 16px;text-align:center;color:{{ if eq (index $row 3) "✓" }}#86efac{{ else if eq (index $row 3) "—" }}var(--mpk-muted){{ else if eq (index $row 3) "Soon" }}#fbbf24{{ else }}var(--mpk-text){{ end }}">{{ index $row 3 }}</td>
             </tr>
             {{ end }}
           </tbody>
@@ -142,30 +133,4 @@
 
   </div>
 </div>
-{{ end }}
-
-{{ define "footer_js" }}
-<script>
-var proMonthlyUrl = "{{ .Site.Params.lemon_squeezy_pro_monthly_url }}";
-var proYearlyUrl  = "{{ .Site.Params.lemon_squeezy_pro_yearly_url }}";
-
-function showMonthly() {
-  document.getElementById('pro-price').textContent = '$12';
-  document.getElementById('pro-period').textContent = '/ month';
-  document.getElementById('pro-buy-btn').href = proMonthlyUrl;
-  document.getElementById('pro-buy-btn').textContent = 'Get Pro Monthly';
-  var m = document.getElementById('btn-monthly'), y = document.getElementById('btn-yearly');
-  m.style.background = 'rgba(108,99,255,0.2)'; m.style.borderColor = '#6C63FF'; m.style.color = '#fff';
-  y.style.background = 'none'; y.style.borderColor = 'rgba(255,255,255,0.15)'; y.style.color = 'var(--mpk-muted)';
-}
-function showYearly() {
-  document.getElementById('pro-price').textContent = '$99';
-  document.getElementById('pro-period').textContent = '/ year';
-  document.getElementById('pro-buy-btn').href = proYearlyUrl;
-  document.getElementById('pro-buy-btn').textContent = 'Get Pro Yearly';
-  var m = document.getElementById('btn-monthly'), y = document.getElementById('btn-yearly');
-  y.style.background = 'rgba(108,99,255,0.2)'; y.style.borderColor = '#6C63FF'; y.style.color = '#fff';
-  m.style.background = 'none'; m.style.borderColor = 'rgba(255,255,255,0.15)'; m.style.color = 'var(--mpk-muted)';
-}
-</script>
 {{ end }}

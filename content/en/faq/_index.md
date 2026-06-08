@@ -1,29 +1,37 @@
 ---
 title: 'FAQ'
 meta_title: 'FAQ — Multiplatform Kickstarter'
-description: "Frequently asked questions about Multiplatform Kickstarter — the local AI app builder for Kotlin Multiplatform developers."
+description: "Frequently asked questions about Multiplatform Kickstarter — the AI Kotlin Multiplatform app builder."
 ---
 
 ## Is Multiplatform Kickstarter a SaaS?
 
-No. Multiplatform Kickstarter is a desktop app that runs entirely on your machine. No code or prompts are sent to any cloud service. A subscription only unlocks features inside the app — generation itself stays local.
+No. It is planned as a local-first desktop app. Core generation, preview, code inspection, and ZIP export happen inside your local workspace. No hosted build environment is required.
 
-## Which platforms can it generate?
+## Do I need a cloud account?
 
-It generates Kotlin Multiplatform projects targeting Android, iOS, desktop (JVM — macOS, Windows, Linux), and WASM (browser). All targets share the same Compose Multiplatform UI and Kotlin business logic.
+No cloud account is required. The core workflow — project generation, code inspection, and ZIP export — runs entirely on your machine.
+
+## What platforms can it generate?
+
+The goal is to generate Kotlin Multiplatform projects targeting Android, iOS, Desktop (JVM — macOS, Windows, Linux), and WASM (browser) from one shared codebase.
 
 ## Do I need Android Studio or Xcode installed?
 
-You need Android Studio or IntelliJ IDEA to build and run the generated projects. Xcode is needed to build and deploy to real iOS devices. The generator itself runs as a standalone desktop app — you can generate and inspect code without either IDE installed.
+You need Android Studio or IntelliJ IDEA to build and run the generated projects. Xcode is needed to build for real iOS devices. The generator itself runs as a standalone desktop app — you can generate and inspect code without either IDE installed.
 
-## Can I inspect the generated code?
+## Can I inspect and edit the generated code?
 
-Yes. The workspace includes a full file tree browser and code viewer. You can read every generated file — screens, ViewModels, repositories, build scripts — before exporting. In-app editing is on the roadmap.
+Yes. The product is designed around source-code ownership. You can inspect generated files, browse the full file tree, read every screen, ViewModel, repository, and build script — and export the complete project.
+
+## Can I export the project?
+
+Yes. ZIP export is part of the core workflow. You can open the generated project in Android Studio or IntelliJ IDEA and start building immediately.
 
 ## Will it publish directly to app stores?
 
-Not yet. Store publishing is planned for a future release. The current MVP focuses on project generation, code inspection, and ZIP export. Git integration and automated publishing workflows will follow.
+Store publishing workflows are planned, but the initial focus is prompt-to-project generation, local preview, iteration, code inspection, and ZIP export. Git integration and automated publishing will follow in later releases.
 
-## How are subscriptions handled?
+## How is payment handled?
 
-Subscriptions and one-time purchases are handled by Lemon Squeezy, our merchant of record. After purchase you receive a license key by email. Enter the key inside the desktop app to unlock Pro features. No server-side validation is performed by this website.
+Payments and license keys are handled by Lemon Squeezy. After purchase you receive a license key by email. Enter the key inside the desktop app to unlock Pro features.

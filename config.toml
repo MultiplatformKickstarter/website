@@ -2,7 +2,7 @@ baseURL = "https://multiplatformkickstarter.com/"
 themesDir = "themes"
 theme = "hugo-serif-theme"
 languageCode = "en-us"
-title = "Multiplatform Kickstarter — Local AI App Builder for Kotlin Multiplatform"
+title = "Multiplatform Kickstarter — AI Kotlin Multiplatform App Builder"
 defaultContentLanguage = 'en'
 defaultContentLanguageInSubdir = false
 enableRobotsTXT = true
@@ -68,7 +68,7 @@ enableRobotsTXT = true
     languageCode = 'en-US'
     languageDirection = 'ltr'
     languageName = 'English'
-    title = 'Multiplatform Kickstarter — Local AI App Builder for Kotlin Multiplatform'
+    title = 'Multiplatform Kickstarter — AI Kotlin Multiplatform App Builder'
     weight = 0
 
 [menu]
